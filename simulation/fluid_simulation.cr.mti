@@ -1,0 +1,44 @@
+C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module norm_tb
+
+Top level modules:
+	norm_tb
+
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module sqrt
+
+Top level modules:
+	sqrt
+
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module div
+-- Compiling module divu
+
+Top level modules:
+	div
+
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module sqrt_tb
+
+Top level modules:
+	sqrt_tb
+
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module norm
+
+Top level modules:
+	norm
+
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/div_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/div_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module div_tb
+
+Top level modules:
+	div_tb
+
+} {} {}}
