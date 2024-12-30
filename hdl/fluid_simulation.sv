@@ -19,35 +19,33 @@ module fluid_simulation (
     output logic [7:0] HEX5
 );
 
-   localparam FIELD_WIDTH = 80;
-   localparam FIELD_HEIGHT = 60;
-   localparam FIELD_SIZE = FIELD_WIDTH * FIELD_HEIGHT;
-   localparam FIELD_DATAW = 96; // xn, yn, mag
-   localparam FIELD_ADDRW = $clog2(FIELD_SIZE);
+  localparam FIELD_WIDTH = 8;
+  localparam FIELD_HEIGHT = 6;
+  localparam FIELD_SIZE = FIELD_WIDTH * FIELD_HEIGHT;
+  localparam FIELD_DATAW = 96;  // xn, yn, mag
+  localparam FIELD_ADDRW = $clog2(FIELD_SIZE);
 
 
-   logic [FIELD_ADDRW-1:0] field_addr_write, field_addr_read;
-   logic [FIELD_DATAW-1:0] field_data_in, field_data_out;
+  logic [FIELD_ADDRW-1:0] field_addr_write, field_addr_read;
+  logic [FIELD_DATAW-1:0] field_data_in, field_data_out;
 
-   bram_sdp bram_vel_inst # (
-      .WIDTH(FIELD_DATAW),
-      .DEPTH(FIELD_SIZE),
-      .INIT_F("vel_init.mem")
-   ) (
-      .clk_write(MAX10_CLK1_50),
-      .clk_read(MAX10_CLK1_50),
-      .we(1'b1),
-      .addr_write(field_addr_write),
-      .addr_read(field_addr_read),
-      .data_in(field_data_in),
-      .data_out(field_data_out)
-   );
+  //    bram_sdp bram_vel_inst # (
+  //       .WIDTH(FIELD_DATAW),
+  //         .DEPTH(FIELD_SIZE),
+  //       .INIT_F("vel_init.mem")
+  //    ) (
+  //       .clk_write(MAX10_CLK1_50),
+  //       .clk_read(MAX10_CLK1_50),
+  //       .we(1'b1),
+  //       .addr_write(field_addr_write),
+  //       .addr_read(field_addr_read),
+  //       .data_in(field_data_in),
+  //       .data_out(field_data_out)
+  //    );
 
-      
 
-  draw draw_inst #(
-      .FIELD_DATAW(FIELD_DATAW)
-  ) (
+
+  draw draw_inst (
       .clk(MAX10_CLK1_50),
       .vga_r(VGA_R),
       .vga_g(VGA_G),
@@ -57,13 +55,6 @@ module fluid_simulation (
       .field_addr_read(field_addr_read),
       .field_data_out(field_data_out)
   );
-
-
-
-
-
-
-
 
 endmodule
 

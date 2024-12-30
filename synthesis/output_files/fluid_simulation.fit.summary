@@ -1,0 +1,18 @@
+Fitter Status : Successful - Mon Dec 30 17:07:30 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : fluid_simulation
+Top-level Entity Name : fluid_simulation
+Family : MAX 10
+Device : 10M50DAF484C6GES
+Timing Models : Preliminary
+Total logic elements : 92 / 49,760 ( < 1 % )
+    Total combinational functions : 74 / 49,760 ( < 1 % )
+    Dedicated logic registers : 58 / 49,760 ( < 1 % )
+Total registers : 58
+Total pins : 87 / 360 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 76,800 / 1,677,312 ( 5 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
