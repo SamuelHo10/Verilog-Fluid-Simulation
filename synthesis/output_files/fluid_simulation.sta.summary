@@ -2,44 +2,68 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : -16.245
+TNS   : -16.245
+
 Type  : Slow 1200mV 85C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 32.090
+Slack : 30.062
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.309
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.331
+Slack : 0.479
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.436
+Slack : 9.403
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 19.676
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -13.067
+TNS   : -13.067
+
 Type  : Slow 1200mV 0C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 32.765
+Slack : 30.948
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.281
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.275
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.451
+Slack : 9.418
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.692
+Slack : 19.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : 2.488
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 36.099
+Slack : 34.995
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.141
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.158
+Slack : 0.235
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'

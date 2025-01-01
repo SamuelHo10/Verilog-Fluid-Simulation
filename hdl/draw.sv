@@ -1,10 +1,13 @@
 module draw #(
-    parameter line_width  = 4,
-    parameter FIELD_DATAW = 96
+    parameter DRAW_WIDTH  = 320,
+    parameter DRAW_HEIGHT = 240,
+    parameter DRAW_SIZE   = DRAW_WIDTH * DRAW_HEIGHT,
+    parameter DRAW_ADDRW  = $clog2(DRAW_SIZE),
+    parameter DRAW_DATAW  = 1
 ) (
     input logic clk,
-    input logic field_addr_read,
-    input logic [FIELD_DATAW-1:0] field_data_out,
+    input logic [DRAW_ADDRW-1:0] draw_addr_write,
+    input logic [DRAW_DATAW-1:0] draw_data_in,
     output logic [3:0] vga_r,
     output logic [3:0] vga_g,
     output logic [3:0] vga_b,
@@ -16,19 +19,14 @@ module draw #(
   logic disp_ena;
   logic vga_clk;
 
-  localparam DRAW_WIDTH = 320;
-  localparam DRAW_HEIGHT = 240;
-  localparam DRAW_SIZE = DRAW_WIDTH * DRAW_HEIGHT;
-  localparam DRAW_ADDRW = $clog2(DRAW_SIZE);
-  localparam DRAW_DATAW = 1;
-
-  logic [DRAW_ADDRW-1:0] draw_addr_write, draw_addr_read;
+  logic [DRAW_ADDRW-1:0] draw_addr_read;
   logic [9:0] col, row;
-  logic [DRAW_DATAW-1:0] draw_data_in, draw_data_out;
+  logic [DRAW_DATAW-1:0] draw_data_out;
 
   bram_sdp #(
-      .WIDTH (DRAW_DATAW),
-      .DEPTH (DRAW_SIZE)
+      .WIDTH(DRAW_DATAW),
+      .DEPTH(DRAW_SIZE),
+      .INIT_F("cheetah.mem")
   ) bram_draw_inst (
       .clk_write(clk),
       .clk_read(vga_clk),
@@ -60,8 +58,8 @@ module draw #(
       .h_sync   (h_sync),
       .v_sync   (v_sync),
       .disp_ena (disp_ena),
-      .col     (col),
-      .row     (row)
+      .col      (col),
+      .row      (row)
   );
 
 endmodule

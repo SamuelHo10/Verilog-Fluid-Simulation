@@ -1,5 +1,5 @@
 Timing Analyzer report for fluid_simulation
-Mon Dec 30 17:07:36 2024
+Tue Dec 31 21:36:28 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -90,13 +90,15 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.35        ;
+; Average used               ; 1.91        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.9%      ;
-;     Processors 3-10        ;   3.9%      ;
+;     Processor 2            ;  11.0%      ;
+;     Processor 3            ;  10.5%      ;
+;     Processor 4            ;  10.3%      ;
+;     Processors 5-10        ;   9.8%      ;
 +----------------------------+-------------+
 
 
@@ -115,18 +117,20 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+-------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                        ; Note ;
 +------------+-----------------+-------------------------------------------------------------------+------+
-; 126.42 MHz ; 126.42 MHz      ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 27.59 MHz  ; 27.59 MHz       ; MAX10_CLK1_50                                                     ;      ;
+; 100.62 MHz ; 100.62 MHz      ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
 +------------+-----------------+-------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+--------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup Summary                                                        ;
-+-------------------------------------------------------------------+--------+---------------+
-; Clock                                                             ; Slack  ; End Point TNS ;
-+-------------------------------------------------------------------+--------+---------------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 32.090 ; 0.000         ;
-+-------------------------------------------------------------------+--------+---------------+
++---------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                                                         ;
++-------------------------------------------------------------------+---------+---------------+
+; Clock                                                             ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------+---------+---------------+
+; MAX10_CLK1_50                                                     ; -16.245 ; -16.245       ;
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 30.062  ; 0.000         ;
++-------------------------------------------------------------------+---------+---------------+
 
 
 +-------------------------------------------------------------------------------------------+
@@ -134,7 +138,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------+-------+---------------+
 ; Clock                                                             ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------+-------+---------------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.331 ; 0.000         ;
+; MAX10_CLK1_50                                                     ; 0.309 ; 0.000         ;
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.479 ; 0.000         ;
 +-------------------------------------------------------------------+-------+---------------+
 
 
@@ -155,7 +160,7 @@ No paths to report.
 +-------------------------------------------------------------------+--------+---------------+
 ; Clock                                                             ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------+--------+---------------+
-; MAX10_CLK1_50                                                     ; 9.436  ; 0.000         ;
+; MAX10_CLK1_50                                                     ; 9.403  ; 0.000         ;
 ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.676 ; 0.000         ;
 +-------------------------------------------------------------------+--------+---------------+
 
@@ -171,18 +176,20 @@ No synchronizer chains to report.
 +------------+-----------------+-------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                        ; Note ;
 +------------+-----------------+-------------------------------------------------------------------+------+
-; 138.22 MHz ; 138.22 MHz      ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 30.24 MHz  ; 30.24 MHz       ; MAX10_CLK1_50                                                     ;      ;
+; 110.47 MHz ; 110.47 MHz      ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
 +------------+-----------------+-------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+--------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup Summary                                                         ;
-+-------------------------------------------------------------------+--------+---------------+
-; Clock                                                             ; Slack  ; End Point TNS ;
-+-------------------------------------------------------------------+--------+---------------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 32.765 ; 0.000         ;
-+-------------------------------------------------------------------+--------+---------------+
++---------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                                                          ;
++-------------------------------------------------------------------+---------+---------------+
+; Clock                                                             ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------+---------+---------------+
+; MAX10_CLK1_50                                                     ; -13.067 ; -13.067       ;
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 30.948  ; 0.000         ;
++-------------------------------------------------------------------+---------+---------------+
 
 
 +-------------------------------------------------------------------------------------------+
@@ -190,7 +197,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------+-------+---------------+
 ; Clock                                                             ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------+-------+---------------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.275 ; 0.000         ;
+; MAX10_CLK1_50                                                     ; 0.281 ; 0.000         ;
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.404 ; 0.000         ;
 +-------------------------------------------------------------------+-------+---------------+
 
 
@@ -211,8 +219,8 @@ No paths to report.
 +-------------------------------------------------------------------+--------+---------------+
 ; Clock                                                             ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------+--------+---------------+
-; MAX10_CLK1_50                                                     ; 9.451  ; 0.000         ;
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.692 ; 0.000         ;
+; MAX10_CLK1_50                                                     ; 9.418  ; 0.000         ;
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.694 ; 0.000         ;
 +-------------------------------------------------------------------+--------+---------------+
 
 
@@ -227,7 +235,8 @@ No synchronizer chains to report.
 +-------------------------------------------------------------------+--------+---------------+
 ; Clock                                                             ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------+--------+---------------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 36.099 ; 0.000         ;
+; MAX10_CLK1_50                                                     ; 2.488  ; 0.000         ;
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 34.995 ; 0.000         ;
 +-------------------------------------------------------------------+--------+---------------+
 
 
@@ -236,7 +245,8 @@ No synchronizer chains to report.
 +-------------------------------------------------------------------+-------+---------------+
 ; Clock                                                             ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------+-------+---------------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.158 ; 0.000         ;
+; MAX10_CLK1_50                                                     ; 0.141 ; 0.000         ;
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.235 ; 0.000         ;
 +-------------------------------------------------------------------+-------+---------------+
 
 
@@ -268,18 +278,18 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                            ;
-+--------------------------------------------------------------------+--------+-------+----------+---------+---------------------+
-; Clock                                                              ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+--------------------------------------------------------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                   ; 32.090 ; 0.158 ; N/A      ; N/A     ; 9.265               ;
-;  MAX10_CLK1_50                                                     ; N/A    ; N/A   ; N/A      ; N/A     ; 9.265               ;
-;  draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 32.090 ; 0.158 ; N/A      ; N/A     ; 19.676              ;
-; Design-wide TNS                                                    ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
-;  MAX10_CLK1_50                                                     ; N/A    ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-+--------------------------------------------------------------------+--------+-------+----------+---------+---------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                             ;
++--------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
+; Clock                                                              ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack                                                   ; -16.245 ; 0.141 ; N/A      ; N/A     ; 9.265               ;
+;  MAX10_CLK1_50                                                     ; -16.245 ; 0.141 ; N/A      ; N/A     ; 9.265               ;
+;  draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 30.062  ; 0.235 ; N/A      ; N/A     ; 19.676              ;
+; Design-wide TNS                                                    ; -16.245 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  MAX10_CLK1_50                                                     ; -16.245 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.000   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++--------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -636,23 +646,25 @@ No synchronizer chains to report.
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                                                                                                   ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                                                        ; To Clock                                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+----------+----------+----------+----------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 4798     ; 0        ; 0        ; 0        ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                                                       ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+--------------+----------+----------+----------+
+; From Clock                                                        ; To Clock                                                          ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+--------------+----------+----------+----------+
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 4798         ; 0        ; 0        ; 0        ;
+; MAX10_CLK1_50                                                     ; MAX10_CLK1_50                                                     ; > 2147483647 ; 0        ; 0        ; 0        ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                                                                                                    ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                                                        ; To Clock                                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+----------+----------+----------+----------+
-; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 4798     ; 0        ; 0        ; 0        ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                                                        ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+--------------+----------+----------+----------+
+; From Clock                                                        ; To Clock                                                          ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+--------------+----------+----------+----------+
+; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] ; 4798         ; 0        ; 0        ; 0        ;
+; MAX10_CLK1_50                                                     ; MAX10_CLK1_50                                                     ; > 2147483647 ; 0        ; 0        ; 0        ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -742,7 +754,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Mon Dec 30 17:07:34 2024
+    Info: Processing started: Tue Dec 31 21:36:26 2024
 Info: Command: quartus_sta fluid_simulation -c fluid_simulation
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -761,51 +773,59 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
-Info (332146): Worst-case setup slack is 32.090
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -16.245
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    32.090               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case hold slack is 0.331
+    Info (332119):   -16.245             -16.245 MAX10_CLK1_50 
+    Info (332119):    30.062               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.309
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.331               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.309               0.000 MAX10_CLK1_50 
+    Info (332119):     0.479               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.436
+Info (332146): Worst-case minimum pulse width slack is 9.403
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.436               0.000 MAX10_CLK1_50 
+    Info (332119):     9.403               0.000 MAX10_CLK1_50 
     Info (332119):    19.676               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 32.765
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -13.067
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    32.765               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case hold slack is 0.275
+    Info (332119):   -13.067             -13.067 MAX10_CLK1_50 
+    Info (332119):    30.948               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.281
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.275               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.281               0.000 MAX10_CLK1_50 
+    Info (332119):     0.404               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.451
+Info (332146): Worst-case minimum pulse width slack is 9.418
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.451               0.000 MAX10_CLK1_50 
-    Info (332119):    19.692               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     9.418               0.000 MAX10_CLK1_50 
+    Info (332119):    19.694               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 36.099
+Info (332146): Worst-case setup slack is 2.488
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    36.099               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case hold slack is 0.158
+    Info (332119):     2.488               0.000 MAX10_CLK1_50 
+    Info (332119):    34.995               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.141
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.158               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.141               0.000 MAX10_CLK1_50 
+    Info (332119):     0.235               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 9.265
@@ -815,10 +835,10 @@ Info (332146): Worst-case minimum pulse width slack is 9.265
     Info (332119):    19.721               0.000 draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4884 megabytes
-    Info: Processing ended: Mon Dec 30 17:07:36 2024
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4902 megabytes
+    Info: Processing ended: Tue Dec 31 21:36:28 2024
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
