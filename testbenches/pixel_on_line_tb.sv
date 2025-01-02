@@ -59,6 +59,16 @@ module pixel_on_line_tb ();
     $display("on_line = %b", on_line);
     #5;
 
+    x   = 17/SF;
+    y   = 17/SF;
+    x0  = 20/SF;
+    y0  = 15/SF;
+    xn  = 0/SF;
+    yn  = 1/SF;
+    mag = 10/SF;
+    #5;
+    $display("on_line = %b", on_line);
+    #5;
 
 
     $stop;

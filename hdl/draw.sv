@@ -1,6 +1,6 @@
 module draw #(
-    parameter DRAW_WIDTH  = 320,
-    parameter DRAW_HEIGHT = 240,
+    parameter DRAW_WIDTH  = 640,
+    parameter DRAW_HEIGHT = 480,
     parameter DRAW_SIZE   = DRAW_WIDTH * DRAW_HEIGHT,
     parameter DRAW_ADDRW  = $clog2(DRAW_SIZE),
     parameter DRAW_DATAW  = 1
@@ -8,6 +8,7 @@ module draw #(
     input logic clk,
     input logic [DRAW_ADDRW-1:0] draw_addr_write,
     input logic [DRAW_DATAW-1:0] draw_data_in,
+    input logic draw_we,
     output logic [3:0] vga_r,
     output logic [3:0] vga_g,
     output logic [3:0] vga_b,
@@ -24,20 +25,19 @@ module draw #(
   logic [DRAW_DATAW-1:0] draw_data_out;
 
   bram_sdp #(
-      .WIDTH(DRAW_DATAW),
-      .DEPTH(DRAW_SIZE),
+      .WIDTH (DRAW_DATAW),
+      .DEPTH (DRAW_SIZE),
       .INIT_F("cheetah.mem")
   ) bram_draw_inst (
       .clk_write(clk),
       .clk_read(vga_clk),
-      .we(1'b1),
+      .we(draw_we),
       .addr_write(draw_addr_write),
       .addr_read(draw_addr_read),
       .data_in(draw_data_in),
       .data_out(draw_data_out)
   );
 
-  assign draw_addr_read = (col >> 1) + (row >> 1) * DRAW_WIDTH;
 
   always @(posedge vga_clk) begin
     {vga_r, vga_g, vga_b} <= disp_ena ? {12{draw_data_out}} : 0;
@@ -58,6 +58,7 @@ module draw #(
       .h_sync   (h_sync),
       .v_sync   (v_sync),
       .disp_ena (disp_ena),
+      .addr     (draw_addr_read),
       .col      (col),
       .row      (row)
   );

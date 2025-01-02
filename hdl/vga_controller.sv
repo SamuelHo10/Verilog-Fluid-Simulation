@@ -12,15 +12,17 @@ module vga_controller #(
     parameter V_FP     = 10,    // vertical front porch
     parameter V_PULSE  = 2,     // vertical pulse
     parameter V_BP     = 33,    // vertical back porch
-    parameter V_POL    = 1'b0   // vertical sync polarity (1 = positive, 0 = negative)
+    parameter V_POL    = 1'b0,   // vertical sync polarity (1 = positive, 0 = negative)
+    parameter ADDR_SIZE = $clog2(H_PIXELS * V_PIXELS)
 ) (
     input      pixel_clk,  // Pixel clock
     input      reset_n,    // Active low synchronous reset
     output reg h_sync,     // horizontal sync signal
     output reg v_sync,     // vertical sync signal
     output reg disp_ena,   // display enable (0 = all colors must be blank)
-    output reg [9:0] col, // current column
-    output reg [9:0] row    // current row
+    output reg [ADDR_SIZE:0] addr, // current column
+    output reg [9:0] col,  // current column
+    output reg [9:0] row   // current row
 );
 
   // Get total number of row and column pixel clocks
@@ -39,6 +41,7 @@ module vga_controller #(
       h_sync <= ~H_POL;
       v_sync <= ~V_POL;
       disp_ena <= 1'b0;
+      addr <= 0;
       col <= 0;
       row <= 0;
     end else begin
@@ -52,6 +55,7 @@ module vga_controller #(
           v_count <= v_count + 1;
         end else begin
           v_count <= 0;
+          addr <= 0;
         end
       end
 
@@ -69,7 +73,6 @@ module vga_controller #(
         v_sync <= V_POL;
       end
 
-      // Update Pixel Coordinates
       if (h_count < H_PIXELS) begin
         col <= h_count;
       end
@@ -81,6 +84,7 @@ module vga_controller #(
       // Set display enable output
       if (h_count < H_PIXELS && v_count < V_PIXELS) begin
         disp_ena <= 1'b1;
+        addr <= addr + 1;
       end else begin
         disp_ena <= 1'b0;
       end

@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at pixel_on_line.sv(3): object "LINE_WIDTH_SQR" differs only in case from object "line_width_sqr" in the same scope File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 3

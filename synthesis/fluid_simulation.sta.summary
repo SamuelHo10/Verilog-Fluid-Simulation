@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : -21.866
+TNS   : -816.850
+
+Type  : Slow 1200mV 85C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 29.538
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.501
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.701
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -18.306
+TNS   : -682.566
+
+Type  : Slow 1200mV 0C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 30.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.513
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.712
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : 2.229
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 35.412
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.267
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.723
+TNS   : 0.000
+
+------------------------------------------------------------

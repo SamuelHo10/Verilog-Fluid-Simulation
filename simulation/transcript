@@ -11,392 +11,34 @@
 # Compile of vga_controller.sv was successful.
 # Compile of pixel_on_line.sv was successful.
 # Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 1 failed with no errors.
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pixel_on_line_tb
-# vsim -voptargs="+acc" work.pixel_on_line_tb 
-# Start time: 11:16:33 on Dec 31,2024
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.draw_block_tb
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 10:56:41 on Jan 02,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(33): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 11, found 10.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(33): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
 # Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
 # Loading work.pixel_on_line(fast)
-add wave -position end sim:/pixel_on_line_tb/uut/*
+add wave -position end sim:/draw_block_tb/uut/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlft6cvca5".
+#           Attempting to use alternate WLF file "./wlftwb3v28".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft6cvca5
+#           Using alternate file: ./wlftwb3v28
 run -all
-# Test case 1: on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(52)
-#    Time: 10 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 52
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pixel_on_line_tb
-# End time: 11:23:37 on Dec 31,2024, Elapsed time: 0:07:04
-# Errors: 0, Warnings: 14
-# vsim -voptargs="+acc" work.pixel_on_line_tb 
-# Start time: 11:23:37 on Dec 31,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-add wave -position end sim:/pixel_on_line_tb/uut/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlft1zedmm".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft1zedmm
-run -all
-# on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(52)
-#    Time: 10 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 52
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-run -all
-# on_line = 0
-# on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-run -all
-# on_line = 0
-# on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-run -all
-# on_line = 0
-# on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-add wave -position end sim:/pixel_on_line_tb/uut/*
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv failed with 1 errors.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 1 failed with 1 error.
-run
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pixel_on_line_tb
-# End time: 11:39:40 on Dec 31,2024, Elapsed time: 0:16:03
-# Errors: 0, Warnings: 4
-# vsim -voptargs="+acc" work.pixel_on_line_tb 
-# Start time: 11:39:40 on Dec 31,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-add wave -position end sim:/pixel_on_line_tb/uut/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlftd9emzk".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftd9emzk
-run -all
-# on_line = 1
-# on_line = 1
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pixel_on_line_tb
-# End time: 11:41:40 on Dec 31,2024, Elapsed time: 0:02:00
-# Errors: 0, Warnings: 5
-# vsim -voptargs="+acc" work.pixel_on_line_tb 
-# Start time: 11:41:40 on Dec 31,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-add wave -position end sim:/pixel_on_line_tb/uut/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlftfrm4sx".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfrm4sx
-run -all
-# on_line = 0
-# on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pixel_on_line_tb
-# End time: 11:44:47 on Dec 31,2024, Elapsed time: 0:03:07
-# Errors: 0, Warnings: 5
-# vsim -voptargs="+acc" work.pixel_on_line_tb 
-# Start time: 11:44:47 on Dec 31,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-add wave -position end sim:/pixel_on_line_tb/uut/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlft0kr2ax".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0kr2ax
-run -all
-# on_line = 0
-# on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv failed with 1 errors.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 1 failed with 1 error.
-vsim -voptargs=+acc work.pixel_on_line_tb
-# End time: 11:47:30 on Dec 31,2024, Elapsed time: 0:02:43
-# Errors: 0, Warnings: 5
-# vsim -voptargs="+acc" work.pixel_on_line_tb 
-# Start time: 11:47:30 on Dec 31,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-add wave -position end sim:/pixel_on_line_tb/uut/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlftd2qzhz".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftd2qzhz
-run -all
-# on_line = 0
-# on_line = 0
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# 13 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pixel_on_line_tb
-# End time: 11:50:34 on Dec 31,2024, Elapsed time: 0:03:04
-# Errors: 0, Warnings: 4
-# vsim -voptargs="+acc" work.pixel_on_line_tb 
-# Start time: 11:50:34 on Dec 31,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.pixel_on_line_tb(fast)
-# Loading work.pixel_on_line(fast)
-add wave -position end sim:/pixel_on_line_tb/uut/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlftavgt3g".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftavgt3g
-run -all
-# on_line = 1
-# on_line = 1
-# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
-#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
-# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
-# ** Error: Acs sdne.
-# 
-#        Unable to replace existing ini file (C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/simulation/fluid_simulation.mpf).  File can not be renamed.
-# Compile of div_tb.sv was successful.
-# Compile of div.sv was successful.
-# Compile of sqrt.sv was successful.
-# Compile of sqrt_tb.sv was successful.
-# Compile of norm.sv was successful.
-# Compile of norm_tb.sv was successful.
-# Compile of draw.sv was successful.
-# Compile of bram_sdp.sv was successful.
-# Compile of comb_ckt_generator.sv was successful.
-# Compile of fluid_simulation.sv was successful.
-# Compile of vga_controller.sv was successful.
-# Compile of pixel_on_line.sv was successful.
-# Compile of pixel_on_line_tb.sv was successful.
-# Compile of draw_lines.sv failed with 1 errors.
-# 14 compiles, 1 failed with 1 error.
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(70)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 70
 # Compile of div_tb.sv was successful.
 # Compile of div.sv was successful.
 # Compile of sqrt.sv was successful.
@@ -411,4 +53,701 @@ run -all
 # Compile of pixel_on_line.sv was successful.
 # Compile of pixel_on_line_tb.sv was successful.
 # Compile of draw_lines.sv was successful.
-# 14 compiles, 0 failed with no errors.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.draw_block_tb
+# End time: 10:58:07 on Jan 02,2025, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 11
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 10:58:07 on Jan 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(33): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 11, found 10.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(33): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/draw_block_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftkemw0m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkemw0m
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(71)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 71
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.draw_block_tb
+# End time: 11:04:10 on Jan 02,2025, Elapsed time: 0:06:03
+# Errors: 0, Warnings: 7
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 11:04:10 on Jan 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(33): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 11, found 10.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(33): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/draw_block_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlfti3fh34".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfti3fh34
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(71)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 71
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.draw_block_tb
+# End time: 11:06:49 on Jan 02,2025, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 7
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 11:06:49 on Jan 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/draw_block_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlft83m8br".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft83m8br
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(71)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 71
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv failed with 1 errors.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 1 failed with 1 error.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv failed with 1 errors.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 1 failed with 1 error.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.draw_block_tb
+# End time: 11:15:34 on Jan 02,2025, Elapsed time: 0:08:45
+# Errors: 0, Warnings: 7
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 11:15:34 on Jan 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/draw_block_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftz7sfrr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftz7sfrr
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(71)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 71
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(71)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 71
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(71)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 71
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(71)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 71
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(31): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 11, found 10.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(31): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 1110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+run
+run
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(31): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 11, found 10.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(31): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 4110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+vsim -voptargs=+acc work.pixel_on_line_tb
+# End time: 11:28:29 on Jan 02,2025, Elapsed time: 0:12:55
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.pixel_on_line_tb 
+# Start time: 11:28:29 on Jan 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.pixel_on_line_tb(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/pixel_on_line_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftit7103".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftit7103
+run -all
+# on_line = 1
+# on_line = 1
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(64)
+#    Time: 20 ns  Iteration: 0  Instance: /pixel_on_line_tb
+# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 64
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.pixel_on_line_tb(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# on_line = 1
+# on_line = 1
+# on_line = 0
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(74)
+#    Time: 30 ns  Iteration: 0  Instance: /pixel_on_line_tb
+# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 74
+add wave -position end sim:/pixel_on_line_tb/uut/*
+run
+vsim -voptargs=+acc work.pixel_on_line_tb
+# End time: 11:34:51 on Jan 02,2025, Elapsed time: 0:06:22
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.pixel_on_line_tb 
+# Start time: 11:34:51 on Jan 02,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.pixel_on_line_tb(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/pixel_on_line_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftym0jgn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftym0jgn
+run -all
+# on_line = 1
+# on_line = 1
+# on_line = 0
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(74)
+#    Time: 30 ns  Iteration: 0  Instance: /pixel_on_line_tb
+# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 74
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.pixel_on_line_tb(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# on_line = 1
+# on_line = 1
+# on_line = 1
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv(74)
+#    Time: 30 ns  Iteration: 0  Instance: /pixel_on_line_tb
+# Break in Module pixel_on_line_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv line 74
+vsim -voptargs=+acc work.draw_block_tb
+# End time: 11:42:07 on Jan 02,2025, Elapsed time: 0:07:16
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 11:42:07 on Jan 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(31): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 11, found 10.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(31): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/draw_block_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftxr5khk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxr5khk
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 4110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 4110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv(54): (vopt-2697) MSB 32 of part-select into 'draw_addr_write_decimal' is out of bounds.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 4110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+vsim -voptargs=+acc work.draw_block_tb
+# End time: 11:49:05 on Jan 02,2025, Elapsed time: 0:06:58
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 11:49:05 on Jan 02,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/draw_block_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlft3t5x5v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3t5x5v
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 4110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.draw_block_tb
+# End time: 11:54:14 on Jan 02,2025, Elapsed time: 0:05:09
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.draw_block_tb 
+# Start time: 11:54:14 on Jan 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+add wave -position end sim:/draw_block_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftc5gg71".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc5gg71
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 4110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "draw_block(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.draw_block_tb(fast)
+# Loading work.draw_block(fast)
+# Loading work.pixel_on_line(fast)
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv(69)
+#    Time: 4110 ns  Iteration: 0  Instance: /draw_block_tb
+# Break in Module draw_block_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv line 69
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_lines.sv was successful.
+# Compile of draw_lines_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# 17 compiles, 0 failed with no errors.
