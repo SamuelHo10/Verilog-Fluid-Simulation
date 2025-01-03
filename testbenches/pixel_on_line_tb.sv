@@ -1,4 +1,4 @@
-// FILE: hdl/test_pixel_on_line.sv
+// OLD TESTBENCH DOES NOT WORK
 `timescale 1ns / 1ps
 
 module pixel_on_line_tb ();
@@ -66,6 +66,17 @@ module pixel_on_line_tb ();
     xn  = 0/SF;
     yn  = 1/SF;
     mag = 10/SF;
+    #5;
+    $display("on_line = %b", on_line);
+    #5;
+
+    x   = 17/SF;
+    y   = 17/SF;
+    x0  = 20/SF;
+    y0  = 20/SF;
+    xn  = 32'hffff3f38;
+    yn  = 32'h0000a86f;
+    mag = 32'h000a6126;
     #5;
     $display("on_line = %b", on_line);
     #5;

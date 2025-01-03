@@ -26,8 +26,8 @@ module draw #(
 
   bram_sdp #(
       .WIDTH (DRAW_DATAW),
-      .DEPTH (DRAW_SIZE),
-      .INIT_F("cheetah.mem")
+      .DEPTH (DRAW_SIZE)//,
+      //.INIT_F("cheetah.mem")
   ) bram_draw_inst (
       .clk_write(clk),
       .clk_read(vga_clk),

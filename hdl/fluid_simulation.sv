@@ -50,51 +50,34 @@ module fluid_simulation (
 
   logic [DRAW_ADDRW-1:0] draw_addr_write;
   logic [DRAW_DATAW-1:0] draw_data_in;
-  logic start_draw_block, draw_we;
+  logic start_draw_blocks, draw_we;
 
 
 
-  // draw_lines #(
-  //     .DRAW_WIDTH(DRAW_WIDTH),
-  //     .DRAW_HEIGHT(DRAW_HEIGHT),
-  //     .DRAW_SIZE(DRAW_SIZE),
-  //     .DRAW_ADDRW(DRAW_ADDRW),
-  //     .DRAW_DATAW(DRAW_DATAW),
-  //     .FIELD_WIDTH(FIELD_WIDTH),
-  //     .FIELD_HEIGHT(FIELD_HEIGHT),
-  //     .FIELD_SIZE(FIELD_SIZE),
-  //     .FIELD_DATAW(FIELD_DATAW),
-  //     .FIELD_ADDRW(FIELD_ADDRW)
-  // ) draw_lines_inst (
-  //     .clk(MAX10_CLK1_50),
-  //     .start(start_draw_lines),
-  //     .done(),
-  //     .field_addr_write(field_addr_write),
-  //     .field_data_in(field_data_in),
-  //     .draw_addr_write(draw_addr_write),
-  //     .draw_data_in(draw_data_in)
-  // );
-
-  draw_block #(
-      .DRAW_WIDTH (DRAW_WIDTH),
+  draw_blocks #(
+      .DRAW_WIDTH(DRAW_WIDTH),
       .DRAW_HEIGHT(DRAW_HEIGHT),
-      .DRAW_SIZE  (DRAW_SIZE),
-      .DRAW_ADDRW (DRAW_ADDRW),
-      .DRAW_DATAW (DRAW_DATAW),
-      .BLOCK_SIZE (DRAW_WIDTH / FIELD_WIDTH)
-  ) draw_block_inst (
+      .DRAW_SIZE(DRAW_SIZE),
+      .DRAW_ADDRW(DRAW_ADDRW),
+      .DRAW_DATAW(DRAW_DATAW),
+      .FIELD_WIDTH(FIELD_WIDTH),
+      .FIELD_HEIGHT(FIELD_HEIGHT),
+      .FIELD_SIZE(FIELD_SIZE),
+      .FIELD_DATAW(FIELD_DATAW),
+      .FIELD_ADDRW(FIELD_ADDRW),
+      .BLOCK_SIZE(DRAW_WIDTH / FIELD_WIDTH)
+  ) draw_blocks_inst (
       .clk(MAX10_CLK1_50),
-      .start(start_draw_block),
+      .start(start_draw_blocks),
       .done(),
-      .block_x({16'd40, 16'b0}),
-      .block_y({16'd40, 16'b0}),
-      .xn({16'b0, 16'b1011010011111101}),
-      .yn({16'b0, 16'b1011010011111101}),
-      .mag({16'd20, 16'b0}),
+      .field_addr_write(field_addr_write),
+      .field_data_in(field_data_in),
       .draw_addr_write(draw_addr_write),
       .draw_data_in(draw_data_in),
       .draw_we(draw_we)
   );
+
+
 
 
   draw #(
@@ -115,7 +98,7 @@ module fluid_simulation (
       .draw_we(draw_we)
   );
 
-  assign start_draw_block = ~KEY[0];
+  assign start_draw_blocks = ~KEY[0];
 
   // enum {
   //   IDLE,
