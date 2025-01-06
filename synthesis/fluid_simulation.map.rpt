@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fluid_simulation
-Thu Jan  2 21:56:26 2025
+Sun Jan  5 18:01:51 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -20,40 +20,56 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
  12. Registers Packed Into Inferred Megafunctions
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Source assignments for draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated
- 15. Source assignments for draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_t871:auto_generated
- 16. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst
- 17. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst
- 18. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst
- 19. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst
- 20. Parameter Settings for User Entity Instance: draw:draw_inst
- 21. Parameter Settings for User Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst
- 22. Parameter Settings for User Entity Instance: draw:draw_inst|pll:vgapll_inst|altpll:altpll_component
- 23. Parameter Settings for User Entity Instance: draw:draw_inst|vga_controller:vga_controller_inst
- 24. Parameter Settings for Inferred Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0
- 25. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0
- 26. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7
- 27. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult8
- 28. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult0
- 29. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult3
- 30. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult1
- 31. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult4
- 32. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult5
- 33. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult6
- 34. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult2
- 35. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult0
- 36. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult1
- 37. altpll Parameter Settings by Entity Instance
- 38. altsyncram Parameter Settings by Entity Instance
- 39. lpm_mult Parameter Settings by Entity Instance
- 40. Port Connectivity Checks: "draw:draw_inst|vga_controller:vga_controller_inst"
- 41. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst"
- 42. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst"
- 43. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst"
- 44. Port Connectivity Checks: "draw_blocks:draw_blocks_inst"
- 45. Post-Synthesis Netlist Statistics for Top Partition
- 46. Elapsed Time Per Partition
- 47. Analysis & Synthesis Messages
- 48. Analysis & Synthesis Suppressed Messages
+ 15. Source assignments for draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_88g1:auto_generated
+ 16. Source assignments for update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0|altsyncram_oc71:auto_generated
+ 17. Source assignments for update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0|altsyncram_c771:auto_generated
+ 18. Parameter Settings for User Entity Instance: update_field:update_field_inst
+ 19. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst
+ 20. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst
+ 21. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst
+ 22. Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst
+ 23. Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst
+ 24. Parameter Settings for User Entity Instance: update_field:update_field_inst|read_vels:read_vels_inst
+ 25. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst
+ 26. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst
+ 27. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst
+ 28. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst
+ 29. Parameter Settings for User Entity Instance: draw:draw_inst
+ 30. Parameter Settings for User Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst
+ 31. Parameter Settings for User Entity Instance: draw:draw_inst|pll:vgapll_inst|altpll:altpll_component
+ 32. Parameter Settings for User Entity Instance: draw:draw_inst|vga_controller:vga_controller_inst
+ 33. Parameter Settings for Inferred Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0
+ 34. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0
+ 35. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0
+ 36. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0
+ 37. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7
+ 38. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult8
+ 39. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult0
+ 40. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult3
+ 41. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult1
+ 42. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult4
+ 43. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult5
+ 44. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult6
+ 45. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult2
+ 46. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult0
+ 47. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult1
+ 48. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult0
+ 49. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1
+ 50. altpll Parameter Settings by Entity Instance
+ 51. altsyncram Parameter Settings by Entity Instance
+ 52. lpm_mult Parameter Settings by Entity Instance
+ 53. Port Connectivity Checks: "draw:draw_inst|vga_controller:vga_controller_inst"
+ 54. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst"
+ 55. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst"
+ 56. Port Connectivity Checks: "draw_blocks:draw_blocks_inst"
+ 57. Port Connectivity Checks: "update_field:update_field_inst|read_vels:read_vels_inst"
+ 58. Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst"
+ 59. Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|div:div_inst"
+ 60. Port Connectivity Checks: "update_field:update_field_inst"
+ 61. Post-Synthesis Netlist Statistics for Top Partition
+ 62. Elapsed Time Per Partition
+ 63. Analysis & Synthesis Messages
+ 64. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -80,19 +96,19 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan  2 21:56:26 2025          ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan  5 18:01:51 2025          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; fluid_simulation                               ;
 ; Top-level Entity Name              ; fluid_simulation                               ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 1,593                                          ;
-;     Total combinational functions  ; 1,574                                          ;
-;     Dedicated logic registers      ; 263                                            ;
-; Total registers                    ; 263                                            ;
+; Total logic elements               ; 2,808                                          ;
+;     Total combinational functions  ; 2,502                                          ;
+;     Dedicated logic registers      ; 1,050                                          ;
+; Total registers                    ; 1050                                           ;
 ; Total pins                         ; 73                                             ;
 ; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 311,808                                        ;
-; Embedded Multiplier 9-bit elements ; 88                                             ;
+; Total memory bits                  ; 314,514                                        ;
+; Embedded Multiplier 9-bit elements ; 104                                            ;
 ; Total PLLs                         ; 1                                              ;
 ; UFM blocks                         ; 0                                              ;
 ; ADC blocks                         ; 0                                              ;
@@ -193,18 +209,18 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processors 8-10        ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processors 8-10        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -213,12 +229,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                              ; Library ;
 +----------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; ../hdl/update_field.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv                                          ;         ;
+; ../hdl/read_vels.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv                                             ;         ;
 ; ../hdl/draw_blocks.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv                                           ;         ;
 ; ../hdl/vga_controller.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv                                        ;         ;
+; ../hdl/sqrt.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv                                                  ;         ;
 ; ../hdl/pixel_on_line.sv                            ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv                                         ;         ;
+; ../hdl/norm.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv                                                  ;         ;
 ; ../hdl/fluid_simulation.sv                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv                                      ;         ;
 ; ../hdl/draw_block.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv                                            ;         ;
 ; ../hdl/draw.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv                                                  ;         ;
+; ../hdl/div.sv                                      ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv                                                   ;         ;
 ; ../hdl/bram_sdp.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv                                              ;         ;
 ; ../hdl/ip/pll.v                                    ; yes             ; User Wizard-Generated File                            ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/ip/pll.v                                                 ;         ;
 ; altpll.tdf                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altpll.tdf                                                      ;         ;
@@ -239,8 +260,11 @@ https://fpgasoftware.intel.com/eula.
 ; db/decode_79a.tdf                                  ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/decode_79a.tdf                                  ;         ;
 ; db/decode_0l9.tdf                                  ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/decode_0l9.tdf                                  ;         ;
 ; db/mux_g3b.tdf                                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mux_g3b.tdf                                     ;         ;
-; db/altsyncram_t871.tdf                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_t871.tdf                             ;         ;
-; db/fluid_simulation.ram0_bram_sdp_124f44b6.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/fluid_simulation.ram0_bram_sdp_124f44b6.hdl.mif ;         ;
+; db/altsyncram_88g1.tdf                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_88g1.tdf                             ;         ;
+; db/altsyncram_oc71.tdf                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_oc71.tdf                             ;         ;
+; db/fluid_simulation.ram0_bram_sdp_da46bba3.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/fluid_simulation.ram0_bram_sdp_da46bba3.hdl.mif ;         ;
+; db/altsyncram_c771.tdf                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_c771.tdf                             ;         ;
+; db/fluid_simulation.ram0_bram_sdp_6a547886.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/fluid_simulation.ram0_bram_sdp_6a547886.hdl.mif ;         ;
 ; lpm_mult.tdf                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf                                                    ;         ;
 ; lpm_add_sub.inc                                    ; yes             ; Megafunction                                          ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_add_sub.inc                                                 ;         ;
 ; multcore.inc                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.inc                                                    ;         ;
@@ -256,34 +280,34 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 1,593               ;
+; Estimated Total logic elements              ; 2,808               ;
 ;                                             ;                     ;
-; Total combinational functions               ; 1574                ;
+; Total combinational functions               ; 2502                ;
 ; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 170                 ;
-;     -- 3 input functions                    ; 1105                ;
-;     -- <=2 input functions                  ; 299                 ;
+;     -- 4 input functions                    ; 313                 ;
+;     -- 3 input functions                    ; 1622                ;
+;     -- <=2 input functions                  ; 567                 ;
 ;                                             ;                     ;
 ; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 265                 ;
-;     -- arithmetic mode                      ; 1309                ;
+;     -- normal mode                          ; 705                 ;
+;     -- arithmetic mode                      ; 1797                ;
 ;                                             ;                     ;
-; Total registers                             ; 263                 ;
-;     -- Dedicated logic registers            ; 263                 ;
+; Total registers                             ; 1050                ;
+;     -- Dedicated logic registers            ; 1050                ;
 ;     -- I/O registers                        ; 0                   ;
 ;                                             ;                     ;
 ; I/O pins                                    ; 73                  ;
-; Total memory bits                           ; 311808              ;
+; Total memory bits                           ; 314514              ;
 ;                                             ;                     ;
-; Embedded Multiplier 9-bit elements          ; 88                  ;
+; Embedded Multiplier 9-bit elements          ; 104                 ;
 ;                                             ;                     ;
 ; Total PLLs                                  ; 1                   ;
 ;     -- PLLs                                 ; 1                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; MAX10_CLK1_50~input ;
-; Maximum fan-out                             ; 335                 ;
-; Total fan-out                               ; 8644                ;
-; Average fan-out                             ; 3.91                ;
+; Maximum fan-out                             ; 1188                ;
+; Total fan-out                               ; 15184               ;
+; Average fan-out                             ; 3.79                ;
 +---------------------------------------------+---------------------+
 
 
@@ -292,7 +316,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                               ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |fluid_simulation                            ; 1574 (0)            ; 263 (0)                   ; 311808      ; 0          ; 88           ; 0       ; 44        ; 73   ; 0            ; 0          ; |fluid_simulation                                                                                                                                 ; fluid_simulation ; work         ;
+; |fluid_simulation                            ; 2502 (1)            ; 1050 (0)                  ; 314514      ; 0          ; 104          ; 0       ; 52        ; 73   ; 0            ; 0          ; |fluid_simulation                                                                                                                                 ; fluid_simulation ; work         ;
 ;    |draw:draw_inst|                          ; 197 (1)             ; 63 (14)                   ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst                                                                                                                  ; draw             ; work         ;
 ;       |bram_sdp:bram_draw_inst|              ; 123 (0)             ; 7 (1)                     ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst                                                                                          ; bram_sdp         ; work         ;
 ;          |altsyncram:memory_rtl_0|           ; 123 (0)             ; 6 (0)                     ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0                                                                  ; altsyncram       ; work         ;
@@ -304,10 +328,10 @@ https://fpgasoftware.intel.com/eula.
 ;          |altpll:altpll_component|           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|pll:vgapll_inst|altpll:altpll_component                                                                          ; altpll           ; work         ;
 ;             |pll_altpll:auto_generated|      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|pll:vgapll_inst|altpll:altpll_component|pll_altpll:auto_generated                                                ; pll_altpll       ; work         ;
 ;       |vga_controller:vga_controller_inst|   ; 73 (73)             ; 42 (42)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|vga_controller:vga_controller_inst                                                                               ; vga_controller   ; work         ;
-;    |draw_blocks:draw_blocks_inst|            ; 1377 (48)           ; 200 (33)                  ; 4608        ; 0          ; 88           ; 0       ; 44        ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst                                                                                                    ; draw_blocks      ; work         ;
+;    |draw_blocks:draw_blocks_inst|            ; 1406 (77)           ; 200 (33)                  ; 4608        ; 0          ; 88           ; 0       ; 44        ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst                                                                                                    ; draw_blocks      ; work         ;
 ;       |bram_sdp:bram_field_inst|             ; 0 (0)               ; 0 (0)                     ; 4608        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst                                                                           ; bram_sdp         ; work         ;
 ;          |altsyncram:memory_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 4608        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0                                                   ; altsyncram       ; work         ;
-;             |altsyncram_t871:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4608        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_t871:auto_generated                    ; altsyncram_t871  ; work         ;
+;             |altsyncram_88g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4608        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_88g1:auto_generated                    ; altsyncram_88g1  ; work         ;
 ;       |draw_block:draw_block_inst|           ; 1329 (159)          ; 167 (36)                  ; 0           ; 0          ; 88           ; 0       ; 44        ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst                                                                         ; draw_block       ; work         ;
 ;          |lpm_mult:Mult0|                    ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult0                                                          ; lpm_mult         ; work         ;
 ;             |mult_ogs:auto_generated|        ; 60 (60)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult0|mult_ogs:auto_generated                                  ; mult_ogs         ; work         ;
@@ -332,18 +356,36 @@ https://fpgasoftware.intel.com/eula.
 ;                |mult_qgs:auto_generated|     ; 60 (60)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7|mult_qgs:auto_generated ; mult_qgs         ; work         ;
 ;             |lpm_mult:Mult8|                 ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult8                         ; lpm_mult         ; work         ;
 ;                |mult_qgs:auto_generated|     ; 60 (60)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult8|mult_qgs:auto_generated ; mult_qgs         ; work         ;
+;    |update_field:update_field_inst|          ; 898 (146)           ; 787 (235)                 ; 2706        ; 0          ; 16           ; 0       ; 8         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst                                                                                                  ; update_field     ; work         ;
+;       |bram_sdp:bram_h_vel_inst|             ; 0 (0)               ; 0 (0)                     ; 1386        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_h_vel_inst                                                                         ; bram_sdp         ; work         ;
+;          |altsyncram:memory_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 1386        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0                                                 ; altsyncram       ; work         ;
+;             |altsyncram_oc71:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1386        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0|altsyncram_oc71:auto_generated                  ; altsyncram_oc71  ; work         ;
+;       |bram_sdp:bram_v_vel_inst|             ; 0 (0)               ; 0 (0)                     ; 1320        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_v_vel_inst                                                                         ; bram_sdp         ; work         ;
+;          |altsyncram:memory_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 1320        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0                                                 ; altsyncram       ; work         ;
+;             |altsyncram_c771:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1320        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0|altsyncram_c771:auto_generated                  ; altsyncram_c771  ; work         ;
+;       |norm:norm_inst|                       ; 620 (95)            ; 420 (198)                 ; 0           ; 0          ; 16           ; 0       ; 8         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst                                                                                   ; norm             ; work         ;
+;          |div:div_inst|                      ; 266 (96)            ; 87 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst                                                                      ; div              ; work         ;
+;             |divu:divu_inst|                 ; 170 (170)           ; 87 (87)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst                                                       ; divu             ; work         ;
+;          |lpm_mult:Mult0|                    ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult0                                                                    ; lpm_mult         ; work         ;
+;             |mult_qgs:auto_generated|        ; 60 (60)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult0|mult_qgs:auto_generated                                            ; mult_qgs         ; work         ;
+;          |lpm_mult:Mult1|                    ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1                                                                    ; lpm_mult         ; work         ;
+;             |mult_qgs:auto_generated|        ; 60 (60)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1|mult_qgs:auto_generated                                            ; mult_qgs         ; work         ;
+;          |sqrt:sqrt_inst|                    ; 139 (139)           ; 135 (135)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst                                                                    ; sqrt             ; work         ;
+;       |read_vels:read_vels_inst|             ; 132 (132)           ; 132 (132)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|read_vels:read_vels_inst                                                                         ; read_vels        ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                            ;
-+-------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
-; Name                                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                ;
-+-------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
-; draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 307200       ; 1            ; 307200       ; 1            ; 307200 ; None                                               ;
-; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_t871:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 48           ; 96           ; --           ; --           ; 4608   ; db/fluid_simulation.ram0_bram_sdp_124f44b6.hdl.mif ;
-+-------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
+; Name                                                                                                                      ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                ;
++---------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
+; draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated|ALTSYNCRAM                  ; AUTO ; Simple Dual Port ; 307200       ; 1            ; 307200       ; 1            ; 307200 ; None                                               ;
+; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_88g1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 48           ; 96           ; 48           ; 96           ; 4608   ; None                                               ;
+; update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0|altsyncram_oc71:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 42           ; 33           ; --           ; --           ; 1386   ; db/fluid_simulation.ram0_bram_sdp_da46bba3.hdl.mif ;
+; update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0|altsyncram_c771:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 40           ; 33           ; --           ; --           ; 1320   ; db/fluid_simulation.ram0_bram_sdp_6a547886.hdl.mif ;
++---------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -352,36 +394,61 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
 ; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 44          ;
+; Simple Multipliers (18-bit)           ; 52          ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 88          ;
-; Signed Embedded Multipliers           ; 11          ;
-; Unsigned Embedded Multipliers         ; 11          ;
-; Mixed Sign Embedded Multipliers       ; 22          ;
+; Embedded Multiplier 9-bit elements    ; 104         ;
+; Signed Embedded Multipliers           ; 13          ;
+; Unsigned Embedded Multipliers         ; 13          ;
+; Mixed Sign Embedded Multipliers       ; 26          ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
 ; Dedicated Input Shift Register Chains ; 0           ;
 +---------------------------------------+-------------+
 Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                     ;
-+-------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                         ; Reason for Removal                                                                                             ;
-+-------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[2..30] ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
-; draw_blocks:draw_blocks_inst|block_x_int[1..3]                                                        ; Merged with draw_blocks:draw_blocks_inst|block_x_int[0]                                                        ;
-; draw_blocks:draw_blocks_inst|block_y_int[1..3]                                                        ; Merged with draw_blocks:draw_blocks_inst|block_y_int[0]                                                        ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[2..9,11..31]                            ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                  ;
-; draw_blocks:draw_blocks_inst|state[2..9,11..31]                                                       ; Merged with draw_blocks:draw_blocks_inst|state[10]                                                             ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31]    ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|block_x_int[0]                                                           ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|block_y_int[0]                                                           ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                     ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|state[10]                                                                ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw:draw_inst|vga_controller:vga_controller_inst|addr[19]                                            ; Lost fanout                                                                                                    ;
-; Total Number of Removed Registers = 99                                                                ;                                                                                                                ;
-+-------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                ; Reason for Removal                                                                                             ;
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[3,5,7,9,13,17,25,27,29]       ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[2,4,6,8,10,12,15,19,23,26,28] ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[30] ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[11,14,16,18,20..22]           ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[24] ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[4,11,15,19,23,27,31]                                           ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[2]                                   ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[5,7,9,17,21,25,29]                                             ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                   ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[8,10,12..14,16,18,20,22,24,26,28,30]                           ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[6]                                   ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[3,5,7,9,11,13,15,17,19,21,23,25,27,29,31]                 ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[4,6,8,10,12,14,16,18,20,22,24,26,28,30]                   ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[2]                              ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[2,6,8,10,12,14,16,18,20,22,24,26,28,30]      ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[1,5,9,13,17,21,25,29]                        ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                 ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[11,15,19,23,27,31]                           ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[7]                 ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[24]                           ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[3,6]                                                           ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[2]                                   ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[2]                                                        ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[7]                                           ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                 ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[30]                           ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                                           ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
+; draw_blocks:draw_blocks_inst|block_x_int[1..3]                                                                               ; Merged with draw_blocks:draw_blocks_inst|block_x_int[0]                                                        ;
+; draw_blocks:draw_blocks_inst|block_y_int[1..3]                                                                               ; Merged with draw_blocks:draw_blocks_inst|block_y_int[0]                                                        ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[2..9,11..31]                                                   ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                  ;
+; draw_blocks:draw_blocks_inst|state[2..9,11..31]                                                                              ; Merged with draw_blocks:draw_blocks_inst|state[10]                                                             ;
+; update_field:update_field_inst|state[2..9,11..31]                                                                            ; Merged with update_field:update_field_inst|state[10]                                                           ;
+; update_field:update_field_inst|norm:norm_inst|state[3..9,11..31]                                                             ; Merged with update_field:update_field_inst|norm:norm_inst|state[10]                                            ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[1]                                                            ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[0]                                  ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31]                           ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[2]                                                             ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|state[10]                                                                                       ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[0]                                                            ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                                                        ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                                           ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|state[10]                                                                                     ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|state[10]                                                                      ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|block_x_int[0]                                                                                  ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|block_y_int[0]                                                                                  ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                                            ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw:draw_inst|vga_controller:vga_controller_inst|addr[19]                                                                   ; Lost fanout                                                                                                    ;
+; Total Number of Removed Registers = 252                                                                                      ;                                                                                                                ;
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -389,37 +456,53 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 263   ;
-; Number of registers using Synchronous Clear  ; 82    ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 1050  ;
+; Number of registers using Synchronous Clear  ; 161   ;
+; Number of registers using Synchronous Load   ; 38    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 200   ;
+; Number of registers using Clock Enable       ; 938   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                                                                                      ;
-+-----------------------------------------------------------------------+--------------------------------------------------------------------+------+
-; Register Name                                                         ; Megafunction                                                       ; Type ;
-+-----------------------------------------------------------------------+--------------------------------------------------------------------+------+
-; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|data_out[0..95] ; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|memory_rtl_0 ; RAM  ;
-+-----------------------------------------------------------------------+--------------------------------------------------------------------+------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                                                                          ;
++-------------------------------------------------------------------------+----------------------------------------------------------------------+------+
+; Register Name                                                           ; Megafunction                                                         ; Type ;
++-------------------------------------------------------------------------+----------------------------------------------------------------------+------+
+; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|data_out[0..95]   ; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|memory_rtl_0   ; RAM  ;
+; update_field:update_field_inst|bram_sdp:bram_h_vel_inst|data_out[0..32] ; update_field:update_field_inst|bram_sdp:bram_h_vel_inst|memory_rtl_0 ; RAM  ;
+; update_field:update_field_inst|bram_sdp:bram_v_vel_inst|data_out[0..32] ; update_field:update_field_inst|bram_sdp:bram_v_vel_inst|memory_rtl_0 ; RAM  ;
++-------------------------------------------------------------------------+----------------------------------------------------------------------+------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
-; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|x[11] ;
-; 5:1                ; 12 bits   ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|block_x_int[10]                  ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|field_addr_read[0]               ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|y[5]  ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|block_y_int[9]                   ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|draw:draw_inst|vga_controller:vga_controller_inst|addr        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------+
+; 3:1                ; 37 bits   ; 74 LEs        ; 37 LEs               ; 37 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|i[4]                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[3]                ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|ac[0]               ;
+; 3:1                ; 54 bits   ; 108 LEs       ; 54 LEs               ; 54 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|aq[59] ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|aq[26] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|ac[8]               ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_addr_write[4]                               ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|x[10]                    ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|divisor[10]                        ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|divident[1]                        ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_y[4]                                        ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_x[10]                                       ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|y[4]                     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|state[1]                                          ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|state[10]                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|draw_blocks:draw_blocks_inst|block_y_int                                         ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|draw:draw_inst|vga_controller:vga_controller_inst|addr                           ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|Add0   ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|update_field:update_field_inst|read_vels:read_vels_inst|h_vel_addr_read[0]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |fluid_simulation|update_field:update_field_inst|read_vels:read_vels_inst|v_vel_addr_read[5]       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -432,12 +515,137 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_t871:auto_generated ;
+; Source assignments for draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_88g1:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                    ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                     ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0|altsyncram_oc71:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                      ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                       ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0|altsyncram_c771:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                      ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                       ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: update_field:update_field_inst ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; FIELD_WIDTH    ; 8     ; Signed Integer                                     ;
+; FIELD_HEIGHT   ; 6     ; Signed Integer                                     ;
+; FIELD_SIZE     ; 48    ; Signed Integer                                     ;
+; FIELD_DATAW    ; 96    ; Signed Integer                                     ;
+; FIELD_ADDRW    ; 6     ; Signed Integer                                     ;
+; BLOCK_SIZE     ; 80    ; Signed Integer                                     ;
+; H_VEL_WIDTH    ; 7     ; Signed Integer                                     ;
+; H_VEL_HEIGHT   ; 6     ; Signed Integer                                     ;
+; H_VEL_SIZE     ; 42    ; Signed Integer                                     ;
+; V_VEL_WIDTH    ; 8     ; Signed Integer                                     ;
+; V_VEL_HEIGHT   ; 5     ; Signed Integer                                     ;
+; V_VEL_SIZE     ; 40    ; Signed Integer                                     ;
+; VEL_DATAW      ; 33    ; Signed Integer                                     ;
+; H_VEL_ADDRW    ; 6     ; Signed Integer                                     ;
+; V_VEL_ADDRW    ; 6     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                 ;
+; FBITS          ; 16    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; WIDTH          ; 31    ; Signed Integer                                                                                ;
+; FBITS          ; 16    ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                   ;
+; FBITS          ; 16    ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst ;
++----------------+------------+------------------------------------------------------------------------+
+; Parameter Name ; Value      ; Type                                                                   ;
++----------------+------------+------------------------------------------------------------------------+
+; WIDTH          ; 33         ; Signed Integer                                                         ;
+; DEPTH          ; 42         ; Signed Integer                                                         ;
+; INIT_F         ; h_vels.mem ; String                                                                 ;
+; ADDRW          ; 6          ; Signed Integer                                                         ;
++----------------+------------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst ;
++----------------+------------+------------------------------------------------------------------------+
+; Parameter Name ; Value      ; Type                                                                   ;
++----------------+------------+------------------------------------------------------------------------+
+; WIDTH          ; 33         ; Signed Integer                                                         ;
+; DEPTH          ; 40         ; Signed Integer                                                         ;
+; INIT_F         ; v_vels.mem ; String                                                                 ;
+; ADDRW          ; 6          ; Signed Integer                                                         ;
++----------------+------------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: update_field:update_field_inst|read_vels:read_vels_inst ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; FIELD_WIDTH    ; 8     ; Signed Integer                                                              ;
+; FIELD_HEIGHT   ; 6     ; Signed Integer                                                              ;
+; FIELD_SIZE     ; 48    ; Signed Integer                                                              ;
+; FIELD_DATAW    ; 96    ; Signed Integer                                                              ;
+; FIELD_ADDRW    ; 6     ; Signed Integer                                                              ;
+; BLOCK_SIZE     ; 80    ; Signed Integer                                                              ;
+; H_VEL_WIDTH    ; 7     ; Signed Integer                                                              ;
+; H_VEL_HEIGHT   ; 6     ; Signed Integer                                                              ;
+; H_VEL_SIZE     ; 42    ; Signed Integer                                                              ;
+; V_VEL_WIDTH    ; 8     ; Signed Integer                                                              ;
+; V_VEL_HEIGHT   ; 5     ; Signed Integer                                                              ;
+; V_VEL_SIZE     ; 40    ; Signed Integer                                                              ;
+; VEL_DATAW      ; 33    ; Signed Integer                                                              ;
+; H_VEL_ADDRW    ; 6     ; Signed Integer                                                              ;
+; V_VEL_ADDRW    ; 6     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------+
@@ -462,14 +670,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +----------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst ;
-+----------------+------------+----------------------------------------------------------------------+
-; Parameter Name ; Value      ; Type                                                                 ;
-+----------------+------------+----------------------------------------------------------------------+
-; WIDTH          ; 96         ; Signed Integer                                                       ;
-; DEPTH          ; 48         ; Signed Integer                                                       ;
-; INIT_F         ; blocks.mem ; String                                                               ;
-; ADDRW          ; 6          ; Signed Integer                                                       ;
-+----------------+------------+----------------------------------------------------------------------+
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 96    ; Signed Integer                                                            ;
+; DEPTH          ; 48    ; Signed Integer                                                            ;
+; INIT_F         ;       ; String                                                                    ;
+; ADDRW          ; 6     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -983,62 +1191,184 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +--------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0 ;
-+------------------------------------+----------------------------------------------------+--------------------------------------+
-; Parameter Name                     ; Value                                              ; Type                                 ;
-+------------------------------------+----------------------------------------------------+--------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                                                  ; Untyped                              ;
-; AUTO_CARRY_CHAINS                  ; ON                                                 ; AUTO_CARRY                           ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                                ; IGNORE_CARRY                         ;
-; AUTO_CASCADE_CHAINS                ; ON                                                 ; AUTO_CASCADE                         ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                                ; IGNORE_CASCADE                       ;
-; WIDTH_BYTEENA                      ; 1                                                  ; Untyped                              ;
-; OPERATION_MODE                     ; ROM                                                ; Untyped                              ;
-; WIDTH_A                            ; 96                                                 ; Untyped                              ;
-; WIDTHAD_A                          ; 6                                                  ; Untyped                              ;
-; NUMWORDS_A                         ; 48                                                 ; Untyped                              ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                       ; Untyped                              ;
-; ADDRESS_ACLR_A                     ; NONE                                               ; Untyped                              ;
-; OUTDATA_ACLR_A                     ; NONE                                               ; Untyped                              ;
-; WRCONTROL_ACLR_A                   ; NONE                                               ; Untyped                              ;
-; INDATA_ACLR_A                      ; NONE                                               ; Untyped                              ;
-; BYTEENA_ACLR_A                     ; NONE                                               ; Untyped                              ;
-; WIDTH_B                            ; 1                                                  ; Untyped                              ;
-; WIDTHAD_B                          ; 1                                                  ; Untyped                              ;
-; NUMWORDS_B                         ; 1                                                  ; Untyped                              ;
-; INDATA_REG_B                       ; CLOCK1                                             ; Untyped                              ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                             ; Untyped                              ;
-; RDCONTROL_REG_B                    ; CLOCK1                                             ; Untyped                              ;
-; ADDRESS_REG_B                      ; CLOCK1                                             ; Untyped                              ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                       ; Untyped                              ;
-; BYTEENA_REG_B                      ; CLOCK1                                             ; Untyped                              ;
-; INDATA_ACLR_B                      ; NONE                                               ; Untyped                              ;
-; WRCONTROL_ACLR_B                   ; NONE                                               ; Untyped                              ;
-; ADDRESS_ACLR_B                     ; NONE                                               ; Untyped                              ;
-; OUTDATA_ACLR_B                     ; NONE                                               ; Untyped                              ;
-; RDCONTROL_ACLR_B                   ; NONE                                               ; Untyped                              ;
-; BYTEENA_ACLR_B                     ; NONE                                               ; Untyped                              ;
-; WIDTH_BYTEENA_A                    ; 1                                                  ; Untyped                              ;
-; WIDTH_BYTEENA_B                    ; 1                                                  ; Untyped                              ;
-; RAM_BLOCK_TYPE                     ; AUTO                                               ; Untyped                              ;
-; BYTE_SIZE                          ; 8                                                  ; Untyped                              ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ; Untyped                              ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                               ; Untyped                              ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                               ; Untyped                              ;
-; INIT_FILE                          ; db/fluid_simulation.ram0_bram_sdp_124f44b6.hdl.mif ; Untyped                              ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                             ; Untyped                              ;
-; MAXIMUM_DEPTH                      ; 0                                                  ; Untyped                              ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                                             ; Untyped                              ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                             ; Untyped                              ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                             ; Untyped                              ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                             ; Untyped                              ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                    ; Untyped                              ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                    ; Untyped                              ;
-; ENABLE_ECC                         ; FALSE                                              ; Untyped                              ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                              ; Untyped                              ;
-; WIDTH_ECCSTATUS                    ; 3                                                  ; Untyped                              ;
-; DEVICE_FAMILY                      ; MAX 10                                             ; Untyped                              ;
-; CBXI_PARAMETER                     ; altsyncram_t871                                    ; Untyped                              ;
-+------------------------------------+----------------------------------------------------+--------------------------------------+
++------------------------------------+----------------------+--------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                               ;
++------------------------------------+----------------------+--------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                            ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                         ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                       ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                       ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                     ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                            ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                            ;
+; WIDTH_A                            ; 96                   ; Untyped                                                            ;
+; WIDTHAD_A                          ; 6                    ; Untyped                                                            ;
+; NUMWORDS_A                         ; 48                   ; Untyped                                                            ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                            ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                            ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                            ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                            ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                            ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                            ;
+; WIDTH_B                            ; 96                   ; Untyped                                                            ;
+; WIDTHAD_B                          ; 6                    ; Untyped                                                            ;
+; NUMWORDS_B                         ; 48                   ; Untyped                                                            ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                            ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                            ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                            ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                            ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                            ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                            ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                            ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                            ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                            ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                            ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                            ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                            ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                                            ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                            ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                            ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                                            ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                            ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                            ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                            ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                            ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                            ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                                            ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                            ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                            ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                            ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                            ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                            ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                            ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                            ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                            ;
+; DEVICE_FAMILY                      ; MAX 10               ; Untyped                                                            ;
+; CBXI_PARAMETER                     ; altsyncram_88g1      ; Untyped                                                            ;
++------------------------------------+----------------------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0 ;
++------------------------------------+----------------------------------------------------+----------------------------------------+
+; Parameter Name                     ; Value                                              ; Type                                   ;
++------------------------------------+----------------------------------------------------+----------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                  ; Untyped                                ;
+; AUTO_CARRY_CHAINS                  ; ON                                                 ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                ; ON                                                 ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                ; IGNORE_CASCADE                         ;
+; WIDTH_BYTEENA                      ; 1                                                  ; Untyped                                ;
+; OPERATION_MODE                     ; ROM                                                ; Untyped                                ;
+; WIDTH_A                            ; 33                                                 ; Untyped                                ;
+; WIDTHAD_A                          ; 6                                                  ; Untyped                                ;
+; NUMWORDS_A                         ; 42                                                 ; Untyped                                ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                       ; Untyped                                ;
+; ADDRESS_ACLR_A                     ; NONE                                               ; Untyped                                ;
+; OUTDATA_ACLR_A                     ; NONE                                               ; Untyped                                ;
+; WRCONTROL_ACLR_A                   ; NONE                                               ; Untyped                                ;
+; INDATA_ACLR_A                      ; NONE                                               ; Untyped                                ;
+; BYTEENA_ACLR_A                     ; NONE                                               ; Untyped                                ;
+; WIDTH_B                            ; 1                                                  ; Untyped                                ;
+; WIDTHAD_B                          ; 1                                                  ; Untyped                                ;
+; NUMWORDS_B                         ; 1                                                  ; Untyped                                ;
+; INDATA_REG_B                       ; CLOCK1                                             ; Untyped                                ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                             ; Untyped                                ;
+; RDCONTROL_REG_B                    ; CLOCK1                                             ; Untyped                                ;
+; ADDRESS_REG_B                      ; CLOCK1                                             ; Untyped                                ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                       ; Untyped                                ;
+; BYTEENA_REG_B                      ; CLOCK1                                             ; Untyped                                ;
+; INDATA_ACLR_B                      ; NONE                                               ; Untyped                                ;
+; WRCONTROL_ACLR_B                   ; NONE                                               ; Untyped                                ;
+; ADDRESS_ACLR_B                     ; NONE                                               ; Untyped                                ;
+; OUTDATA_ACLR_B                     ; NONE                                               ; Untyped                                ;
+; RDCONTROL_ACLR_B                   ; NONE                                               ; Untyped                                ;
+; BYTEENA_ACLR_B                     ; NONE                                               ; Untyped                                ;
+; WIDTH_BYTEENA_A                    ; 1                                                  ; Untyped                                ;
+; WIDTH_BYTEENA_B                    ; 1                                                  ; Untyped                                ;
+; RAM_BLOCK_TYPE                     ; AUTO                                               ; Untyped                                ;
+; BYTE_SIZE                          ; 8                                                  ; Untyped                                ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                               ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                               ; Untyped                                ;
+; INIT_FILE                          ; db/fluid_simulation.ram0_bram_sdp_da46bba3.hdl.mif ; Untyped                                ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                             ; Untyped                                ;
+; MAXIMUM_DEPTH                      ; 0                                                  ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                    ; Untyped                                ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                    ; Untyped                                ;
+; ENABLE_ECC                         ; FALSE                                              ; Untyped                                ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                              ; Untyped                                ;
+; WIDTH_ECCSTATUS                    ; 3                                                  ; Untyped                                ;
+; DEVICE_FAMILY                      ; MAX 10                                             ; Untyped                                ;
+; CBXI_PARAMETER                     ; altsyncram_oc71                                    ; Untyped                                ;
++------------------------------------+----------------------------------------------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0 ;
++------------------------------------+----------------------------------------------------+----------------------------------------+
+; Parameter Name                     ; Value                                              ; Type                                   ;
++------------------------------------+----------------------------------------------------+----------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                  ; Untyped                                ;
+; AUTO_CARRY_CHAINS                  ; ON                                                 ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                ; ON                                                 ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                ; IGNORE_CASCADE                         ;
+; WIDTH_BYTEENA                      ; 1                                                  ; Untyped                                ;
+; OPERATION_MODE                     ; ROM                                                ; Untyped                                ;
+; WIDTH_A                            ; 33                                                 ; Untyped                                ;
+; WIDTHAD_A                          ; 6                                                  ; Untyped                                ;
+; NUMWORDS_A                         ; 40                                                 ; Untyped                                ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                       ; Untyped                                ;
+; ADDRESS_ACLR_A                     ; NONE                                               ; Untyped                                ;
+; OUTDATA_ACLR_A                     ; NONE                                               ; Untyped                                ;
+; WRCONTROL_ACLR_A                   ; NONE                                               ; Untyped                                ;
+; INDATA_ACLR_A                      ; NONE                                               ; Untyped                                ;
+; BYTEENA_ACLR_A                     ; NONE                                               ; Untyped                                ;
+; WIDTH_B                            ; 1                                                  ; Untyped                                ;
+; WIDTHAD_B                          ; 1                                                  ; Untyped                                ;
+; NUMWORDS_B                         ; 1                                                  ; Untyped                                ;
+; INDATA_REG_B                       ; CLOCK1                                             ; Untyped                                ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                             ; Untyped                                ;
+; RDCONTROL_REG_B                    ; CLOCK1                                             ; Untyped                                ;
+; ADDRESS_REG_B                      ; CLOCK1                                             ; Untyped                                ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                       ; Untyped                                ;
+; BYTEENA_REG_B                      ; CLOCK1                                             ; Untyped                                ;
+; INDATA_ACLR_B                      ; NONE                                               ; Untyped                                ;
+; WRCONTROL_ACLR_B                   ; NONE                                               ; Untyped                                ;
+; ADDRESS_ACLR_B                     ; NONE                                               ; Untyped                                ;
+; OUTDATA_ACLR_B                     ; NONE                                               ; Untyped                                ;
+; RDCONTROL_ACLR_B                   ; NONE                                               ; Untyped                                ;
+; BYTEENA_ACLR_B                     ; NONE                                               ; Untyped                                ;
+; WIDTH_BYTEENA_A                    ; 1                                                  ; Untyped                                ;
+; WIDTH_BYTEENA_B                    ; 1                                                  ; Untyped                                ;
+; RAM_BLOCK_TYPE                     ; AUTO                                               ; Untyped                                ;
+; BYTE_SIZE                          ; 8                                                  ; Untyped                                ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                               ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                               ; Untyped                                ;
+; INIT_FILE                          ; db/fluid_simulation.ram0_bram_sdp_6a547886.hdl.mif ; Untyped                                ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                             ; Untyped                                ;
+; MAXIMUM_DEPTH                      ; 0                                                  ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                             ; Untyped                                ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                    ; Untyped                                ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                    ; Untyped                                ;
+; ENABLE_ECC                         ; FALSE                                              ; Untyped                                ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                              ; Untyped                                ;
+; WIDTH_ECCSTATUS                    ; 3                                                  ; Untyped                                ;
+; DEVICE_FAMILY                      ; MAX 10                                             ; Untyped                                ;
+; CBXI_PARAMETER                     ; altsyncram_c771                                    ; Untyped                                ;
++------------------------------------+----------------------------------------------------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1427,6 +1757,76 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult0 ;
++------------------------------------------------+----------+---------------------------------------------------+
+; Parameter Name                                 ; Value    ; Type                                              ;
++------------------------------------------------+----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 32       ; Untyped                                           ;
+; LPM_WIDTHB                                     ; 32       ; Untyped                                           ;
+; LPM_WIDTHP                                     ; 64       ; Untyped                                           ;
+; LPM_WIDTHR                                     ; 64       ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED   ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                                           ;
+; LATENCY                                        ; 0        ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped                                           ;
+; USE_EAB                                        ; OFF      ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_qgs ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                                           ;
++------------------------------------------------+----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1 ;
++------------------------------------------------+----------+---------------------------------------------------+
+; Parameter Name                                 ; Value    ; Type                                              ;
++------------------------------------------------+----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 32       ; Untyped                                           ;
+; LPM_WIDTHB                                     ; 32       ; Untyped                                           ;
+; LPM_WIDTHP                                     ; 64       ; Untyped                                           ;
+; LPM_WIDTHR                                     ; 64       ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED   ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                                           ;
+; LATENCY                                        ; 0        ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped                                           ;
+; USE_EAB                                        ; OFF      ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_qgs ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                                           ;
++------------------------------------------------+----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                                           ;
 +-------------------------------+--------------------------------------------------------+
@@ -1444,35 +1844,57 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+--------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                                          ;
-+-------------------------------------------+-------------------------------------------------------------------------------+
-; Name                                      ; Value                                                                         ;
-+-------------------------------------------+-------------------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                             ;
-; Entity Instance                           ; draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0                ;
-;     -- OPERATION_MODE                     ; DUAL_PORT                                                                     ;
-;     -- WIDTH_A                            ; 1                                                                             ;
-;     -- NUMWORDS_A                         ; 307200                                                                        ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                  ;
-;     -- WIDTH_B                            ; 1                                                                             ;
-;     -- NUMWORDS_B                         ; 307200                                                                        ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                                        ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                  ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                          ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                     ;
-; Entity Instance                           ; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0 ;
-;     -- OPERATION_MODE                     ; ROM                                                                           ;
-;     -- WIDTH_A                            ; 96                                                                            ;
-;     -- NUMWORDS_A                         ; 48                                                                            ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                  ;
-;     -- WIDTH_B                            ; 1                                                                             ;
-;     -- NUMWORDS_B                         ; 1                                                                             ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                                        ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                  ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                          ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                     ;
-+-------------------------------------------+-------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                            ;
++-------------------------------------------+---------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                           ;
++-------------------------------------------+---------------------------------------------------------------------------------+
+; Number of entity instances                ; 4                                                                               ;
+; Entity Instance                           ; draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0                  ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                       ;
+;     -- WIDTH_A                            ; 1                                                                               ;
+;     -- NUMWORDS_A                         ; 307200                                                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                    ;
+;     -- WIDTH_B                            ; 1                                                                               ;
+;     -- NUMWORDS_B                         ; 307200                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                       ;
+; Entity Instance                           ; draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0   ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                       ;
+;     -- WIDTH_A                            ; 96                                                                              ;
+;     -- NUMWORDS_A                         ; 48                                                                              ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                    ;
+;     -- WIDTH_B                            ; 96                                                                              ;
+;     -- NUMWORDS_B                         ; 48                                                                              ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                                        ;
+; Entity Instance                           ; update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                                             ;
+;     -- WIDTH_A                            ; 33                                                                              ;
+;     -- NUMWORDS_A                         ; 42                                                                              ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                    ;
+;     -- WIDTH_B                            ; 1                                                                               ;
+;     -- NUMWORDS_B                         ; 1                                                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                       ;
+; Entity Instance                           ; update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                                             ;
+;     -- WIDTH_A                            ; 33                                                                              ;
+;     -- NUMWORDS_A                         ; 40                                                                              ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                    ;
+;     -- WIDTH_B                            ; 1                                                                               ;
+;     -- NUMWORDS_B                         ; 1                                                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                       ;
++-------------------------------------------+---------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1480,7 +1902,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+
 ; Name                                  ; Value                                                                                                   ;
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+
-; Number of entity instances            ; 11                                                                                                      ;
+; Number of entity instances            ; 13                                                                                                      ;
 ; Entity Instance                       ; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7 ;
 ;     -- LPM_WIDTHA                     ; 32                                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 32                                                                                                      ;
@@ -1602,6 +2024,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                    ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                      ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                      ;
+; Entity Instance                       ; update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult0                                            ;
+;     -- LPM_WIDTHA                     ; 32                                                                                                      ;
+;     -- LPM_WIDTHB                     ; 32                                                                                                      ;
+;     -- LPM_WIDTHP                     ; 64                                                                                                      ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                  ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                      ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                      ;
+;     -- USE_EAB                        ; OFF                                                                                                     ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                    ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                      ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                      ;
+; Entity Instance                       ; update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1                                            ;
+;     -- LPM_WIDTHA                     ; 32                                                                                                      ;
+;     -- LPM_WIDTHB                     ; 32                                                                                                      ;
+;     -- LPM_WIDTHP                     ; 64                                                                                                      ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                  ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                      ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                      ;
+;     -- USE_EAB                        ; OFF                                                                                                     ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                    ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                      ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                      ;
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+
 
 
@@ -1637,22 +2081,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------+-------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst" ;
-+------+-------+----------+---------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                 ;
-+------+-------+----------+---------------------------------------------------------+
-; we   ; Input ; Info     ; Stuck at GND                                            ;
-+------+-------+----------+---------------------------------------------------------+
-
-
 +----------------------------------------------------------+
 ; Port Connectivity Checks: "draw_blocks:draw_blocks_inst" ;
-+------+--------+----------+-------------------------------+
-; Port ; Type   ; Severity ; Details                       ;
-+------+--------+----------+-------------------------------+
-; done ; Output ; Info     ; Explicitly unconnected        ;
-+------+--------+----------+-------------------------------+
++-------+--------+----------+------------------------------+
+; Port  ; Type   ; Severity ; Details                      ;
++-------+--------+----------+------------------------------+
+; start ; Input  ; Info     ; Stuck at VCC                 ;
+; done  ; Output ; Info     ; Explicitly unconnected       ;
++-------+--------+----------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|read_vels:read_vels_inst"                               ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; vx1[32] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; vx2[32] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; vy1[32] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; vy2[32] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; n       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst"                                            ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; rem  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|div:div_inst"                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; r    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst" ;
++------+--------+----------+---------------------------------+
+; Port ; Type   ; Severity ; Details                         ;
++------+--------+----------+---------------------------------+
+; done ; Output ; Info     ; Explicitly unconnected          ;
++------+--------+----------+---------------------------------+
 
 
 +-----------------------------------------------------+
@@ -1661,29 +2137,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 73                          ;
-; cycloneiii_ff         ; 263                         ;
-;     ENA               ; 128                         ;
-;     ENA SCLR          ; 72                          ;
-;     SCLR              ; 10                          ;
-;     plain             ; 53                          ;
+; cycloneiii_ff         ; 1050                        ;
+;     ENA               ; 751                         ;
+;     ENA SCLR          ; 149                         ;
+;     ENA SLD           ; 38                          ;
+;     SCLR              ; 12                          ;
+;     plain             ; 100                         ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 1575                        ;
-;     arith             ; 1309                        ;
-;         2 data inputs ; 236                         ;
-;         3 data inputs ; 1073                        ;
-;     normal            ; 266                         ;
+; cycloneiii_lcell_comb ; 2502                        ;
+;     arith             ; 1797                        ;
+;         2 data inputs ; 381                         ;
+;         3 data inputs ; 1416                        ;
+;     normal            ; 705                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 12                          ;
-;         2 data inputs ; 50                          ;
-;         3 data inputs ; 32                          ;
-;         4 data inputs ; 170                         ;
-; cycloneiii_mac_mult   ; 44                          ;
-; cycloneiii_mac_out    ; 44                          ;
+;         1 data inputs ; 21                          ;
+;         2 data inputs ; 163                         ;
+;         3 data inputs ; 206                         ;
+;         4 data inputs ; 313                         ;
+; cycloneiii_mac_mult   ; 52                          ;
+; cycloneiii_mac_out    ; 52                          ;
 ; cycloneiii_pll        ; 1                           ;
-; cycloneiii_ram_block  ; 134                         ;
+; cycloneiii_ram_block  ; 200                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.90                        ;
-; Average LUT depth     ; 4.36                        ;
+; Average LUT depth     ; 4.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1692,7 +2169,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1702,10 +2179,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Thu Jan  2 21:56:16 2025
+    Info: Processing started: Sun Jan  5 18:01:40 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fluid_simulation -c fluid_simulation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/update_field.sv
+    Info (12023): Found entity 1: update_field File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/read_vels.sv
+    Info (12023): Found entity 1: read_vels File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/draw_blocks.sv
     Info (12023): Found entity 1: draw_blocks File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/vga_controller.sv
@@ -1740,14 +2221,35 @@ Warning (10034): Output port "HEX4" at fluid_simulation.sv(13) has no driver Fil
 Warning (10034): Output port "HEX5" at fluid_simulation.sv(14) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
 Warning (10034): Output port "GSENSOR_CS_N" at fluid_simulation.sv(27) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 27
 Warning (10034): Output port "GSENSOR_SCLK" at fluid_simulation.sv(29) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 29
-Info (12128): Elaborating entity "draw_blocks" for hierarchy "draw_blocks:draw_blocks_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 78
-Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(101): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 101
-Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(102): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 102
-Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(105): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 105
-Info (10264): Verilog HDL Case Statement information at draw_blocks.sv(92): all case item expressions in this case statement are onehot File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 92
-Info (12128): Elaborating entity "bram_sdp" for hierarchy "draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 55
-Info (10648): Verilog HDL Display System Task info at bram_sdp.sv(26): Load init file 'blocks.mem' into bram_sdp. File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv Line: 26
-Info (12128): Elaborating entity "draw_block" for hierarchy "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 82
+Info (12128): Elaborating entity "update_field" for hierarchy "update_field:update_field_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 91
+Warning (10230): Verilog HDL assignment warning at update_field.sv(149): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 149
+Info (12128): Elaborating entity "norm" for hierarchy "update_field:update_field_inst|norm:norm_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 38
+Info (12128): Elaborating entity "div" for hierarchy "update_field:update_field_inst|norm:norm_inst|div:div_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv Line: 31
+Warning (10230): Verilog HDL assignment warning at div.sv(22): truncated value with size 32 to match size of target (31) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at div.sv(23): truncated value with size 32 to match size of target (31) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 23
+Warning (10230): Verilog HDL assignment warning at div.sv(38): truncated value with size 33 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 38
+Info (12128): Elaborating entity "divu" for hierarchy "update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 36
+Warning (10230): Verilog HDL assignment warning at div.sv(84): truncated value with size 32 to match size of target (7) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 84
+Warning (10230): Verilog HDL assignment warning at div.sv(94): truncated value with size 32 to match size of target (7) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 94
+Info (12128): Elaborating entity "sqrt" for hierarchy "update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at sqrt.sv(49): truncated value with size 32 to match size of target (5) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv Line: 49
+Info (12128): Elaborating entity "bram_sdp" for hierarchy "update_field:update_field_inst|bram_sdp:bram_h_vel_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 59
+Info (10648): Verilog HDL Display System Task info at bram_sdp.sv(26): Load init file 'h_vels.mem' into bram_sdp. File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv Line: 26
+Info (12128): Elaborating entity "bram_sdp" for hierarchy "update_field:update_field_inst|bram_sdp:bram_v_vel_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 73
+Info (10648): Verilog HDL Display System Task info at bram_sdp.sv(26): Load init file 'v_vels.mem' into bram_sdp. File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv Line: 26
+Info (12128): Elaborating entity "read_vels" for hierarchy "update_field:update_field_inst|read_vels:read_vels_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 110
+Warning (10230): Verilog HDL assignment warning at read_vels.sv(46): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 46
+Warning (10230): Verilog HDL assignment warning at read_vels.sv(51): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 51
+Warning (10230): Verilog HDL assignment warning at read_vels.sv(56): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 56
+Warning (10230): Verilog HDL assignment warning at read_vels.sv(61): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 61
+Info (10264): Verilog HDL Case Statement information at read_vels.sv(83): all case item expressions in this case statement are onehot File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 83
+Info (12128): Elaborating entity "draw_blocks" for hierarchy "draw_blocks:draw_blocks_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 115
+Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(90): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 90
+Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(91): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 91
+Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(94): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 94
+Info (10264): Verilog HDL Case Statement information at draw_blocks.sv(81): all case item expressions in this case statement are onehot File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 81
+Info (12128): Elaborating entity "bram_sdp" for hierarchy "draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 44
+Info (12128): Elaborating entity "draw_block" for hierarchy "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 71
 Warning (10230): Verilog HDL assignment warning at draw_block.sv(35): truncated value with size 47 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv Line: 35
 Warning (10230): Verilog HDL assignment warning at draw_block.sv(36): truncated value with size 47 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv Line: 36
 Warning (10230): Verilog HDL assignment warning at draw_block.sv(73): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv Line: 73
@@ -1756,7 +2258,7 @@ Info (10264): Verilog HDL Case Statement information at draw_block.sv(64): all c
 Info (12128): Elaborating entity "pixel_on_line" for hierarchy "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv Line: 50
 Warning (10230): Verilog HDL assignment warning at pixel_on_line.sv(20): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 20
 Warning (10230): Verilog HDL assignment warning at pixel_on_line.sv(21): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 21
-Info (12128): Elaborating entity "draw" for hierarchy "draw:draw_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 99
+Info (12128): Elaborating entity "draw" for hierarchy "draw:draw_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 136
 Warning (10230): Verilog HDL assignment warning at draw.sv(43): truncated value with size 32 to match size of target (12) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 43
 Info (12128): Elaborating entity "bram_sdp" for hierarchy "draw:draw_inst|bram_sdp:bram_draw_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 39
 Info (12128): Elaborating entity "pll" for hierarchy "draw:draw_inst|pll:vgapll_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 52
@@ -1824,8 +2326,10 @@ Info (12128): Elaborating entity "vga_controller" for hierarchy "draw:draw_inst|
 Warning (10230): Verilog HDL assignment warning at vga_controller.sv(51): truncated value with size 32 to match size of target (10) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv Line: 51
 Warning (10230): Verilog HDL assignment warning at vga_controller.sv(55): truncated value with size 32 to match size of target (10) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv Line: 55
 Warning (10230): Verilog HDL assignment warning at vga_controller.sv(87): truncated value with size 32 to match size of target (20) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv Line: 87
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "update_field:update_field_inst|vel_we" is missing source, defaulting to GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 40
 Warning (276027): Inferred dual-clock RAM node "draw:draw_inst|bram_sdp:bram_draw_inst|memory_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
-Info (19000): Inferred 2 megafunctions from design logic
+Info (19000): Inferred 4 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "draw:draw_inst|bram_sdp:bram_draw_inst|memory_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 1
@@ -1842,17 +2346,44 @@ Info (19000): Inferred 2 megafunctions from design logic
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
     Info (276029): Inferred altsyncram megafunction from the following design logic: "draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|memory_rtl_0" 
-        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 96
         Info (286033): Parameter WIDTHAD_A set to 6
         Info (286033): Parameter NUMWORDS_A set to 48
+        Info (286033): Parameter WIDTH_B set to 96
+        Info (286033): Parameter WIDTHAD_B set to 6
+        Info (286033): Parameter NUMWORDS_B set to 48
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "update_field:update_field_inst|bram_sdp:bram_h_vel_inst|memory_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 33
+        Info (286033): Parameter WIDTHAD_A set to 6
+        Info (286033): Parameter NUMWORDS_A set to 42
         Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
         Info (286033): Parameter OUTDATA_ACLR_A set to NONE
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/fluid_simulation.ram0_bram_sdp_124f44b6.hdl.mif
-Info (278001): Inferred 11 megafunctions from design logic
+        Info (286033): Parameter INIT_FILE set to db/fluid_simulation.ram0_bram_sdp_da46bba3.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "update_field:update_field_inst|bram_sdp:bram_v_vel_inst|memory_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 33
+        Info (286033): Parameter WIDTHAD_A set to 6
+        Info (286033): Parameter NUMWORDS_A set to 40
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/fluid_simulation.ram0_bram_sdp_6a547886.hdl.mif
+Info (278001): Inferred 13 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult7" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult8" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv Line: 31
@@ -1864,6 +2395,8 @@ Info (278001): Inferred 11 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult2" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 30
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 30
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult1" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 30
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "update_field:update_field_inst|norm:norm_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv Line: 22
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "update_field:update_field_inst|norm:norm_inst|Mult1" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv Line: 22
 Info (12130): Elaborated megafunction instantiation "draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0"
 Info (12133): Instantiated megafunction "draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1890,18 +2423,51 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
     Info (12023): Found entity 1: mux_g3b File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mux_g3b.tdf Line: 23
 Info (12130): Elaborated megafunction instantiation "draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0"
 Info (12133): Instantiated megafunction "draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
     Info (12134): Parameter "WIDTH_A" = "96"
     Info (12134): Parameter "WIDTHAD_A" = "6"
     Info (12134): Parameter "NUMWORDS_A" = "48"
+    Info (12134): Parameter "WIDTH_B" = "96"
+    Info (12134): Parameter "WIDTHAD_B" = "6"
+    Info (12134): Parameter "NUMWORDS_B" = "48"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_88g1.tdf
+    Info (12023): Found entity 1: altsyncram_88g1 File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_88g1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0"
+Info (12133): Instantiated megafunction "update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "33"
+    Info (12134): Parameter "WIDTHAD_A" = "6"
+    Info (12134): Parameter "NUMWORDS_A" = "42"
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
     Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/fluid_simulation.ram0_bram_sdp_124f44b6.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t871.tdf
-    Info (12023): Found entity 1: altsyncram_t871 File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_t871.tdf Line: 28
+    Info (12134): Parameter "INIT_FILE" = "db/fluid_simulation.ram0_bram_sdp_da46bba3.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oc71.tdf
+    Info (12023): Found entity 1: altsyncram_oc71 File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_oc71.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0"
+Info (12133): Instantiated megafunction "update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "33"
+    Info (12134): Parameter "WIDTHAD_A" = "6"
+    Info (12134): Parameter "NUMWORDS_A" = "40"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/fluid_simulation.ram0_bram_sdp_6a547886.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c771.tdf
+    Info (12023): Found entity 1: altsyncram_c771 File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_c771.tdf Line: 28
 Info (12130): Elaborated megafunction instantiation "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
 Info (12133): Instantiated megafunction "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7" with the following parameter: File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
     Info (12134): Parameter "LPM_WIDTHA" = "32"
@@ -1961,9 +2527,9 @@ Info (12133): Instantiated megafunction "draw_blocks:draw_blocks_inst|draw_block
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13014): Ignored 1980 buffer(s)
-    Info (13019): Ignored 1980 SOFT buffer(s)
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 2340 buffer(s)
+    Info (13019): Ignored 2340 SOFT buffer(s)
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GSENSOR_SDI" has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 30
     Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 32
@@ -2029,18 +2595,18 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 17
     Warning (15610): No output dependent on input pin "GSENSOR_INT[1]" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 28
     Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 28
-Info (21057): Implemented 1911 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3310 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 64 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 1615 logic cells
-    Info (21064): Implemented 134 RAM segments
+    Info (21061): Implemented 2932 logic cells
+    Info (21064): Implemented 200 RAM segments
     Info (21065): Implemented 1 PLLs
-    Info (21062): Implemented 88 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 4883 megabytes
-    Info: Processing ended: Thu Jan  2 21:56:26 2025
-    Info: Elapsed time: 00:00:10
+    Info (21062): Implemented 104 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 97 warnings
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Sun Jan  5 18:01:51 2025
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:06
 
 

@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Thu Jan  2 21:56:26 2025
+Analysis & Synthesis Status : Successful - Sun Jan  5 18:01:51 2025
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : fluid_simulation
 Top-level Entity Name : fluid_simulation
 Family : MAX 10
-Total logic elements : 1,593
-    Total combinational functions : 1,574
-    Dedicated logic registers : 263
-Total registers : 263
+Total logic elements : 2,808
+    Total combinational functions : 2,502
+    Dedicated logic registers : 1,050
+Total registers : 1050
 Total pins : 73
 Total virtual pins : 0
-Total memory bits : 311,808
-Embedded Multiplier 9-bit elements : 88
+Total memory bits : 314,514
+Embedded Multiplier 9-bit elements : 104
 Total PLLs : 1
 UFM blocks : 0
 ADC blocks : 0

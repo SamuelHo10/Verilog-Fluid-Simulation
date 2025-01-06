@@ -43,6 +43,18 @@ module fluid_simulation (
   localparam FIELD_DATAW = 96;  // xn, yn, mag
   localparam FIELD_ADDRW = $clog2(FIELD_SIZE);
 
+  localparam BLOCK_SIZE = DRAW_WIDTH / FIELD_WIDTH;
+  localparam H_VEL_WIDTH = FIELD_WIDTH - 1;
+  localparam H_VEL_HEIGHT = FIELD_HEIGHT;
+  localparam H_VEL_SIZE = H_VEL_WIDTH * H_VEL_HEIGHT;
+  localparam V_VEL_WIDTH = FIELD_WIDTH;
+  localparam V_VEL_HEIGHT = FIELD_HEIGHT - 1;
+  localparam V_VEL_SIZE = V_VEL_WIDTH * V_VEL_HEIGHT;
+  localparam VEL_DATAW = 33;  // vel, wall
+  localparam H_VEL_ADDRW = $clog2(H_VEL_SIZE);
+  localparam V_VEL_ADDRW = $clog2(V_VEL_SIZE);
+
+
 
   logic [FIELD_ADDRW-1:0] field_addr_write, field_addr_read;
   logic [FIELD_DATAW-1:0] field_data_in, field_data_out;
@@ -50,9 +62,33 @@ module fluid_simulation (
 
   logic [DRAW_ADDRW-1:0] draw_addr_write;
   logic [DRAW_DATAW-1:0] draw_data_in;
-  logic start_draw_blocks, draw_we;
+  logic draw_we, field_we;
+  logic start_update;
 
 
+  update_field #(
+      .FIELD_WIDTH(FIELD_WIDTH),
+      .FIELD_HEIGHT(FIELD_HEIGHT),
+      .FIELD_SIZE(FIELD_SIZE),
+      .FIELD_DATAW(FIELD_DATAW),
+      .FIELD_ADDRW(FIELD_ADDRW),
+      .BLOCK_SIZE(BLOCK_SIZE),
+      .H_VEL_WIDTH(H_VEL_WIDTH),
+      .H_VEL_HEIGHT(H_VEL_HEIGHT),
+      .H_VEL_SIZE(H_VEL_SIZE),
+      .V_VEL_WIDTH(V_VEL_WIDTH),
+      .V_VEL_HEIGHT(V_VEL_HEIGHT),
+      .VEL_DATAW(VEL_DATAW),
+      .H_VEL_ADDRW(H_VEL_ADDRW),
+      .V_VEL_ADDRW(V_VEL_ADDRW)
+  ) update_field_inst (
+      .clk(MAX10_CLK1_50),
+      .start(start_update),
+      .done(),
+      .field_addr_write(field_addr_write),
+      .field_data_in(field_data_in),
+      .field_we(field_we)
+  );
 
   draw_blocks #(
       .DRAW_WIDTH(DRAW_WIDTH),
@@ -68,10 +104,11 @@ module fluid_simulation (
       .BLOCK_SIZE(DRAW_WIDTH / FIELD_WIDTH)
   ) draw_blocks_inst (
       .clk(MAX10_CLK1_50),
-      .start(start_draw_blocks),
+      .start(1'b1),
       .done(),
       .field_addr_write(field_addr_write),
       .field_data_in(field_data_in),
+      .field_we(field_we),
       .draw_addr_write(draw_addr_write),
       .draw_data_in(draw_data_in),
       .draw_we(draw_we)
@@ -98,7 +135,7 @@ module fluid_simulation (
       .draw_we(draw_we)
   );
 
-  assign start_draw_blocks = ~KEY[0];
+  assign start_update = ~KEY[0];
 
   // enum {
   //   IDLE,

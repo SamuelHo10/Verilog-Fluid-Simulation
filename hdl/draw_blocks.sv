@@ -16,22 +16,12 @@ module draw_blocks #(
     output logic done,
     input logic [FIELD_ADDRW-1:0] field_addr_write,
     input logic [FIELD_DATAW-1:0] field_data_in,
+    input logic field_we,
     output logic [DRAW_ADDRW-1:0] draw_addr_write,
     output logic [DRAW_DATAW-1:0] draw_data_in,
     output logic draw_we
 );
-  //   logic [31:0] xi, yi, xn, yn;
-  //   logic donenorm, startnorm;
 
-  //   norm norm_inst (
-  //       .x(xi),
-  //       .y(yi),
-  //       .clk(clk),
-  //       .start(startnorm),
-  //       .xn(),
-  //       .yn(divisor),
-  //       .done(done1)
-  //   );
 
   logic start_draw_block, done_draw_block;
   logic [31:0] block_x, block_y;
@@ -42,12 +32,11 @@ module draw_blocks #(
 
   bram_sdp #(
       .WIDTH (FIELD_DATAW),
-      .DEPTH (FIELD_SIZE),
-      .INIT_F("blocks.mem")
+      .DEPTH (FIELD_SIZE)
   ) bram_field_inst (
       .clk_write(clk),
       .clk_read(clk),
-      .we(1'b0),
+      .we(field_we),
       .addr_write(field_addr_write),
       .addr_read(field_addr_read),
       .data_in(field_data_in),
