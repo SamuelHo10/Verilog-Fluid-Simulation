@@ -1,19 +1,19 @@
 module update_field #(
     parameter FIELD_WIDTH = 8,
     parameter FIELD_HEIGHT = 6,
-    localparam FIELD_SIZE = FIELD_WIDTH * FIELD_HEIGHT,
+    parameter FIELD_SIZE = FIELD_WIDTH * FIELD_HEIGHT,
     parameter FIELD_DATAW = 96,  // xn, yn, mag
-    localparam FIELD_ADDRW = $clog2(FIELD_SIZE),
+    parameter FIELD_ADDRW = $clog2(FIELD_SIZE),
     parameter BLOCK_SIZE = 80,
-    localparam H_VEL_WIDTH = FIELD_WIDTH - 1,
-    localparam H_VEL_HEIGHT = FIELD_HEIGHT,
-    localparam H_VEL_SIZE = H_VEL_WIDTH * H_VEL_HEIGHT,
-    localparam V_VEL_WIDTH = FIELD_WIDTH,
-    localparam V_VEL_HEIGHT = FIELD_HEIGHT - 1,
-    localparam V_VEL_SIZE = V_VEL_WIDTH * V_VEL_HEIGHT,
+    parameter H_VEL_WIDTH = FIELD_WIDTH - 1,
+    parameter H_VEL_HEIGHT = FIELD_HEIGHT,
+    parameter H_VEL_SIZE = H_VEL_WIDTH * H_VEL_HEIGHT,
+    parameter V_VEL_WIDTH = FIELD_WIDTH,
+    parameter V_VEL_HEIGHT = FIELD_HEIGHT - 1,
+    parameter V_VEL_SIZE = V_VEL_WIDTH * V_VEL_HEIGHT,
     parameter VEL_DATAW = 33,  // vel, wall
-    localparam H_VEL_ADDRW = $clog2(H_VEL_SIZE),
-    localparam V_VEL_ADDRW = $clog2(V_VEL_SIZE)
+    parameter H_VEL_ADDRW = $clog2(H_VEL_SIZE),
+    parameter V_VEL_ADDRW = $clog2(V_VEL_SIZE)
 ) (
     input logic clk,
     input logic start,
@@ -124,12 +124,16 @@ module update_field #(
   end
 
   // update velocity logic
-  logic [31:0] signed vel_update;
+  logic signed [31:0] vel_update;
+  logic signed [63:0] one_half_vel_total, one_third_vel_total, one_fourth_vel_total;
   always_comb begin
+    one_third_vel_total  = vel_total * 32'sh5555;
+    one_half_vel_total   = vel_total * 32'sh8000;
+    one_fourth_vel_total = vel_total * 32'sh4000;
     case (n)
-      2: vel_update = vel_total >> 1;
-      3: vel_update = vel_total * 32'sh55555555;  // 1/3
-      4: vel_update = vel_total >> 2;
+      2: vel_update = one_half_vel_total[47:16];
+      3: vel_update = one_third_vel_total[47:16];
+      4: vel_update = one_fourth_vel_total[47:16];
       default: vel_update = 0;
     endcase
   end
@@ -142,7 +146,7 @@ module update_field #(
       .FIELD_HEIGHT(FIELD_HEIGHT),
       .FIELD_DATAW(FIELD_DATAW),
       .BLOCK_SIZE(BLOCK_SIZE),
-      .VEL_DATAW(VEL_DATAW),
+      .VEL_DATAW(VEL_DATAW)
   ) write_vels_inst (
       .clk(clk),
       .start(start_write_vels),
@@ -166,25 +170,29 @@ module update_field #(
 
   enum {
     IDLE,
+    READ1,
+    SUB1,
+    WRITE_VELS1,
+    CHANGE_FIELD1,
     READ2,
-    SUB2,
-    CHANGE_FIELD2,
-    READ3,
-    NORM3,
-    CHANGE_FIELD3
+    NORM2,
+    CHANGE_FIELD2
   } state;
 
   always_ff @(posedge clk) begin
 
     done <= 0;
     field_we <= 0;
+    start_read_vels <= 0;
+    start_write_vels <= 0;
+    startnorm <= 0;
+
 
     case (state)
-      READ2: begin
-        start_read_vels <= 0;
-        start_write_vels <= 0;
+      READ1: begin
+
         if (done_read_vels) begin
-          state <= SUB2;
+          state <= SUB1;
           vel_total <= $signed(
               vx1[31:0]
           ) - $signed(
@@ -196,16 +204,22 @@ module update_field #(
           );
         end
       end
-      SUB2: begin
+      SUB1: begin
         start_write_vels <= 1;
-        state <= CHANGE_FIELD2;
+        state <= WRITE_VELS1;
         vx1_write <= {vx1[32], $signed(vx1[31:0]) - vel_update};
         vx2_write <= {vx2[32], $signed(vx2[31:0]) + vel_update};
         vy1_write <= {vy1[32], $signed(vy1[31:0]) - vel_update};
         vy2_write <= {vy2[32], $signed(vy2[31:0]) + vel_update};
       end
-      CHANGE_FIELD2: begin
-        state <= READ2;
+      WRITE_VELS1: begin
+        if (done_write_vels) begin
+          state <= CHANGE_FIELD1;
+        end
+      end
+      CHANGE_FIELD1: begin
+
+        state <= READ1;
         start_read_vels <= 1;
 
         field_x <= field_x_next;
@@ -213,31 +227,29 @@ module update_field #(
         field_addr_write <= field_addr_write + 1;
 
         if (field_end_pos) begin
-          state <= READ3;
+          state <= READ2;
           field_x <= 0;
           field_y <= 0;
           field_addr_write <= 0;
         end
       end
-      READ3: begin
-        start_read_vels <= 0;
+      READ2: begin
         if (done_read_vels) begin
-          state <= NORM;
+          state <= NORM2;
           startnorm <= 1;
           xi <= $signed(vx1[31:0]) + $signed(vx2[31:0]);
           yi <= $signed(vy1[31:0]) + $signed(vy2[31:0]);
         end
       end
-      NORM3: begin
-        startnorm <= 0;
+      NORM2: begin
         if (donenorm) begin
-          state <= CHANGE_FIELD;
+          state <= CHANGE_FIELD2;
           field_data_in <= {xn, yn, mag};
           field_we <= 1;
         end
       end
-      CHANGE_FIELD3: begin
-        state <= READ3;
+      CHANGE_FIELD2: begin
+        state <= READ2;
         start_read_vels <= 1;
 
         field_x <= field_x_next;
@@ -259,7 +271,7 @@ module update_field #(
           field_y <= 0;
           field_addr_write <= 0;
 
-          state <= READ2;
+          state <= READ1;
           start_read_vels <= 1;
         end
       end

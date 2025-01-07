@@ -21,11 +21,9 @@ module update_field_tb ();
 
   // Instantiate the Unit Under Test (UUT)
   update_field #(
-      .FIELD_WIDTH (FIELD_WIDTH),
+      .FIELD_WIDTH(FIELD_WIDTH),
       .FIELD_HEIGHT(FIELD_HEIGHT),
-      .FIELD_SIZE  (FIELD_SIZE),
-      .FIELD_DATAW (FIELD_DATAW),
-      .FIELD_ADDRW (FIELD_ADDRW)
+      .FIELD_DATAW(FIELD_DATAW)
   ) uut (
       .clk(clk),
       .start(start),
@@ -41,13 +39,14 @@ module update_field_tb ();
   end
 
   initial begin
-    start = 0;
-    #10;
-    start = 1;
-    #10;
-    start = 0;
 
-    wait (done);
+    for (int i = 0; i < 100; i++) begin
+      #10;
+      start = 1;
+      #10;
+      start = 0;
+      wait (done);
+    end
 
     #100;
 

@@ -1,7 +1,7 @@
 m255
 K4
 z2
-Z0 !s12c _opt1
+Z0 !s12c _opt3
 Z1 !s99 nomlopt
 R0
 R1
@@ -31,63 +31,7 @@ R0
 R1
 R0
 R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-Z2 !s12c _opt
+Z2 !s12c _opt1
 R1
 R2
 R1
@@ -105,13 +49,9 @@ R2
 R1
 R2
 R1
-R0
-R1
-R0
-R1
 R2
 R1
-R0
+R2
 R1
 R2
 R1
@@ -123,49 +63,139 @@ R2
 R1
 R2
 R1
-R0
+R2
 R1
 R2
 R1
-Z3 !s12c _opt2
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+Z3 !s12c _opt
 R1
 R3
 R1
-R0
+R3
 R1
-R0
+R3
 R1
-R0
+R3
 R1
-R2
+R3
 R1
-R0
+R3
 R1
-R0
+R3
 R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
+R3
 R1
 R2
 R1
 R2
+R1
+R3
+R1
+R2
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R2
+R1
+R3
+R1
+Z4 !s12c _opt2
+R1
+R4
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R3
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R3
+R1
+R3
 R1
 !s11f vlog 2023.3 2023.07, Jul 17 2023
 13
@@ -174,666 +204,703 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z4 dC:/windows/system32
+Z5 dC:/windows/system32
 T_opt
 !s110 1735663835
 V42]<o6j>AaD7Md;6gZn6;0
 04 16 4 work pixel_on_line_tb fast 0
 =1-cc4740450810-677420da-291-f30
 R1
-Z5 !s12b OEM100
-Z6 !s124 OEM10U2 
-Z7 o-quiet -auto_acc_if_foreign -work work +acc
-Z8 tCvgOpt 0
+Z6 !s12b OEM100
+Z7 !s124 OEM10U2 
+Z8 o-quiet -auto_acc_if_foreign -work work +acc
+Z9 tCvgOpt 0
 n@_opt
-Z9 OL;O;2023.3;77
-R4
+Z10 OL;O;2023.3;77
+R5
 T_opt1
 !s110 1736118016
 VTF35MMdEGfK<`MLfkJFnc2
-04 15 4 work update_field_tb fast 0
+Z11 04 15 4 work update_field_tb fast 0
 =7-cc4740450810-677b0f00-d7-4460
 R1
-R5
+R6
 !s124 OEM10U9 
-R7
 R8
-n@_opt1
 R9
-R4
+n@_opt1
+R10
+R5
 T_opt2
 !s110 1735249688
 V?HhQ1MML?WHAlbW5d?iU?2
 04 7 4 work sqrt_tb fast 0
 =1-cc4740450810-676dcf18-15f-2490
 R1
-R5
 R6
 R7
 R8
-n@_opt2
 R9
-R4
+n@_opt2
+R10
+R5
+T_opt3
+!s110 1736224345
+VD:H^OfOg2iPSMUIAMheZ=2
+R11
+=5-cc4740450810-677cae59-d1-2ba4
+R1
+R6
+!s124 OEM10U10 
+R8
+R9
+n@_opt3
+R10
 vbram_sdp
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv
-Z10 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z11 !s110 1736132151
+Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z13 !s110 1736224338
 !i10b 1
 !s100 2_C52b2=5eBSc^V<1?Bf`2
 IoSTY_Lg3]z=hI8T416mUD3
 S1
-Z12 dC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/simulation
+Z14 dC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/simulation
 w1735592599
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv
-!i122 1358
+!i122 1907
 L0 6 35
-Z13 VDg1SIo80bB@j0V0VzS_@n1
-Z14 OL;L;2023.3;77
+Z15 VDg1SIo80bB@j0V0VzS_@n1
+Z16 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z15 !s108 1736132151.000000
+Z17 !s108 1736224337.000000
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv|
 !i113 0
-Z16 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R8
+Z18 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
 vcomb_ckt_generator
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/comb_ckt_generator.sv
-R10
-R11
+R12
+R13
 !i10b 1
 !s100 8izbdI7_ChlF[z]TAF2mB3
 IQ4T^NKj<X1:AB2k<S@[0j1
 S1
-R12
+R14
 w1734889044
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/comb_ckt_generator.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/comb_ckt_generator.sv
-!i122 1359
+!i122 1908
 L0 11 83
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+Z19 !s108 1736224338.000000
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/comb_ckt_generator.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/comb_ckt_generator.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdiv
-Z17 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv
-R10
-R11
+Z20 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv
+R12
+Z21 !s110 1736224337
 !i10b 1
 !s100 nNJF0?oLPS:e_YY[W;T?<3
 IjMj22229G=g?T7E52APjz3
 S1
-R12
-Z18 w1735346170
-Z19 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv
-Z20 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv
-!i122 1352
-L0 3 39
-R13
 R14
+Z22 w1735346170
+Z23 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv
+Z24 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv
+!i122 1901
+L0 3 39
+R15
+R16
 r1
 !s85 0
 31
-R15
-Z21 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv|
-Z22 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv|
+R17
+Z25 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv|
+Z26 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdiv_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/div_tb.sv
-R10
-R11
+R12
+R21
 !i10b 1
 !s100 83ih:AVAQ79VzVDS>TBXW3
 IK>=W[k8GPhL0k@<fM[S2L0
 S1
-R12
+R14
 w1735241279
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/div_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/div_tb.sv
-!i122 1351
+!i122 1900
 L0 3 42
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+R17
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/div_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/div_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdivu
-R17
-R10
-R11
+R20
+R12
+R21
 !i10b 1
 !s100 P^oo`fcNA0jKzghE:hDki3
 I[i8XW1P09aNOcJ`EhBS`D0
 S1
-R12
-R18
-R19
-R20
-!i122 1352
-L0 44 64
-R13
 R14
+R22
+R23
+R24
+!i122 1901
+L0 44 64
+R15
+R16
 r1
 !s85 0
 31
-R15
-R21
-R22
+R17
+R25
+R26
 !i113 0
-R16
-R8
+R18
+R9
 vdraw
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv
-R10
-R11
+R12
+R21
 !i10b 1
 !s100 T5BL]kagoe2n:;Sf1<[fJ0
 IPZbXmnof4=zGTIbn@B>FI2
 S1
-R12
+R14
 w1735855183
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv
-!i122 1357
+!i122 1906
 L0 1 66
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+R17
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdraw_block
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv
-R10
-Z23 !s110 1736132152
+R12
+R13
 !i10b 1
 !s100 @a;3Z?CELjHi<B2@nIK4@2
 IR<faRGSJo:co<BD[3cX442
 S1
-R12
+R14
 w1735869344
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv
-!i122 1364
+!i122 1913
 L0 2 96
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-Z24 !s108 1736132152.000000
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdraw_block_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv
-R10
-R23
+R12
+R13
 !i10b 1
 !s100 S;;^QG:z4n<Q7@mgN;jNO0
 IiTMOTm<cVPLiiXZRz^Ubf1
 S1
-R12
+R14
 w1735856815
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv
-!i122 1365
+!i122 1914
 L0 3 71
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R24
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_block_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdraw_blocks
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv
-R10
-R23
+R12
+R13
 !i10b 1
 !s100 ^UBG6=ahHgn@`B6ZF^MeW0
 IdlgG8<^4=^YL6<VKj;kHc0
 S1
-R12
+R14
 w1736110638
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv
-!i122 1366
+!i122 1915
 L0 1 115
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R24
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdraw_blocks_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_blocks_tb.sv
-R10
-R23
+R12
+Z27 !s110 1736224339
 !i10b 1
 !s100 Y5mMz38el^maoH]>o^c731
 Io[7>jo>_]DGVn97H28iW02
 S1
-R12
+R14
 w1735862028
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_blocks_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_blocks_tb.sv
-!i122 1367
+!i122 1916
 L0 4 76
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R24
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_blocks_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_blocks_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdraw_lines
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_lines.sv
-R10
-Z25 !s110 1735842706
+R12
+Z28 !s110 1735842706
 !i10b 1
 !s100 RXVSKmfK>eY0ACQ_Z]`em2
 Ih4`0E5j>QTV0Cg^9<MAO]1
 S1
-R12
+R14
 w1735757905
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_lines.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_lines.sv
 !i122 874
 L0 1 131
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-Z26 !s108 1735842706.000000
+Z29 !s108 1735842706.000000
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_lines.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_lines.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdraw_lines_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_lines_tb.sv
-R10
-R25
+R12
+R28
 !i10b 1
 !s100 a:U?jn;YFXGZQ9KgKi7lj0
 Iz_CizETA:RoD?llKIROF@1
 S1
-R12
+R14
 w1735757000
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_lines_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_lines_tb.sv
 !i122 875
 L0 4 75
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R26
+R29
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_lines_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_lines_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vdraw_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_tb.sv
-R10
-Z27 !s110 1735588206
+R12
+Z30 !s110 1735588206
 !i10b 1
 !s100 BP:;U7Nn?>mKAN2cYh8R]0
 IQAKzj56KK9Ig<_5BfH32z1
 S1
-R12
+R14
 w1735587854
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_tb.sv
 !i122 168
 L0 4 64
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-Z28 !s108 1735588206.000000
+Z31 !s108 1735588206.000000
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vfluid_simulation
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv
-R10
-R23
-!i10b 1
-!s100 ZlXKPnj4gcdgD[CTAIR=Q3
-IWgdXUjUZmBS1f?64lI18]3
-S1
 R12
-w1736111844
+R13
+!i10b 1
+!s100 k33Gi4Z4YM]icL<NILT300
+ILCZc5@NR_PShQW0]9RSUj1
+S1
+R14
+w1736217240
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv
-!i122 1360
-L0 2 160
-R13
-R14
+!i122 1909
+L0 2 167
+R15
+R16
 r1
 !s85 0
 31
-R15
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vnorm
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv
-R10
-R11
+R12
+R21
 !i10b 1
 !s100 Ga]K=TVE_Pd>c0@SSN2oR1
 IcVd=diNnlG:Z7i=3DRYFf1
 S1
-R12
+R14
 w1736096417
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv
-!i122 1355
+!i122 1904
 L0 3 92
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+R17
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vnorm_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv
-R10
-R11
+R12
+R21
 !i10b 1
 !s100 im<ULm[[d5J88h[]<;KO53
 I^jRjV4D@IOn0>Vk6bMKod2
 S1
-R12
+R14
 w1735342128
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv
-!i122 1356
+!i122 1905
 L0 3 43
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+R17
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vpixel_on_line
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv
-R10
-R23
+R12
+R13
 !i10b 1
 !s100 mgBEdIPlQBc?SSjQ]ig>]2
 IfH0DlEeY=W>`D4Gm@_eDk3
 S1
-R12
+R14
 w1735872965
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv
-!i122 1362
+!i122 1911
 L0 1 78
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R24
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vpixel_on_line_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv
-R10
-R23
+R12
+R13
 !i10b 1
 !s100 UmY]PiFoHIgQ1=k7[LgdO3
 I96j3HNj8O=[G41c9b24oG3
 S1
-R12
+R14
 w1735870180
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv
-!i122 1363
+!i122 1912
 L0 4 85
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R24
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/pixel_on_line_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vpll
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/ip/pll.v
-R27
+R30
 !i10b 1
 !s100 IKkNXza08ZidTcF<I>JN[2
 I;zF0Ai[aJNid_CR>MARUb3
-R12
+R14
 w1734723570
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/ip/pll.v
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/ip/pll.v
 !i122 166
 L0 40 110
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R28
+R31
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/ip/pll.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/ip/pll.v|
 !i113 0
 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R8
+R9
 vread_vels
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv
-R10
-R23
-!i10b 1
-!s100 0d118h[SnnRHd?cVbVm762
-IBh0;3gOVJNQSUU[mdY8KH3
-S1
 R12
-w1736117977
+R27
+!i10b 1
+!s100 UNL@Y`ZH8^QfH2m_e9VD91
+I8X9K0he^H1FIUL1:=`PT72
+S1
+R14
+w1736224333
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv
-!i122 1368
-L0 1 106
-R13
-R14
+!i122 1917
+L0 1 114
+R15
+R16
 r1
 !s85 0
 31
-R24
+Z32 !s108 1736224339.000000
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vsqrt
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv
-R10
-R11
+R12
+R21
 !i10b 1
 !s100 GHEfkOc^cO;@eQ1a]`OQ93
 IO]o^ToPa`?HPF13XcnTY<0
 S1
-R12
+R14
 w1735404542
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv
-!i122 1353
+!i122 1902
 L0 3 65
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+R17
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vsqrt_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv
-R10
-R11
+R12
+R21
 !i10b 1
 !s100 e_[1@N[X^D`ELL`38AbCE0
 I2z74o@HmF;ohUO`[_coU;2
 S1
-R12
+R14
 w1735249844
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv
-!i122 1354
+!i122 1903
 L0 3 45
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+R17
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vupdate_field
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv
-R10
-!s110 1736118013
-!i10b 1
-!s100 V^VmUCh:PE4S@nj]NP5a^2
-IKD]9nWhGO0^7BUOadgiM81
-S1
 R12
-w1736118002
+R27
+!i10b 1
+!s100 bYH96^YKWleg11Ue1_Lza1
+I=B7Qbg0UhZPQDgNm0bkKg3
+S1
+R14
+w1736216618
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv
-!i122 1330
-L0 1 171
-R13
-R14
+!i122 1918
+L0 1 281
+R15
+R16
 r1
 !s85 0
 31
-!s108 1736118013.000000
+R32
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vupdate_field_tb
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv
-R10
-R23
-!i10b 1
-!s100 l8`>6I7:YF<7QRnk::QJM2
-Iz8beZC<a54oQ9jC5N:@JK1
-S1
 R12
-w1736115905
+R27
+!i10b 1
+!s100 JGJondcC0gKG16?^G1SkM1
+If:]`:8CELz=16oIE4R>CP2
+S1
+R14
+w1736221678
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv
-!i122 1369
-L0 3 55
-R13
-R14
+!i122 1919
+L0 3 54
+R15
+R16
 r1
 !s85 0
 31
-R24
+R32
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv|
 !i113 0
-R16
-R8
+R18
+R9
 vvga_controller
 2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv
-R10
-R23
+R12
+R13
 !i10b 1
 !s100 lS;:c8>K6zCDKZ@FdRKh42
 I=Zdlzm]TlRgS`S^eHL]L73
 S1
-R12
+R14
 w1735852753
 8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv
 FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv
-!i122 1361
+!i122 1910
 L0 5 90
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R24
+R19
 !s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv|
 !i113 0
+R18
+R9
+vwrite_vels
+2C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv
+R12
+R27
+!i10b 1
+!s100 ]BZYSd55eH2[9ASoPgQ6W3
+IJlGK;AZN>2jaNY3hZ;SUc2
+S1
+R14
+w1736220164
+8C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv
+FC:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv
+!i122 1920
+L0 1 117
+R15
 R16
-R8
+r1
+!s85 0
+31
+R32
+!s107 C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv|
+!i113 0
+R18
+R9

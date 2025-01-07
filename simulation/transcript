@@ -16,11 +16,424 @@
 # Compile of draw_blocks.sv was successful.
 # Compile of draw_blocks_tb.sv was successful.
 # Compile of read_vels.sv was successful.
-# Compile of update_field.sv failed with 5 errors.
+# Compile of update_field.sv failed with 4 errors.
 # Compile of update_field_tb.sv was successful.
-# 20 compiles, 1 failed with 5 errors.
-# Error opening C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/simulation/(vlog-13069) C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv
-# Path name 'C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/simulation/(vlog-13069) C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv' doesn't exist.
+# Compile of write_vels.sv failed with 8 errors.
+# 21 compiles, 2 failed with 12 errors.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.update_field_tb
+# vsim -voptargs="+acc" work.update_field_tb 
+# Start time: 20:14:23 on Jan 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run -all
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv(53)
+#    Time: 662515 ns  Iteration: 0  Instance: /update_field_tb
+# Break in Module update_field_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv line 53
+add wave -position end sim:/update_field_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlft38ks4m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft38ks4m
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run -all
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv(53)
+#    Time: 662515 ns  Iteration: 0  Instance: /update_field_tb
+# Break in Module update_field_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv line 53
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
 # Compile of div_tb.sv was successful.
 # Compile of div.sv was successful.
 # Compile of sqrt.sv was successful.
@@ -41,4 +454,1109 @@
 # Compile of read_vels.sv was successful.
 # Compile of update_field.sv failed with 1 errors.
 # Compile of update_field_tb.sv was successful.
-# 20 compiles, 1 failed with 1 error.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 1 failed with 1 error.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.update_field_tb
+# End time: 20:59:49 on Jan 06,2025, Elapsed time: 0:45:26
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.update_field_tb 
+# Start time: 20:59:49 on Jan 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+add wave -position end sim:/update_field_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftahrq7z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftahrq7z
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv(53)
+#    Time: 662515 ns  Iteration: 0  Instance: /update_field_tb
+# Break in Module update_field_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv line 53
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+add wave -position end sim:/update_field_tb/uut/write_vels_inst/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/update_field_tb/uut/write_vels_inst/vx_read'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/update_field_tb/uut/write_vels_inst/vy_read'. 
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv(53)
+#    Time: 681715 ns  Iteration: 0  Instance: /update_field_tb
+# Break in Module update_field_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv line 53
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+vsim -voptargs=+acc work.update_field_tb
+# End time: 21:55:18 on Jan 06,2025, Elapsed time: 0:55:29
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.update_field_tb 
+# Start time: 21:55:18 on Jan 06,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+add wave -position end sim:/update_field_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlfts0770f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts0770f
+add wave -position 9 sim:/update_field_tb/uut/write_vels_inst/*
+vsim -voptargs=+acc work.update_field_tb
+# End time: 21:56:15 on Jan 06,2025, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.update_field_tb 
+# Start time: 21:56:15 on Jan 06,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+add wave -position end sim:/update_field_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftvcjq5w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvcjq5w
+add wave -position end sim:/update_field_tb/uut/write_vels_inst/*
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.update_field_tb
+# End time: 22:07:20 on Jan 06,2025, Elapsed time: 0:11:05
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.update_field_tb 
+# Start time: 22:07:20 on Jan 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+add wave -position end sim:/update_field_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlft9t7z0s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9t7z0s
+add wave -position end sim:/update_field_tb/uut/write_vels_inst/*
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.update_field_tb
+# End time: 22:18:31 on Jan 06,2025, Elapsed time: 0:11:11
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.update_field_tb 
+# Start time: 22:18:31 on Jan 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+add wave -position end sim:/update_field_tb/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftcar7ez".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcar7ez
+add wave -position end sim:/update_field_tb/uut/write_vels_inst/*
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv(53)
+#    Time: 686515 ns  Iteration: 0  Instance: /update_field_tb
+# Break in Module update_field_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv line 53
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run -all
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv(53)
+#    Time: 6864115 ns  Iteration: 0  Instance: /update_field_tb
+# Break in Module update_field_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv line 53
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+vsim -voptargs=+acc work.update_field_tb
+# End time: 23:08:03 on Jan 06,2025, Elapsed time: 0:49:32
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.update_field_tb 
+# Start time: 23:08:03 on Jan 06,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+add wave -position end sim:/update_field_tb/uut/read_vels_inst/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: samue  Hostname: SAMUEL  ProcessID: 9360
+#           Attempting to use alternate WLF file "./wlftwxidwt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwxidwt
+add wave -position end sim:/update_field_tb/uut/*
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "read_vels(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "read_vels(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv failed with 2 errors.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 1 failed with 2 errors.
+# Compile of div_tb.sv was successful.
+# Compile of div.sv was successful.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# Compile of norm.sv was successful.
+# Compile of norm_tb.sv was successful.
+# Compile of draw.sv was successful.
+# Compile of bram_sdp.sv was successful.
+# Compile of comb_ckt_generator.sv was successful.
+# Compile of fluid_simulation.sv was successful.
+# Compile of vga_controller.sv was successful.
+# Compile of pixel_on_line.sv was successful.
+# Compile of pixel_on_line_tb.sv was successful.
+# Compile of draw_block.sv was successful.
+# Compile of draw_block_tb.sv was successful.
+# Compile of draw_blocks.sv was successful.
+# Compile of draw_blocks_tb.sv was successful.
+# Compile of read_vels.sv was successful.
+# Compile of update_field.sv was successful.
+# Compile of update_field_tb.sv was successful.
+# Compile of write_vels.sv was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "update_field(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "read_vels(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "write_vels(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run -all
+# ** Note: $stop    : C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv(53)
+#    Time: 7056115 ns  Iteration: 0  Instance: /update_field_tb
+# Break in Module update_field_tb at C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv line 53
+restart
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.update_field_tb(fast)
+# Loading work.update_field(fast)
+# Loading work.norm(fast)
+# Loading work.div(fast)
+# Loading work.divu(fast)
+# Loading work.sqrt(fast)
+# Loading work.bram_sdp(fast)
+# Loading work.bram_sdp(fast__1)
+# Loading work.read_vels(fast)
+# Loading work.write_vels(fast)
+run
+# Load init file 'h_vels.mem' into bram_sdp.
+# Load init file 'v_vels.mem' into bram_sdp.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 23:40:26 on Jan 06,2025, Elapsed time: 0:32:23
+# Errors: 0, Warnings: 2

@@ -74,20 +74,28 @@ module read_vels #(
 
   enum {
     IDLE,
-    READ_VELS1,
-    READ_VELS2
+    STEP1,
+    STEP2,
+    STEP3,
+    STEP4
   } state;
 
   always_ff @(posedge clk) begin
     done <= 0;
     case (state)
-      READ_VELS1: begin
+      STEP1: begin
+        state <= STEP2;
+      end
+      STEP2: begin
         side  <= 0;
+        state <= STEP3;
         vx1   <= vx_read;
         vy1   <= vy_read;
-        state <= READ_VELS2;
       end
-      READ_VELS2: begin
+      STEP3: begin
+        state <= STEP4;
+      end
+      STEP4: begin
         vx2   <= vx_read;
         vy2   <= vy_read;
         state <= IDLE;
@@ -95,7 +103,7 @@ module read_vels #(
       end
       default: begin
         if (start) begin
-          state <= READ_VELS1;
+          state <= STEP1;
           side  <= 1;
         end
       end

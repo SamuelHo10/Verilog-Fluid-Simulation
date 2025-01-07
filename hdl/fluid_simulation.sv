@@ -69,18 +69,9 @@ module fluid_simulation (
   update_field #(
       .FIELD_WIDTH(FIELD_WIDTH),
       .FIELD_HEIGHT(FIELD_HEIGHT),
-      .FIELD_SIZE(FIELD_SIZE),
       .FIELD_DATAW(FIELD_DATAW),
-      .FIELD_ADDRW(FIELD_ADDRW),
       .BLOCK_SIZE(BLOCK_SIZE),
-      .H_VEL_WIDTH(H_VEL_WIDTH),
-      .H_VEL_HEIGHT(H_VEL_HEIGHT),
-      .H_VEL_SIZE(H_VEL_SIZE),
-      .V_VEL_WIDTH(V_VEL_WIDTH),
-      .V_VEL_HEIGHT(V_VEL_HEIGHT),
-      .VEL_DATAW(VEL_DATAW),
-      .H_VEL_ADDRW(H_VEL_ADDRW),
-      .V_VEL_ADDRW(V_VEL_ADDRW)
+      .VEL_DATAW(VEL_DATAW)
   ) update_field_inst (
       .clk(MAX10_CLK1_50),
       .start(start_update),
@@ -134,14 +125,30 @@ module fluid_simulation (
       .draw_data_in(draw_data_in),
       .draw_we(draw_we)
   );
+  logic temp;
+  assign temp = ~KEY[0];
 
-  assign start_update = ~KEY[0];
+  enum {
+    IDLE,
+    RUNNING
+  } state = IDLE;
 
-  // enum {
-  //   IDLE,
-  //   RUNNING
-  // } state;
-
+  always_ff @(posedge MAX10_CLK1_50) begin
+    start_update <= 0;
+    case (state)
+      RUNNING: begin
+        if (~temp) begin
+          state <= IDLE;
+        end
+      end
+      default: begin
+        if (temp) begin
+          state <= RUNNING;
+          start_update <= 1;
+        end
+      end
+    endcase
+  end
   // always_ff @(posedge MAX10_CLK1_50) begin
   //   case (state)
   //     RUNNING: begin

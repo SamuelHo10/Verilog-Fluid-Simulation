@@ -1,5 +1,5 @@
 Flow report for fluid_simulation
-Sun Jan  5 18:02:17 2025
+Mon Jan  6 23:38:05 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -41,21 +41,21 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sun Jan  5 18:02:13 2025          ;
+; Flow Status                        ; Successful - Mon Jan  6 23:38:01 2025          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; fluid_simulation                               ;
 ; Top-level Entity Name              ; fluid_simulation                               ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 2,775 / 49,760 ( 6 % )                         ;
-;     Total combinational functions  ; 2,502 / 49,760 ( 5 % )                         ;
-;     Dedicated logic registers      ; 1,050 / 49,760 ( 2 % )                         ;
-; Total registers                    ; 1050                                           ;
+; Total logic elements               ; 3,217 / 49,760 ( 6 % )                         ;
+;     Total combinational functions  ; 2,934 / 49,760 ( 6 % )                         ;
+;     Dedicated logic registers      ; 1,294 / 49,760 ( 3 % )                         ;
+; Total registers                    ; 1294                                           ;
 ; Total pins                         ; 73 / 360 ( 20 % )                              ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 314,514 / 1,677,312 ( 19 % )                   ;
-; Embedded Multiplier 9-bit elements ; 104 / 288 ( 36 % )                             ;
+; Embedded Multiplier 9-bit elements ; 108 / 288 ( 38 % )                             ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                                 ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                                  ;
 ; ADC blocks                         ; 0 / 2 ( 0 % )                                  ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/05/2025 18:01:41 ;
+; Start date & time ; 01/06/2025 23:37:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fluid_simulation    ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 226805416265744.173611810107148        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 226805416265744.173622464413644        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
@@ -98,11 +98,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4877 MB             ; 00:00:06                           ;
-; Fitter               ; 00:00:18     ; 1.7                     ; 6138 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4731 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 3.0                     ; 4930 MB             ; 00:00:04                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:29                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4885 MB             ; 00:00:04                           ;
+; Fitter               ; 00:00:20     ; 1.7                     ; 6149 MB             ; 00:00:15                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4755 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:03     ; 2.9                     ; 4947 MB             ; 00:00:04                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:00:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
