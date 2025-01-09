@@ -6,7 +6,7 @@ Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
 Slack : -12.177
 TNS   : -2802.617
 
-Type  : Slow 1200mV 85C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 85C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 30.172
 TNS   : 0.000
 
@@ -14,7 +14,7 @@ Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
 Slack : 0.231
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 85C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 0.415
 TNS   : 0.000
 
@@ -22,7 +22,7 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
 Slack : 9.411
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 19.700
 TNS   : 0.000
 
@@ -30,7 +30,7 @@ Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
 Slack : -9.443
 TNS   : -2070.442
 
-Type  : Slow 1200mV 0C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 30.934
 TNS   : 0.000
 
@@ -38,7 +38,7 @@ Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
 Slack : 0.227
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 0.335
 TNS   : 0.000
 
@@ -46,7 +46,7 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
 Slack : 9.420
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 19.709
 TNS   : 0.000
 
@@ -54,7 +54,7 @@ Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
 Slack : 6.131
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Fast 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 35.747
 TNS   : 0.000
 
@@ -62,7 +62,7 @@ Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
 Slack : 0.089
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Fast 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 0.207
 TNS   : 0.000
 
@@ -70,7 +70,7 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
 Slack : 9.264
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'draw_inst|vgapll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 19.720
 TNS   : 0.000
 

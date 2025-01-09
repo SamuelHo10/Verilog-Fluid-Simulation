@@ -55,6 +55,15 @@ module fluid_simulation (
   localparam V_VEL_ADDRW = $clog2(V_VEL_SIZE);
 
 
+  logic clk_25MHz, clk_2MHz, clk_2MHz_p270;
+  pll pll_inst (
+      .inclk0(MAX10_CLK1_50),
+      .c0(clk_25MHz),
+      .c1(clk_2MHz),
+      .c2(clk_2MHz_p270)
+  );
+
+
 
   logic [FIELD_ADDRW-1:0] field_addr_write, field_addr_read;
   logic [FIELD_DATAW-1:0] field_data_in, field_data_out;
@@ -116,6 +125,7 @@ module fluid_simulation (
       .DRAW_DATAW (DRAW_DATAW)
   ) draw_inst (
       .clk(MAX10_CLK1_50),
+      .vga_clk(clk_25MHz),
       .vga_r(VGA_R),
       .vga_g(VGA_G),
       .vga_b(VGA_B),

@@ -6,6 +6,7 @@ module draw #(
     parameter DRAW_DATAW  = 1
 ) (
     input logic clk,
+    input logic vga_clk,
     input logic [DRAW_ADDRW-1:0] draw_addr_write,
     input logic [DRAW_DATAW-1:0] draw_data_in,
     input logic draw_we,
@@ -18,15 +19,14 @@ module draw #(
 
   logic h_sync, v_sync;
   logic disp_ena;
-  logic vga_clk;
 
   logic [DRAW_ADDRW-1:0] draw_addr_read;
   logic [9:0] col, row;
   logic [DRAW_DATAW-1:0] draw_data_out;
 
   bram_sdp #(
-      .WIDTH (DRAW_DATAW),
-      .DEPTH (DRAW_SIZE)//,
+      .WIDTH(DRAW_DATAW),
+      .DEPTH(DRAW_SIZE)    //,
       //.INIT_F("cheetah.mem")
   ) bram_draw_inst (
       .clk_write(clk),
@@ -44,12 +44,6 @@ module draw #(
     vga_hs <= h_sync;
     vga_vs <= v_sync;
   end
-
-  // Instantiate PLL to convert the 50 MHz clock to a 25 MHz clock for timing.
-  pll vgapll_inst (
-      .inclk0(clk),
-      .c0    (vga_clk)
-  );
 
   // Instantite VGA controller
   vga_controller vga_controller_inst (
