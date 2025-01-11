@@ -7,6 +7,7 @@ module norm (
     input logic start,
     output logic signed [31:0] xn,
     output logic signed [31:0] yn,
+    output logic [31:0] mag,
     output logic done
 );
 
@@ -58,6 +59,7 @@ module norm (
         startsqrt <= 0;
         if (donesqrt) begin
           state <= STEP3;
+          mag <= root;
           divisor <= root;
           divident <= x;
           startdiv <= 1;

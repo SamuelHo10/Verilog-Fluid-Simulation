@@ -41,9 +41,9 @@ module sqrt #(
     case (state)
       CALC: begin
         if (i == ITER - 1) begin
-          done <= 1;
-          root <= q_next;
-          rem  <= ac_next[WIDTH+1:2];
+          done  <= 1;
+          root  <= q_next;
+          rem   <= ac_next[WIDTH+1:2];
           state <= IDLE;
         end else begin
           i  <= i + 1;
