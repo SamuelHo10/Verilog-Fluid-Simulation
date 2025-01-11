@@ -18,6 +18,11 @@ module update_field_tb ();
   logic [FIELD_DATAW-1:0] field_data_in;
   logic [FIELD_ADDRW-1:0] field_addr_write;
   logic field_we;
+  logic [15:0] cursor_field_x_prev;
+  logic [15:0] cursor_field_y_prev;
+  logic [15:0] cursor_x;
+  logic [15:0] cursor_y;
+  logic key_pressed;
 
   // Instantiate the Unit Under Test (UUT)
   update_field #(
@@ -30,7 +35,12 @@ module update_field_tb ();
       .done(done),
       .field_data_in(field_data_in),
       .field_addr_write(field_addr_write),
-      .field_we(field_we)
+      .field_we(field_we),
+      .cursor_field_x_prev(cursor_field_x_prev),
+      .cursor_field_y_prev(cursor_field_y_prev),
+      .cursor_x(cursor_x),
+      .cursor_y(cursor_y),
+      .key_pressed(key_pressed)
   );
 
   initial begin
@@ -39,7 +49,11 @@ module update_field_tb ();
   end
 
   initial begin
-
+    key_pressed = 1;
+    cursor_field_x_prev = 0;
+    cursor_field_y_prev = 0;
+    cursor_x = 100;
+    cursor_y = 100;
     for (int i = 0; i < 100; i++) begin
       #10;
       start = 1;

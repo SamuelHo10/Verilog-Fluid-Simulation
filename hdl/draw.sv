@@ -14,8 +14,12 @@ module draw #(
     output logic [3:0] vga_g,
     output logic [3:0] vga_b,
     output logic vga_hs,
-    output logic vga_vs
+    output logic vga_vs,
+    input logic [15:0] cursor_x,
+    input logic [15:0] cursor_y
 );
+
+  localparam CURSOR_SIZE = 5;
 
   logic h_sync, v_sync;
   logic disp_ena;
@@ -38,9 +42,29 @@ module draw #(
       .data_out(draw_data_out)
   );
 
+  logic [15:0] start_cursor_x, start_cursor_y;
+  logic [15:0] end_cursor_x, end_cursor_y;
+
+  assign start_cursor_x = cursor_x > CURSOR_SIZE ? cursor_x - CURSOR_SIZE : 0;
+  assign start_cursor_y = cursor_y > CURSOR_SIZE ? cursor_y - CURSOR_SIZE : 0;
+  assign end_cursor_x = cursor_x + CURSOR_SIZE < DRAW_WIDTH ? cursor_x + CURSOR_SIZE : DRAW_WIDTH;
+  assign end_cursor_y = cursor_y + CURSOR_SIZE < DRAW_HEIGHT ? cursor_y + CURSOR_SIZE : DRAW_HEIGHT;
+
+
 
   always @(posedge vga_clk) begin
-    {vga_r, vga_g, vga_b} <= disp_ena ? {12{draw_data_out}} : 0;
+    if (disp_ena) begin
+      if (col > start_cursor_x && col < end_cursor_x && row > start_cursor_y && row < end_cursor_y) begin
+        {vga_r, vga_g, vga_b} <= 12'b1111_0000_0000;
+      end else if (draw_data_out == 2'b1) begin
+        {vga_r, vga_g, vga_b} <= 12'b1111_1111_1111;
+      end else begin
+        {vga_r, vga_g, vga_b} <= 12'b0000_0000_0000;
+      end
+    end else begin
+      {vga_r, vga_g, vga_b} <= 0;
+    end
+
     vga_hs <= h_sync;
     vga_vs <= v_sync;
   end

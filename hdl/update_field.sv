@@ -17,10 +17,23 @@ module update_field #(
 ) (
     input logic clk,
     input logic start,
+    input logic [15:0] cursor_field_x_prev,
+    input logic [15:0] cursor_field_y_prev,
+    input logic [15:0] cursor_field_x,
+    input logic [15:0] cursor_field_y,
+    input logic [31:0] cursor_x,
+    input logic [31:0] cursor_y,
+    input logic key_pressed,
     output logic done,
     output logic [FIELD_ADDRW-1:0] field_addr_write,
     output logic [FIELD_DATAW-1:0] field_data_in,
-    output logic field_we
+    output logic field_we,
+    output logic [7:0] hex0,
+    output logic [7:0] hex1,
+    output logic [7:0] hex2,
+    output logic [7:0] hex3,
+    output logic [7:0] hex4,
+    output logic [7:0] hex5
 );
 
   logic [31:0] xi, yi, xn, yn, mag;
@@ -165,13 +178,55 @@ module update_field #(
       .done(done_write_vels)
   );
 
+  logic signed [31:0] field_cursor_diff_x, field_cursor_diff_y;
+  logic [31:0] cursor_mag;
+  always_comb begin
+    field_cursor_diff_x = cursor_x - {cursor_field_x_prev * BLOCK_SIZE, 16'b0};
+    field_cursor_diff_y = cursor_y - {cursor_field_y_prev * BLOCK_SIZE, 16'b0};
+  end
 
+  seg7 seg7_inst0 (
+      .in(cursor_mag[3:0]),
+      .display(hex0),
+      .dot(1'b0)
+  );
+
+  seg7 seg7_inst1 (
+      .in(cursor_mag[7:4]),
+      .display(hex1),
+      .dot(1'b0)
+  );
+
+  seg7 seg7_inst2 (
+      .in(cursor_mag[11:8]),
+      .display(hex2),
+      .dot(1'b0)
+  );
+
+  seg7 seg7_inst3 (
+      .in(cursor_mag[15:12]),
+      .display(hex3),
+      .dot(1'b0)
+  );
+
+  seg7 seg7_inst4 (
+      .in(cursor_mag[19:16]),
+      .display(hex4),
+      .dot(1'b1)
+  );
+
+  seg7 seg7_inst5 (
+      .in(cursor_mag[23:20]),
+      .display(hex5),
+      .dot(1'b0)
+  );
 
 
   enum {
     IDLE,
     READ1,
     SUB1,
+    CURSOR_FIELD,
     WRITE_VELS1,
     CHANGE_FIELD1,
     READ2,
@@ -187,7 +242,6 @@ module update_field #(
     start_write_vels <= 0;
     startnorm <= 0;
 
-
     case (state)
       READ1: begin
 
@@ -202,6 +256,9 @@ module update_field #(
           ) - $signed(
               vy2[31:0]
           );
+          if (key_pressed && cursor_field_x_prev == field_x && cursor_field_y_prev == field_y) begin
+            state <= CURSOR_FIELD;
+          end
         end
       end
       SUB1: begin
@@ -211,6 +268,14 @@ module update_field #(
         vx2_write <= {vx2[32], $signed(vx2[31:0]) + vel_update};
         vy1_write <= {vy1[32], $signed(vy1[31:0]) - vel_update};
         vy2_write <= {vy2[32], $signed(vy2[31:0]) + vel_update};
+      end
+      CURSOR_FIELD: begin
+        start_write_vels <= 1;
+        state <= WRITE_VELS1;
+        vx1_write <= {vx1[32], field_cursor_diff_x >>> 3};
+        vx2_write <= {vx2[32], field_cursor_diff_x >>> 3};
+        vy1_write <= {vy1[32], field_cursor_diff_y >>> 3};
+        vy2_write <= {vy2[32], field_cursor_diff_y >>> 3};
       end
       WRITE_VELS1: begin
         if (done_write_vels) begin
@@ -245,6 +310,11 @@ module update_field #(
         if (donenorm) begin
           state <= CHANGE_FIELD2;
           field_data_in <= {xn, yn, mag};
+
+          if(field_x == cursor_field_x && field_y == cursor_field_y) begin
+            cursor_mag <= mag;
+          end
+
           field_we <= 1;
         end
       end

@@ -35,7 +35,7 @@ module fluid_simulation (
   localparam DRAW_HEIGHT = 480;
   localparam DRAW_SIZE = DRAW_WIDTH * DRAW_HEIGHT;
   localparam DRAW_ADDRW = $clog2(DRAW_SIZE);
-  localparam DRAW_DATAW = 1;
+  localparam DRAW_DATAW = 2;
 
   localparam FIELD_WIDTH = 8;
   localparam FIELD_HEIGHT = 6;
@@ -74,7 +74,34 @@ module fluid_simulation (
   logic draw_we, field_we;
   logic start_update;
 
+  logic [31:0] cursor_x, cursor_y;
+  logic [15:0] cursor_field_x, cursor_field_y, cursor_field_x_prev, cursor_field_y_prev;
 
+
+  cursor #(
+      .DRAW_WIDTH (DRAW_WIDTH),
+      .DRAW_HEIGHT(DRAW_HEIGHT),
+      .BLOCK_SIZE (BLOCK_SIZE)
+  ) cursor_inst (
+      .clk(clk_25MHz),
+      .spi_clk(clk_2MHz),
+      .spi_clk_out(clk_2MHz_p270),
+      .KEY(KEY),
+      .GSENSOR_CS_N(GSENSOR_CS_N),
+      .GSENSOR_INT(GSENSOR_INT),
+      .GSENSOR_SCLK(GSENSOR_SCLK),
+      .GSENSOR_SDI(GSENSOR_SDI),
+      .GSENSOR_SDO(GSENSOR_SDO),
+      .cursor_x(cursor_x),
+      .cursor_y(cursor_y),
+      .cursor_field_x(cursor_field_x),
+      .cursor_field_y(cursor_field_y),
+      .cursor_field_x_prev(cursor_field_x_prev),
+      .cursor_field_y_prev(cursor_field_y_prev)
+  );
+
+  logic key_pressed;
+  assign key_pressed = ~KEY[0];
   update_field #(
       .FIELD_WIDTH(FIELD_WIDTH),
       .FIELD_HEIGHT(FIELD_HEIGHT),
@@ -83,11 +110,24 @@ module fluid_simulation (
       .VEL_DATAW(VEL_DATAW)
   ) update_field_inst (
       .clk(MAX10_CLK1_50),
-      .start(start_update),
+      .start(1'b1),
       .done(),
+      .cursor_field_x_prev(cursor_field_x_prev),
+      .cursor_field_y_prev(cursor_field_y_prev),
+      .cursor_field_x(cursor_field_x),
+      .cursor_field_y(cursor_field_y),
+      .cursor_x(cursor_x),
+      .cursor_y(cursor_y),
+      .key_pressed(key_pressed),
       .field_addr_write(field_addr_write),
       .field_data_in(field_data_in),
-      .field_we(field_we)
+      .field_we(field_we),
+      .hex0(HEX0),
+      .hex1(HEX1),
+      .hex2(HEX2),
+      .hex3(HEX3),
+      .hex4(HEX4),
+      .hex5(HEX5)
   );
 
   draw_blocks #(
@@ -133,7 +173,9 @@ module fluid_simulation (
       .vga_vs(VGA_VS),
       .draw_addr_write(draw_addr_write),
       .draw_data_in(draw_data_in),
-      .draw_we(draw_we)
+      .draw_we(draw_we),
+      .cursor_x(cursor_x[31:16]),
+      .cursor_y(cursor_y[31:16])
   );
   logic temp;
   assign temp = ~KEY[0];

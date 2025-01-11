@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fluid_simulation
-Wed Jan  8 13:30:02 2025
+Fri Jan 10 22:20:48 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edition
 
 
@@ -16,63 +16,77 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edi
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis DSP Block Usage Summary
  10. Analysis & Synthesis IP Cores Summary
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Registers Packed Into Inferred Megafunctions
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated
- 16. Source assignments for draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_88g1:auto_generated
- 17. Source assignments for update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0|altsyncram_6vl1:auto_generated
- 18. Source assignments for update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0|altsyncram_opl1:auto_generated
- 19. Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component
- 20. Parameter Settings for User Entity Instance: update_field:update_field_inst
- 21. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst
- 22. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst
- 23. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst
- 24. Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst
- 25. Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst
- 26. Parameter Settings for User Entity Instance: update_field:update_field_inst|read_vels:read_vels_inst
- 27. Parameter Settings for User Entity Instance: update_field:update_field_inst|write_vels:write_vels_inst
- 28. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst
- 29. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst
- 30. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst
- 31. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst
- 32. Parameter Settings for User Entity Instance: draw:draw_inst
- 33. Parameter Settings for User Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst
- 34. Parameter Settings for User Entity Instance: draw:draw_inst|vga_controller:vga_controller_inst
- 35. Parameter Settings for Inferred Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0
- 36. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0
- 37. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0
- 38. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0
- 39. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7
- 40. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult8
- 41. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult0
- 42. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult3
- 43. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult1
- 44. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult4
- 45. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult5
- 46. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult6
- 47. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult2
- 48. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|lpm_mult:Mult0
- 49. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult0
- 50. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult1
- 51. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult0
- 52. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1
- 53. altpll Parameter Settings by Entity Instance
- 54. altsyncram Parameter Settings by Entity Instance
- 55. lpm_mult Parameter Settings by Entity Instance
- 56. Port Connectivity Checks: "draw:draw_inst|vga_controller:vga_controller_inst"
- 57. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst"
- 58. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst"
- 59. Port Connectivity Checks: "draw_blocks:draw_blocks_inst"
- 60. Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst"
- 61. Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|div:div_inst"
- 62. Port Connectivity Checks: "update_field:update_field_inst"
- 63. Port Connectivity Checks: "pll:pll_inst"
- 64. Post-Synthesis Netlist Statistics for Top Partition
- 65. Elapsed Time Per Partition
- 66. Analysis & Synthesis Messages
- 67. Analysis & Synthesis Suppressed Messages
+ 11. State Machine - |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|spi_state
+ 12. State Machine - |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|state
+ 13. Registers Removed During Synthesis
+ 14. Removed Registers Triggering Further Register Optimizations
+ 15. General Register Statistics
+ 16. Inverted Register Statistics
+ 17. Registers Packed Into Inferred Megafunctions
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated
+ 20. Source assignments for draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0|altsyncram_88g1:auto_generated
+ 21. Source assignments for update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0|altsyncram_6vl1:auto_generated
+ 22. Source assignments for update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0|altsyncram_opl1:auto_generated
+ 23. Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component
+ 24. Parameter Settings for User Entity Instance: cursor:cursor_inst
+ 25. Parameter Settings for User Entity Instance: cursor:cursor_inst|spi_control:spi_ctrl
+ 26. Parameter Settings for User Entity Instance: update_field:update_field_inst
+ 27. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst
+ 28. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst
+ 29. Parameter Settings for User Entity Instance: update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst
+ 30. Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst
+ 31. Parameter Settings for User Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst
+ 32. Parameter Settings for User Entity Instance: update_field:update_field_inst|read_vels:read_vels_inst
+ 33. Parameter Settings for User Entity Instance: update_field:update_field_inst|write_vels:write_vels_inst
+ 34. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst
+ 35. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst
+ 36. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst
+ 37. Parameter Settings for User Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst
+ 38. Parameter Settings for User Entity Instance: draw:draw_inst
+ 39. Parameter Settings for User Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst
+ 40. Parameter Settings for User Entity Instance: draw:draw_inst|vga_controller:vga_controller_inst
+ 41. Parameter Settings for Inferred Entity Instance: draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0
+ 42. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0
+ 43. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0
+ 44. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|bram_sdp:bram_v_vel_inst|altsyncram:memory_rtl_0
+ 45. Parameter Settings for Inferred Entity Instance: cursor:cursor_inst|lpm_mult:Mult0
+ 46. Parameter Settings for Inferred Entity Instance: cursor:cursor_inst|lpm_mult:Mult1
+ 47. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7
+ 48. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult8
+ 49. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult0
+ 50. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult3
+ 51. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|lpm_mult:Mult1
+ 52. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult4
+ 53. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult5
+ 54. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult6
+ 55. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult2
+ 56. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|lpm_mult:Mult0
+ 57. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult0
+ 58. Parameter Settings for Inferred Entity Instance: draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult1
+ 59. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult0
+ 60. Parameter Settings for Inferred Entity Instance: update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1
+ 61. altpll Parameter Settings by Entity Instance
+ 62. altsyncram Parameter Settings by Entity Instance
+ 63. lpm_mult Parameter Settings by Entity Instance
+ 64. Port Connectivity Checks: "draw:draw_inst|vga_controller:vga_controller_inst"
+ 65. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst"
+ 66. Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst"
+ 67. Port Connectivity Checks: "draw_blocks:draw_blocks_inst"
+ 68. Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst5"
+ 69. Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst4"
+ 70. Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst3"
+ 71. Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst2"
+ 72. Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst1"
+ 73. Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst0"
+ 74. Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst"
+ 75. Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|div:div_inst"
+ 76. Port Connectivity Checks: "update_field:update_field_inst"
+ 77. Port Connectivity Checks: "cursor:cursor_inst|spi_control:spi_ctrl"
+ 78. Post-Synthesis Netlist Statistics for Top Partition
+ 79. Elapsed Time Per Partition
+ 80. Analysis & Synthesis Messages
+ 81. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -99,19 +113,19 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                        ;
 +------------------------------------+----------------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan  8 13:30:02 2025                          ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 10 22:20:48 2025                          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edition ;
 ; Revision Name                      ; fluid_simulation                                               ;
 ; Top-level Entity Name              ; fluid_simulation                                               ;
 ; Family                             ; MAX 10                                                         ;
-; Total logic elements               ; 3,246                                                          ;
-;     Total combinational functions  ; 2,934                                                          ;
-;     Dedicated logic registers      ; 1,295                                                          ;
-; Total registers                    ; 1295                                                           ;
+; Total logic elements               ; 3,934                                                          ;
+;     Total combinational functions  ; 3,528                                                          ;
+;     Dedicated logic registers      ; 1,512                                                          ;
+; Total registers                    ; 1512                                                           ;
 ; Total pins                         ; 73                                                             ;
 ; Total virtual pins                 ; 0                                                              ;
 ; Total memory bits                  ; 314,514                                                        ;
-; Embedded Multiplier 9-bit elements ; 108                                                            ;
+; Embedded Multiplier 9-bit elements ; 116                                                            ;
 ; Total PLLs                         ; 1                                                              ;
 ; UFM blocks                         ; 0                                                              ;
 ; ADC blocks                         ; 0                                                              ;
@@ -217,7 +231,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
 ;     Processor 5            ;   0.1%      ;
@@ -233,6 +247,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                              ; Library ;
 +----------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; ../hdl/seg7.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/seg7.sv                                                  ;         ;
+; ../hdl/spi_serdes.v                                ; yes             ; User Verilog HDL File                                 ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_serdes.v                                             ;         ;
+; ../hdl/spi_control.v                               ; yes             ; User Verilog HDL File                                 ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_control.v                                            ;         ;
+; ../hdl/cursor.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv                                                ;         ;
 ; ../hdl/write_vels.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv                                            ;         ;
 ; ../hdl/update_field.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv                                          ;         ;
 ; ../hdl/read_vels.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv                                             ;         ;
@@ -275,6 +293,7 @@ https://fpgasoftware.intel.com/eula.
 ; multcore.inc                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.inc                                                    ;         ;
 ; bypassff.inc                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/bypassff.inc                                                    ;         ;
 ; altshift.inc                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altshift.inc                                                    ;         ;
+; db/mult_9rs.tdf                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mult_9rs.tdf                                    ;         ;
 ; db/mult_qgs.tdf                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mult_qgs.tdf                                    ;         ;
 ; db/mult_ogs.tdf                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mult_ogs.tdf                                    ;         ;
 ; db/mult_iks.tdf                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mult_iks.tdf                                    ;         ;
@@ -286,34 +305,34 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 3,246               ;
+; Estimated Total logic elements              ; 3,934               ;
 ;                                             ;                     ;
-; Total combinational functions               ; 2934                ;
+; Total combinational functions               ; 3528                ;
 ; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 459                 ;
-;     -- 3 input functions                    ; 1839                ;
-;     -- <=2 input functions                  ; 636                 ;
+;     -- 4 input functions                    ; 689                 ;
+;     -- 3 input functions                    ; 2055                ;
+;     -- <=2 input functions                  ; 784                 ;
 ;                                             ;                     ;
 ; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 882                 ;
-;     -- arithmetic mode                      ; 2052                ;
+;     -- normal mode                          ; 1225                ;
+;     -- arithmetic mode                      ; 2303                ;
 ;                                             ;                     ;
-; Total registers                             ; 1295                ;
-;     -- Dedicated logic registers            ; 1295                ;
+; Total registers                             ; 1512                ;
+;     -- Dedicated logic registers            ; 1512                ;
 ;     -- I/O registers                        ; 0                   ;
 ;                                             ;                     ;
 ; I/O pins                                    ; 73                  ;
 ; Total memory bits                           ; 314514              ;
 ;                                             ;                     ;
-; Embedded Multiplier 9-bit elements          ; 108                 ;
+; Embedded Multiplier 9-bit elements          ; 116                 ;
 ;                                             ;                     ;
 ; Total PLLs                                  ; 1                   ;
 ;     -- PLLs                                 ; 1                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; MAX10_CLK1_50~input ;
-; Maximum fan-out                             ; 1433                ;
-; Total fan-out                               ; 17840               ;
-; Average fan-out                             ; 3.81                ;
+; Maximum fan-out                             ; 1455                ;
+; Total fan-out                               ; 20667               ;
+; Average fan-out                             ; 3.75                ;
 +---------------------------------------------+---------------------+
 
 
@@ -322,15 +341,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                               ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |fluid_simulation                            ; 2934 (3)            ; 1295 (2)                  ; 314514      ; 0          ; 108          ; 0       ; 54        ; 73   ; 0            ; 0          ; |fluid_simulation                                                                                                                                 ; fluid_simulation ; work         ;
-;    |draw:draw_inst|                          ; 197 (1)             ; 63 (14)                   ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst                                                                                                                  ; draw             ; work         ;
+; |fluid_simulation                            ; 3528 (1)            ; 1512 (0)                  ; 314514      ; 0          ; 116          ; 0       ; 58        ; 73   ; 0            ; 0          ; |fluid_simulation                                                                                                                                 ; fluid_simulation ; work         ;
+;    |cursor:cursor_inst|                      ; 313 (183)           ; 176 (85)                  ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|cursor:cursor_inst                                                                                                              ; cursor           ; work         ;
+;       |lpm_mult:Mult0|                       ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |fluid_simulation|cursor:cursor_inst|lpm_mult:Mult0                                                                                               ; lpm_mult         ; work         ;
+;          |mult_9rs:auto_generated|           ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |fluid_simulation|cursor:cursor_inst|lpm_mult:Mult0|mult_9rs:auto_generated                                                                       ; mult_9rs         ; work         ;
+;       |lpm_mult:Mult1|                       ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |fluid_simulation|cursor:cursor_inst|lpm_mult:Mult1                                                                                               ; lpm_mult         ; work         ;
+;          |mult_9rs:auto_generated|           ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |fluid_simulation|cursor:cursor_inst|lpm_mult:Mult1|mult_9rs:auto_generated                                                                       ; mult_9rs         ; work         ;
+;       |spi_control:spi_ctrl|                 ; 82 (57)             ; 91 (63)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl                                                                                         ; spi_control      ; work         ;
+;          |spi_serdes:serdes|                 ; 25 (25)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes                                                                       ; spi_serdes       ; work         ;
+;    |draw:draw_inst|                          ; 356 (159)           ; 82 (14)                   ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst                                                                                                                  ; draw             ; work         ;
 ;       |bram_sdp:bram_draw_inst|              ; 123 (0)             ; 7 (1)                     ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst                                                                                          ; bram_sdp         ; work         ;
 ;          |altsyncram:memory_rtl_0|           ; 123 (0)             ; 6 (0)                     ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0                                                                  ; altsyncram       ; work         ;
 ;             |altsyncram_qmc1:auto_generated| ; 123 (0)             ; 6 (6)                     ; 307200      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated                                   ; altsyncram_qmc1  ; work         ;
 ;                |decode_0l9:rden_decode_b|    ; 46 (46)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated|decode_0l9:rden_decode_b          ; decode_0l9       ; work         ;
 ;                |decode_79a:decode2|          ; 47 (47)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated|decode_79a:decode2                ; decode_79a       ; work         ;
 ;                |mux_g3b:mux3|                ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|bram_sdp:bram_draw_inst|altsyncram:memory_rtl_0|altsyncram_qmc1:auto_generated|mux_g3b:mux3                      ; mux_g3b          ; work         ;
-;       |vga_controller:vga_controller_inst|   ; 73 (73)             ; 42 (42)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|vga_controller:vga_controller_inst                                                                               ; vga_controller   ; work         ;
+;       |vga_controller:vga_controller_inst|   ; 74 (74)             ; 61 (61)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw:draw_inst|vga_controller:vga_controller_inst                                                                               ; vga_controller   ; work         ;
 ;    |draw_blocks:draw_blocks_inst|            ; 1406 (77)           ; 200 (33)                  ; 4608        ; 0          ; 88           ; 0       ; 44        ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst                                                                                                    ; draw_blocks      ; work         ;
 ;       |bram_sdp:bram_field_inst|             ; 0 (0)               ; 0 (0)                     ; 4608        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst                                                                           ; bram_sdp         ; work         ;
 ;          |altsyncram:memory_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 4608        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|draw_blocks:draw_blocks_inst|bram_sdp:bram_field_inst|altsyncram:memory_rtl_0                                                   ; altsyncram       ; work         ;
@@ -362,7 +388,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |pll:pll_inst|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|pll:pll_inst                                                                                                                    ; pll              ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|pll:pll_inst|altpll:altpll_component                                                                                            ; altpll           ; work         ;
 ;          |pll_altpll1:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|pll:pll_inst|altpll:altpll_component|pll_altpll1:auto_generated                                                                 ; pll_altpll1      ; work         ;
-;    |update_field:update_field_inst|          ; 1328 (442)          ; 1030 (401)                ; 2706        ; 0          ; 20           ; 0       ; 10        ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst                                                                                                  ; update_field     ; work         ;
+;    |update_field:update_field_inst|          ; 1452 (538)          ; 1054 (425)                ; 2706        ; 0          ; 20           ; 0       ; 10        ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst                                                                                                  ; update_field     ; work         ;
 ;       |bram_sdp:bram_h_vel_inst|             ; 0 (0)               ; 0 (0)                     ; 1386        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_h_vel_inst                                                                         ; bram_sdp         ; work         ;
 ;          |altsyncram:memory_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 1386        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0                                                 ; altsyncram       ; work         ;
 ;             |altsyncram_6vl1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1386        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|bram_sdp:bram_h_vel_inst|altsyncram:memory_rtl_0|altsyncram_6vl1:auto_generated                  ; altsyncram_6vl1  ; work         ;
@@ -380,7 +406,13 @@ https://fpgasoftware.intel.com/eula.
 ;             |mult_qgs:auto_generated|        ; 60 (60)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|lpm_mult:Mult1|mult_qgs:auto_generated                                            ; mult_qgs         ; work         ;
 ;          |sqrt:sqrt_inst|                    ; 139 (139)           ; 135 (135)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst                                                                    ; sqrt             ; work         ;
 ;       |read_vels:read_vels_inst|             ; 89 (89)             ; 137 (137)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|read_vels:read_vels_inst                                                                         ; read_vels        ; work         ;
-;       |write_vels:write_vels_inst|           ; 132 (132)           ; 72 (72)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|write_vels:write_vels_inst                                                                       ; write_vels       ; work         ;
+;       |seg7:seg7_inst0|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|seg7:seg7_inst0                                                                                  ; seg7             ; work         ;
+;       |seg7:seg7_inst1|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|seg7:seg7_inst1                                                                                  ; seg7             ; work         ;
+;       |seg7:seg7_inst2|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|seg7:seg7_inst2                                                                                  ; seg7             ; work         ;
+;       |seg7:seg7_inst3|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|seg7:seg7_inst3                                                                                  ; seg7             ; work         ;
+;       |seg7:seg7_inst4|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|seg7:seg7_inst4                                                                                  ; seg7             ; work         ;
+;       |seg7:seg7_inst5|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|seg7:seg7_inst5                                                                                  ; seg7             ; work         ;
+;       |write_vels:write_vels_inst|           ; 118 (118)           ; 72 (72)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fluid_simulation|update_field:update_field_inst|write_vels:write_vels_inst                                                                       ; write_vels       ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -403,11 +435,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
 ; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 54          ;
+; Simple Multipliers (18-bit)           ; 58          ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 108         ;
+; Embedded Multiplier 9-bit elements    ; 116         ;
 ; Signed Embedded Multipliers           ; 14          ;
-; Unsigned Embedded Multipliers         ; 13          ;
+; Unsigned Embedded Multipliers         ; 17          ;
 ; Mixed Sign Embedded Multipliers       ; 27          ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
 ; Dedicated Input Shift Register Chains ; 0           ;
@@ -424,61 +456,117 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------+--------------+---------+--------------+--------------+--------------------------------+-----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                            ;
-+------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                ; Reason for Removal                                                                                             ;
-+------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[2,4,6,8,11,15,19,23,26,28,30] ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[3,5,7,9,13,17,25,27]          ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[29] ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[12,14,16,18,20,22]            ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[24] ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[10]                           ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[21] ;
-; update_field:update_field_inst|write_vels:write_vels_inst|state[2,6,8,10,18,22,26,30]                                        ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[4]                                 ;
-; update_field:update_field_inst|write_vels:write_vels_inst|state[5,12,16,20,24,28]                                            ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[3]                                 ;
-; update_field:update_field_inst|write_vels:write_vels_inst|state[9,11,13,15,17,19,21,23,25,27,29,31]                          ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[7]                                 ;
-; update_field:update_field_inst|read_vels:read_vels_inst|state[7,11,14,16,18,20,22,24,26,28,30]                               ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                   ;
-; update_field:update_field_inst|read_vels:read_vels_inst|state[6,8,10,12]                                                     ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[4]                                   ;
-; update_field:update_field_inst|read_vels:read_vels_inst|state[9,13,15,17,19,21,23,25,27,29,31]                               ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[5]                                   ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[1]                                                            ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[0]                                  ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[3,5,7,9,11,13,15,17,19,21,23,25,27,29,31]                 ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[4,6,8,10,14,18,22,26,30]                                  ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[2]                              ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[16,20,24,28]                                              ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[12]                             ;
-; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[2,6,8,10,12,14,16,18,20,22,24,26,28,30]      ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
-; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[5,13,17,21,25,29]                            ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                 ;
-; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[7,11,15,19,23,27,31]                         ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[1]                 ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[24]                           ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[21]                           ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[29] ;
-; update_field:update_field_inst|write_vels:write_vels_inst|state[3,7,14]                                                      ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[4]                                 ;
-; update_field:update_field_inst|read_vels:read_vels_inst|state[4]                                                             ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                   ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[12]                                                       ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
-; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[1,9]                                         ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[29]                           ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
-; update_field:update_field_inst|read_vels:read_vels_inst|state[5]                                                             ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                   ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[2]                                                        ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
-; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                                           ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
-; draw_blocks:draw_blocks_inst|block_x_int[1..3]                                                                               ; Merged with draw_blocks:draw_blocks_inst|block_x_int[0]                                                        ;
-; draw_blocks:draw_blocks_inst|block_y_int[1..3]                                                                               ; Merged with draw_blocks:draw_blocks_inst|block_y_int[0]                                                        ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[2..9,11..31]                                                   ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                  ;
-; draw_blocks:draw_blocks_inst|state[2..9,11..31]                                                                              ; Merged with draw_blocks:draw_blocks_inst|state[10]                                                             ;
-; update_field:update_field_inst|state[3..9,11..31]                                                                            ; Merged with update_field:update_field_inst|state[10]                                                           ;
-; update_field:update_field_inst|norm:norm_inst|state[3..9,11..31]                                                             ; Merged with update_field:update_field_inst|norm:norm_inst|state[10]                                            ;
-; state[1..9,11..31]                                                                                                           ; Merged with state[10]                                                                                          ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31]                           ; Stuck at GND due to stuck port data_in                                                                         ;
-; update_field:update_field_inst|write_vels:write_vels_inst|state[4]                                                           ; Stuck at GND due to stuck port data_in                                                                         ;
-; update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                                             ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|state[10]                                                                                       ; Stuck at GND due to stuck port data_in                                                                         ;
-; state[10]                                                                                                                    ; Stuck at GND due to stuck port data_in                                                                         ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[0]                                                            ; Stuck at GND due to stuck port data_in                                                                         ;
-; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                                                        ; Stuck at GND due to stuck port data_in                                                                         ;
-; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                                           ; Stuck at GND due to stuck port data_in                                                                         ;
-; update_field:update_field_inst|state[10]                                                                                     ; Stuck at GND due to stuck port data_in                                                                         ;
-; update_field:update_field_inst|norm:norm_inst|state[10]                                                                      ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|block_x_int[0]                                                                                  ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|block_y_int[0]                                                                                  ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                                            ; Stuck at GND due to stuck port data_in                                                                         ;
-; draw:draw_inst|vga_controller:vga_controller_inst|addr[19]                                                                   ; Lost fanout                                                                                                    ;
-; Total Number of Removed Registers = 311                                                                                      ;                                                                                                                ;
-+------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------+
+; State Machine - |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|spi_state ;
++--------------------+----------------+--------------------+--------------------------+
+; Name               ; spi_state.IDLE ; spi_state.INTERACT ; spi_state.TRANSFER       ;
++--------------------+----------------+--------------------+--------------------------+
+; spi_state.IDLE     ; 0              ; 0                  ; 0                        ;
+; spi_state.TRANSFER ; 1              ; 0                  ; 1                        ;
+; spi_state.INTERACT ; 1              ; 1                  ; 0                        ;
++--------------------+----------------+--------------------+--------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|state ;
++-------------+-------------+------------+-------------+--------------------------------------------+
+; Name        ; state.STALL ; state.READ ; state.WRITE ; state.IDLE                                 ;
++-------------+-------------+------------+-------------+--------------------------------------------+
+; state.IDLE  ; 0           ; 0          ; 0           ; 0                                          ;
+; state.WRITE ; 0           ; 0          ; 1           ; 1                                          ;
+; state.READ  ; 0           ; 1          ; 0           ; 1                                          ;
+; state.STALL ; 1           ; 0          ; 0           ; 1                                          ;
++-------------+-------------+------------+-------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                           ; Reason for Removal                                                                                             ;
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; draw:draw_inst|bram_sdp:bram_draw_inst|data_out[1]                                                                      ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|cursor_field_y_prev[10..15]                                                                          ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|cursor_field_x_prev[10..15]                                                                          ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|spi_control:spi_ctrl|data_tx[7]                                                                      ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[7]                                                ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[5,11,15,19,23,25,26,28]  ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[2..4,6,7,9,13,17,27,29]  ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[30] ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[8,12,14,16,18,20,22]     ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[24] ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[10]                      ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[21] ;
+; update_field:update_field_inst|write_vels:write_vels_inst|state[3,6,8,10,18,22,26,30]                                   ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[4]                                 ;
+; update_field:update_field_inst|write_vels:write_vels_inst|state[12,16,20,24,28]                                         ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[2]                                 ;
+; update_field:update_field_inst|write_vels:write_vels_inst|state[7,9,11,13,15,17,19,21,23,25,27,29,31]                   ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[5]                                 ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[7,11,13,14,18,19,22,25..27,29,30]                         ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                   ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[6,10,12,17,28]                                            ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[4]                                   ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[8,9,15,16,20,21,23,24,31]                                 ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[5]                                   ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[1]                                                       ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[0]                                  ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[2,3,12,16,20,24,28]                                  ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[6,8,10,14,18,22,26,30]                               ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[4]                              ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[7,9,11,13,15,17,19,21,23,25,27,29,31]                ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[5]                              ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[2,6,8,10,12,14,16,18,20,22,24,26,28,30] ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[5,13,17,21,25,29]                       ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                 ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[7,11,15,19,23,27,31]                    ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[1]                 ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[24]                      ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[21]                      ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[30] ;
+; update_field:update_field_inst|write_vels:write_vels_inst|state[2,5,14]                                                 ; Merged with update_field:update_field_inst|write_vels:write_vels_inst|state[4]                                 ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[4]                                                        ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                   ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[4]                                                   ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[9]                                      ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[1]                                      ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                 ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[30]                      ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31] ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[5]                                                        ; Merged with update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                   ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[5]                                                   ; Merged with update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                              ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[3]                                      ; Merged with update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                 ;
+; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|read                                                          ; Merged with cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[15]                          ;
+; update_field:update_field_inst|state[4..9,11..31]                                                                       ; Merged with update_field:update_field_inst|state[10]                                                           ;
+; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[6]                                                ; Merged with cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[2]                           ;
+; update_field:update_field_inst|norm:norm_inst|state[3..9,11..31]                                                        ; Merged with update_field:update_field_inst|norm:norm_inst|state[10]                                            ;
+; cursor:cursor_inst|spi_control:spi_ctrl|data_tx[6]                                                                      ; Merged with cursor:cursor_inst|spi_control:spi_ctrl|data_tx[2]                                                 ;
+; cursor:cursor_inst|state[1..9,11..31]                                                                                   ; Merged with cursor:cursor_inst|state[10]                                                                       ;
+; draw_blocks:draw_blocks_inst|block_x_int[1..3]                                                                          ; Merged with draw_blocks:draw_blocks_inst|block_x_int[0]                                                        ;
+; draw_blocks:draw_blocks_inst|block_y_int[1..3]                                                                          ; Merged with draw_blocks:draw_blocks_inst|block_y_int[0]                                                        ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[2..9,11..31]                                              ; Merged with draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                  ;
+; draw_blocks:draw_blocks_inst|state[2..9,11..31]                                                                         ; Merged with draw_blocks:draw_blocks_inst|state[10]                                                             ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|state[31]                      ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|write_vels:write_vels_inst|state[4]                                                      ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|read_vels:read_vels_inst|state[3]                                                        ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|state[10]                                                                                  ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[0]                                                       ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|state[1]                                                   ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|state[4]                                      ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|state[10]                                                                                            ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|spi_control:spi_ctrl|data_tx[14]                                                                     ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|spi_control:spi_ctrl|data_tx[13]                                                                     ; Stuck at VCC due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[14]                                               ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[13]                                               ; Stuck at VCC due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|state[10]                                                                                ; Stuck at GND due to stuck port data_in                                                                         ;
+; update_field:update_field_inst|norm:norm_inst|state[10]                                                                 ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|block_x_int[0]                                                                             ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|block_y_int[0]                                                                             ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|state[10]                                                       ; Stuck at GND due to stuck port data_in                                                                         ;
+; draw:draw_inst|vga_controller:vga_controller_inst|row[9]                                                                ; Stuck at GND due to stuck port data_in                                                                         ;
+; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|state~5                                                       ; Lost fanout                                                                                                    ;
+; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|state~6                                                       ; Lost fanout                                                                                                    ;
+; draw:draw_inst|vga_controller:vga_controller_inst|addr[19]                                                              ; Lost fanout                                                                                                    ;
+; update_field:update_field_inst|field_we                                                                                 ; Merged with update_field:update_field_inst|state[3]                                                            ;
+; Total Number of Removed Registers = 336                                                                                 ;                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++-----------------------------------------------------+---------------------------+---------------------------------------------------------------------------+
+; Register name                                       ; Reason for Removal        ; Registers Removed due to This Register                                    ;
++-----------------------------------------------------+---------------------------+---------------------------------------------------------------------------+
+; cursor:cursor_inst|spi_control:spi_ctrl|data_tx[7]  ; Stuck at GND              ; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[7]  ;
+;                                                     ; due to stuck port data_in ;                                                                           ;
+; cursor:cursor_inst|spi_control:spi_ctrl|data_tx[14] ; Stuck at GND              ; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[14] ;
+;                                                     ; due to stuck port data_in ;                                                                           ;
+; cursor:cursor_inst|spi_control:spi_ctrl|data_tx[13] ; Stuck at VCC              ; cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[13] ;
+;                                                     ; due to stuck port data_in ;                                                                           ;
++-----------------------------------------------------+---------------------------+---------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -486,14 +574,24 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1295  ;
+; Total registers                              ; 1512  ;
 ; Number of registers using Synchronous Clear  ; 161   ;
-; Number of registers using Synchronous Load   ; 38    ;
+; Number of registers using Synchronous Load   ; 168   ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1172  ;
+; Number of registers using Clock Enable       ; 1339  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; cursor:cursor_inst|state[0]            ; 1       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -512,28 +610,36 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------+
-; 3:1                ; 37 bits   ; 74 LEs        ; 37 LEs               ; 37 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|q[9]                ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[2]                ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[31]               ;
-; 3:1                ; 54 bits   ; 108 LEs       ; 54 LEs               ; 54 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|aq[33] ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|aq[30] ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|ac[26]              ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|x[2]                     ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|divisor[17]                        ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|divident[11]                       ;
-; 5:1                ; 33 bits   ; 99 LEs        ; 33 LEs               ; 66 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|write_vels:write_vels_inst|h_vel_data_in[4]       ;
-; 5:1                ; 33 bits   ; 99 LEs        ; 33 LEs               ; 66 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|write_vels:write_vels_inst|v_vel_data_in[6]       ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|y[0]                     ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_addr_write[1]                               ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_y[15]                                       ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_x[24]                                       ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|state[1]                                          ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|state[10]                          ;
+; 3:1                ; 37 bits   ; 74 LEs        ; 37 LEs               ; 37 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|q[29]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[3]                ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|x[15]               ;
+; 3:1                ; 54 bits   ; 108 LEs       ; 54 LEs               ; 54 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|aq[65] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|data_tx[12]                              ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|data_tx[10]                              ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |fluid_simulation|update_field:update_field_inst|vy2_write[22]                                     ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|aq[1]  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst|ac[30]              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|count[2]               ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_addr_write[1]                               ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|divisor[6]                         ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|divident[18]                       ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|x[0]                     ;
+; 5:1                ; 33 bits   ; 99 LEs        ; 33 LEs               ; 66 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|write_vels:write_vels_inst|h_vel_data_in[19]      ;
+; 5:1                ; 33 bits   ; 99 LEs        ; 33 LEs               ; 66 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|write_vels:write_vels_inst|v_vel_data_in[27]      ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; Yes        ; |fluid_simulation|draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|y[13]                    ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_y[11]                                       ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |fluid_simulation|update_field:update_field_inst|field_x[18]                                       ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|state[1]                           ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |fluid_simulation|update_field:update_field_inst|state[3]                                          ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; Yes        ; |fluid_simulation|cursor:cursor_inst|cursor_x[2]                                                   ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; Yes        ; |fluid_simulation|cursor:cursor_inst|cursor_y[24]                                                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |fluid_simulation|draw:draw_inst|vga_r                                                             ;
 ; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|draw_blocks:draw_blocks_inst|block_y_int                                         ;
 ; 3:1                ; 19 bits   ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|draw:draw_inst|vga_controller:vga_controller_inst|addr                           ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |fluid_simulation|update_field:update_field_inst|norm:norm_inst|div:div_inst|divu:divu_inst|Add0   ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |fluid_simulation|update_field:update_field_inst|Mux0                                              ;
-; 6:1                ; 29 bits   ; 116 LEs       ; 87 LEs               ; 29 LEs                 ; No         ; |fluid_simulation|update_field:update_field_inst|Mux7                                              ;
+; 6:1                ; 29 bits   ; 116 LEs       ; 87 LEs               ; 29 LEs                 ; No         ; |fluid_simulation|update_field:update_field_inst|Mux3                                              ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |fluid_simulation|cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes|Selector7              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------+
 
 
@@ -947,6 +1053,29 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cursor:cursor_inst ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; DRAW_WIDTH     ; 640   ; Signed Integer                         ;
+; DRAW_HEIGHT    ; 480   ; Signed Integer                         ;
+; BLOCK_SIZE     ; 80    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cursor:cursor_inst|spi_control:spi_ctrl ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; SPI_CLK_FREQ   ; 200   ; Signed Integer                                              ;
+; UPDATE_FREQ    ; 1     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: update_field:update_field_inst ;
 +----------------+-------+----------------------------------------------------+
@@ -1087,7 +1216,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DRAW_HEIGHT    ; 480    ; Signed Integer                                  ;
 ; DRAW_SIZE      ; 307200 ; Signed Integer                                  ;
 ; DRAW_ADDRW     ; 19     ; Signed Integer                                  ;
-; DRAW_DATAW     ; 1      ; Signed Integer                                  ;
+; DRAW_DATAW     ; 2      ; Signed Integer                                  ;
 ; FIELD_WIDTH    ; 8      ; Signed Integer                                  ;
 ; FIELD_HEIGHT   ; 6      ; Signed Integer                                  ;
 ; FIELD_SIZE     ; 48     ; Signed Integer                                  ;
@@ -1120,7 +1249,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DRAW_HEIGHT    ; 480    ; Signed Integer                                                             ;
 ; DRAW_SIZE      ; 307200 ; Signed Integer                                                             ;
 ; DRAW_ADDRW     ; 19     ; Signed Integer                                                             ;
-; DRAW_DATAW     ; 1      ; Signed Integer                                                             ;
+; DRAW_DATAW     ; 2      ; Signed Integer                                                             ;
 ; BLOCK_SIZE     ; 80     ; Signed Integer                                                             ;
 +----------------+--------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1146,7 +1275,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DRAW_HEIGHT    ; 480    ; Signed Integer                    ;
 ; DRAW_SIZE      ; 307200 ; Signed Integer                    ;
 ; DRAW_ADDRW     ; 19     ; Signed Integer                    ;
-; DRAW_DATAW     ; 1      ; Signed Integer                    ;
+; DRAW_DATAW     ; 2      ; Signed Integer                    ;
 +----------------+--------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1156,7 +1285,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------+-----------------------------------------------------------+
 ; Parameter Name ; Value  ; Type                                                      ;
 +----------------+--------+-----------------------------------------------------------+
-; WIDTH          ; 1      ; Signed Integer                                            ;
+; WIDTH          ; 2      ; Signed Integer                                            ;
 ; DEPTH          ; 307200 ; Signed Integer                                            ;
 ; INIT_F         ;        ; String                                                    ;
 ; ADDRW          ; 19     ; Signed Integer                                            ;
@@ -1425,6 +1554,76 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEVICE_FAMILY                      ; MAX 10                                             ; Untyped                                ;
 ; CBXI_PARAMETER                     ; altsyncram_opl1                                    ; Untyped                                ;
 +------------------------------------+----------------------------------------------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cursor:cursor_inst|lpm_mult:Mult0 ;
++------------------------------------------------+----------+------------------------+
+; Parameter Name                                 ; Value    ; Type                   ;
++------------------------------------------------+----------+------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE         ;
+; LPM_WIDTHA                                     ; 32       ; Untyped                ;
+; LPM_WIDTHB                                     ; 10       ; Untyped                ;
+; LPM_WIDTHP                                     ; 42       ; Untyped                ;
+; LPM_WIDTHR                                     ; 42       ; Untyped                ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped                ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                ;
+; LATENCY                                        ; 0        ; Untyped                ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                ;
+; INPUT_B_IS_CONSTANT                            ; YES      ; Untyped                ;
+; USE_EAB                                        ; OFF      ; Untyped                ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                ;
+; CBXI_PARAMETER                                 ; mult_9rs ; Untyped                ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                ;
++------------------------------------------------+----------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cursor:cursor_inst|lpm_mult:Mult1 ;
++------------------------------------------------+----------+------------------------+
+; Parameter Name                                 ; Value    ; Type                   ;
++------------------------------------------------+----------+------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE         ;
+; LPM_WIDTHA                                     ; 32       ; Untyped                ;
+; LPM_WIDTHB                                     ; 10       ; Untyped                ;
+; LPM_WIDTHP                                     ; 42       ; Untyped                ;
+; LPM_WIDTHR                                     ; 42       ; Untyped                ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped                ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                ;
+; LATENCY                                        ; 0        ; Untyped                ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                ;
+; INPUT_B_IS_CONSTANT                            ; YES      ; Untyped                ;
+; USE_EAB                                        ; OFF      ; Untyped                ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                ;
+; CBXI_PARAMETER                                 ; mult_9rs ; Untyped                ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                ;
++------------------------------------------------+----------+------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1993,7 +2192,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+
 ; Name                                  ; Value                                                                                                   ;
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+
-; Number of entity instances            ; 14                                                                                                      ;
+; Number of entity instances            ; 16                                                                                                      ;
+; Entity Instance                       ; cursor:cursor_inst|lpm_mult:Mult0                                                                       ;
+;     -- LPM_WIDTHA                     ; 32                                                                                                      ;
+;     -- LPM_WIDTHB                     ; 10                                                                                                      ;
+;     -- LPM_WIDTHP                     ; 42                                                                                                      ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                                                                ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                      ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                                                                                                     ;
+;     -- USE_EAB                        ; OFF                                                                                                     ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                    ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                      ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                      ;
+; Entity Instance                       ; cursor:cursor_inst|lpm_mult:Mult1                                                                       ;
+;     -- LPM_WIDTHA                     ; 32                                                                                                      ;
+;     -- LPM_WIDTHB                     ; 10                                                                                                      ;
+;     -- LPM_WIDTHP                     ; 42                                                                                                      ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                                                                ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                      ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                                                                                                     ;
+;     -- USE_EAB                        ; OFF                                                                                                     ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                    ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                      ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                      ;
 ; Entity Instance                       ; draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7 ;
 ;     -- LPM_WIDTHA                     ; 32                                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 32                                                                                                      ;
@@ -2158,19 +2379,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
 ; reset_n ; Input  ; Info     ; Stuck at VCC                                                                                                                ;
 ; addr    ; Output ; Warning  ; Output or bidir port (20 bits) is wider than the port expression (19 bits) it drives; bit(s) "addr[19..19]" have no fanouts ;
-; col     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                         ;
-; row     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                         ;
 +---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst" ;
-+----------+-------+----------+----------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                                ;
-+----------+-------+----------+----------------------------------------------------------------------------------------+
-; x[15..0] ; Input ; Info     ; Stuck at GND                                                                           ;
-; y[15..0] ; Input ; Info     ; Stuck at GND                                                                           ;
-+----------+-------+----------+----------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst"                                                                                 ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                               ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x[15..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                          ;
+; y[15..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                          ;
+; on_line  ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (2 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------+
@@ -2193,6 +2413,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+------------------------------+
 
 
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst5" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; dot  ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst4" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; dot  ; Input ; Info     ; Stuck at VCC                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst3" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; dot  ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst2" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; dot  ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst1" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; dot  ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "update_field:update_field_inst|seg7:seg7_inst0" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; dot  ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst"                                            ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -2213,21 +2487,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "update_field:update_field_inst" ;
-+------+--------+----------+---------------------------------+
-; Port ; Type   ; Severity ; Details                         ;
-+------+--------+----------+---------------------------------+
-; done ; Output ; Info     ; Explicitly unconnected          ;
-+------+--------+----------+---------------------------------+
++-------+--------+----------+--------------------------------+
+; Port  ; Type   ; Severity ; Details                        ;
++-------+--------+----------+--------------------------------+
+; start ; Input  ; Info     ; Stuck at VCC                   ;
+; done  ; Output ; Info     ; Explicitly unconnected         ;
++-------+--------+----------+--------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pll:pll_inst"                                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; c2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cursor:cursor_inst|spi_control:spi_ctrl"                                                   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; reset_n     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; data_update ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -2236,30 +2511,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 73                          ;
-; cycloneiii_ff         ; 1295                        ;
-;     ENA               ; 985                         ;
+; cycloneiii_ff         ; 1512                        ;
+;     ENA               ; 1024                        ;
 ;     ENA SCLR          ; 149                         ;
-;     ENA SLD           ; 38                          ;
+;     ENA SLD           ; 166                         ;
 ;     SCLR              ; 12                          ;
-;     plain             ; 111                         ;
+;     SLD               ; 2                           ;
+;     plain             ; 159                         ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 2934                        ;
-;     arith             ; 2052                        ;
-;         2 data inputs ; 408                         ;
-;         3 data inputs ; 1644                        ;
-;     normal            ; 882                         ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 22                          ;
-;         2 data inputs ; 203                         ;
-;         3 data inputs ; 195                         ;
-;         4 data inputs ; 459                         ;
-; cycloneiii_mac_mult   ; 54                          ;
-; cycloneiii_mac_out    ; 54                          ;
+; cycloneiii_lcell_comb ; 3536                        ;
+;     arith             ; 2303                        ;
+;         2 data inputs ; 507                         ;
+;         3 data inputs ; 1796                        ;
+;     normal            ; 1233                        ;
+;         0 data inputs ; 6                           ;
+;         1 data inputs ; 36                          ;
+;         2 data inputs ; 243                         ;
+;         3 data inputs ; 259                         ;
+;         4 data inputs ; 689                         ;
+; cycloneiii_mac_mult   ; 58                          ;
+; cycloneiii_mac_out    ; 58                          ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 200                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.90                        ;
-; Average LUT depth     ; 4.12                        ;
+; Max LUT depth         ; 10.30                       ;
+; Average LUT depth     ; 4.26                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2268,7 +2544,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -2278,10 +2554,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edition
-    Info: Processing started: Wed Jan  8 13:29:44 2025
+    Info: Processing started: Fri Jan 10 22:20:35 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fluid_simulation -c fluid_simulation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/seg7.sv
+    Info (12023): Found entity 1: seg7 File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/seg7.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/spi_serdes.v
+    Info (12023): Found entity 1: spi_serdes File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_serdes.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/spi_control.v
+    Info (12023): Found entity 1: spi_control File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_control.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/cursor.sv
+    Info (12023): Found entity 1: cursor File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/write_vels.sv
     Info (12023): Found entity 1: write_vels File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/update_field.sv
@@ -2314,14 +2598,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/samue/documents/code/systemverilog/fluid_simulation/hdl/pll.v
     Info (12023): Found entity 1: pll File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pll.v Line: 40
 Info (12127): Elaborating entity "fluid_simulation" for the top level hierarchy
-Warning (10034): Output port "HEX0" at fluid_simulation.sv(9) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-Warning (10034): Output port "HEX1" at fluid_simulation.sv(10) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-Warning (10034): Output port "HEX2" at fluid_simulation.sv(11) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-Warning (10034): Output port "HEX3" at fluid_simulation.sv(12) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-Warning (10034): Output port "HEX4" at fluid_simulation.sv(13) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-Warning (10034): Output port "HEX5" at fluid_simulation.sv(14) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-Warning (10034): Output port "GSENSOR_CS_N" at fluid_simulation.sv(27) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 27
-Warning (10034): Output port "GSENSOR_SCLK" at fluid_simulation.sv(29) has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 29
+Warning (10036): Verilog HDL or VHDL warning at fluid_simulation.sv(75): object "start_update" assigned a value but never read File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 75
 Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 64
 Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_inst|altpll:altpll_component" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pll.v Line: 99
 Info (12130): Elaborated megafunction instantiation "pll:pll_inst|altpll:altpll_component" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pll.v Line: 99
@@ -2391,10 +2668,20 @@ Info (12133): Instantiated megafunction "pll:pll_inst|altpll:altpll_component" w
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll1.v
     Info (12023): Found entity 1: pll_altpll1 File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/pll_altpll1.v Line: 30
 Info (12128): Elaborating entity "pll_altpll1" for hierarchy "pll:pll_inst|altpll:altpll_component|pll_altpll1:auto_generated" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "update_field" for hierarchy "update_field:update_field_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 91
-Warning (10230): Verilog HDL assignment warning at update_field.sv(227): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 227
-Warning (10230): Verilog HDL assignment warning at update_field.sv(257): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 257
-Info (12128): Elaborating entity "norm" for hierarchy "update_field:update_field_inst|norm:norm_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 38
+Info (12128): Elaborating entity "cursor" for hierarchy "cursor:cursor_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 101
+Warning (10230): Verilog HDL assignment warning at cursor.sv(72): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 72
+Warning (10230): Verilog HDL assignment warning at cursor.sv(78): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 78
+Info (12128): Elaborating entity "spi_control" for hierarchy "cursor:cursor_inst|spi_control:spi_ctrl" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 49
+Info (10264): Verilog HDL Case Statement information at spi_control.v(199): all case item expressions in this case statement are onehot File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_control.v Line: 199
+Info (12128): Elaborating entity "spi_serdes" for hierarchy "cursor:cursor_inst|spi_control:spi_ctrl|spi_serdes:serdes" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_control.v Line: 127
+Warning (10230): Verilog HDL assignment warning at spi_serdes.v(78): truncated value with size 32 to match size of target (4) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_serdes.v Line: 78
+Warning (10230): Verilog HDL assignment warning at spi_serdes.v(91): truncated value with size 32 to match size of target (4) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_serdes.v Line: 91
+Info (12128): Elaborating entity "update_field" for hierarchy "update_field:update_field_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 131
+Warning (10230): Verilog HDL assignment warning at update_field.sv(184): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 184
+Warning (10230): Verilog HDL assignment warning at update_field.sv(185): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 185
+Warning (10230): Verilog HDL assignment warning at update_field.sv(292): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 292
+Warning (10230): Verilog HDL assignment warning at update_field.sv(327): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 327
+Info (12128): Elaborating entity "norm" for hierarchy "update_field:update_field_inst|norm:norm_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 51
 Info (12128): Elaborating entity "div" for hierarchy "update_field:update_field_inst|norm:norm_inst|div:div_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv Line: 31
 Warning (10230): Verilog HDL assignment warning at div.sv(22): truncated value with size 32 to match size of target (31) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at div.sv(23): truncated value with size 32 to match size of target (31) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 23
@@ -2404,21 +2691,23 @@ Warning (10230): Verilog HDL assignment warning at div.sv(84): truncated value w
 Warning (10230): Verilog HDL assignment warning at div.sv(94): truncated value with size 32 to match size of target (7) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/div.sv Line: 94
 Info (12128): Elaborating entity "sqrt" for hierarchy "update_field:update_field_inst|norm:norm_inst|sqrt:sqrt_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv Line: 39
 Warning (10230): Verilog HDL assignment warning at sqrt.sv(49): truncated value with size 32 to match size of target (5) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/sqrt.sv Line: 49
-Info (12128): Elaborating entity "bram_sdp" for hierarchy "update_field:update_field_inst|bram_sdp:bram_h_vel_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 59
+Info (12128): Elaborating entity "bram_sdp" for hierarchy "update_field:update_field_inst|bram_sdp:bram_h_vel_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 72
 Info (10648): Verilog HDL Display System Task info at bram_sdp.sv(26): Load init file 'h_vels.mem' into bram_sdp. File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv Line: 26
-Info (12128): Elaborating entity "bram_sdp" for hierarchy "update_field:update_field_inst|bram_sdp:bram_v_vel_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 73
+Info (12128): Elaborating entity "bram_sdp" for hierarchy "update_field:update_field_inst|bram_sdp:bram_v_vel_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 86
 Info (10648): Verilog HDL Display System Task info at bram_sdp.sv(26): Load init file 'v_vels.mem' into bram_sdp. File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv Line: 26
-Info (12128): Elaborating entity "read_vels" for hierarchy "update_field:update_field_inst|read_vels:read_vels_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 111
+Info (12128): Elaborating entity "read_vels" for hierarchy "update_field:update_field_inst|read_vels:read_vels_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 124
 Warning (10230): Verilog HDL assignment warning at read_vels.sv(46): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 46
 Warning (10230): Verilog HDL assignment warning at read_vels.sv(51): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 51
 Warning (10230): Verilog HDL assignment warning at read_vels.sv(56): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 56
 Warning (10230): Verilog HDL assignment warning at read_vels.sv(61): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/read_vels.sv Line: 61
-Info (12128): Elaborating entity "write_vels" for hierarchy "update_field:update_field_inst|write_vels:write_vels_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 166
+Info (12128): Elaborating entity "write_vels" for hierarchy "update_field:update_field_inst|write_vels:write_vels_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 179
 Warning (10230): Verilog HDL assignment warning at write_vels.sv(46): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv Line: 46
 Warning (10230): Verilog HDL assignment warning at write_vels.sv(51): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv Line: 51
 Warning (10230): Verilog HDL assignment warning at write_vels.sv(56): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv Line: 56
 Warning (10230): Verilog HDL assignment warning at write_vels.sv(61): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv Line: 61
-Info (12128): Elaborating entity "draw_blocks" for hierarchy "draw_blocks:draw_blocks_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 115
+Info (12128): Elaborating entity "seg7" for hierarchy "update_field:update_field_inst|seg7:seg7_inst0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 192
+Warning (10230): Verilog HDL assignment warning at seg7.sv(26): truncated value with size 8 to match size of target (7) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/seg7.sv Line: 26
+Info (12128): Elaborating entity "draw_blocks" for hierarchy "draw_blocks:draw_blocks_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 155
 Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(90): truncated value with size 32 to match size of target (6) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 90
 Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(91): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 91
 Warning (10230): Verilog HDL assignment warning at draw_blocks.sv(94): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv Line: 94
@@ -2433,10 +2722,13 @@ Info (10264): Verilog HDL Case Statement information at draw_block.sv(64): all c
 Info (12128): Elaborating entity "pixel_on_line" for hierarchy "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv Line: 50
 Warning (10230): Verilog HDL assignment warning at pixel_on_line.sv(20): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 20
 Warning (10230): Verilog HDL assignment warning at pixel_on_line.sv(21): truncated value with size 48 to match size of target (32) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 21
-Info (12128): Elaborating entity "draw" for hierarchy "draw:draw_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 137
-Warning (10230): Verilog HDL assignment warning at draw.sv(43): truncated value with size 32 to match size of target (12) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 43
-Info (12128): Elaborating entity "bram_sdp" for hierarchy "draw:draw_inst|bram_sdp:bram_draw_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 39
-Info (12128): Elaborating entity "vga_controller" for hierarchy "draw:draw_inst|vga_controller:vga_controller_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 58
+Info (12128): Elaborating entity "draw" for hierarchy "draw:draw_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 179
+Warning (10230): Verilog HDL assignment warning at draw.sv(48): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 48
+Warning (10230): Verilog HDL assignment warning at draw.sv(49): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 49
+Warning (10230): Verilog HDL assignment warning at draw.sv(50): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 50
+Warning (10230): Verilog HDL assignment warning at draw.sv(51): truncated value with size 32 to match size of target (16) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 51
+Info (12128): Elaborating entity "bram_sdp" for hierarchy "draw:draw_inst|bram_sdp:bram_draw_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 43
+Info (12128): Elaborating entity "vga_controller" for hierarchy "draw:draw_inst|vga_controller:vga_controller_inst" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw.sv Line: 82
 Warning (10230): Verilog HDL assignment warning at vga_controller.sv(51): truncated value with size 32 to match size of target (10) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv Line: 51
 Warning (10230): Verilog HDL assignment warning at vga_controller.sv(55): truncated value with size 32 to match size of target (10) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv Line: 55
 Warning (10230): Verilog HDL assignment warning at vga_controller.sv(87): truncated value with size 32 to match size of target (20) File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/vga_controller.sv Line: 87
@@ -2507,7 +2799,9 @@ Info (19000): Inferred 4 megafunctions from design logic
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter INIT_FILE set to db/fluid_simulation.ram0_bram_sdp_6a547886.hdl.mif
         Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
-Info (278001): Inferred 14 megafunctions from design logic
+Info (278001): Inferred 16 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "cursor:cursor_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 51
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "cursor:cursor_inst|Mult1" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 52
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult7" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult8" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv Line: 31
@@ -2517,7 +2811,7 @@ Info (278001): Inferred 14 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult5" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 60
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult6" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 61
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult2" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 30
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "update_field:update_field_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 130
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "update_field:update_field_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 143
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 30
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|Mult1" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 30
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "update_field:update_field_inst|norm:norm_inst|Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/norm.sv Line: 22
@@ -2605,6 +2899,19 @@ Info (12133): Instantiated megafunction "update_field:update_field_inst|bram_sdp
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_opl1.tdf
     Info (12023): Found entity 1: altsyncram_opl1 File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/altsyncram_opl1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "cursor:cursor_inst|lpm_mult:Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 51
+Info (12133): Instantiated megafunction "cursor:cursor_inst|lpm_mult:Mult0" with the following parameter: File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/cursor.sv Line: 51
+    Info (12134): Parameter "LPM_WIDTHA" = "32"
+    Info (12134): Parameter "LPM_WIDTHB" = "10"
+    Info (12134): Parameter "LPM_WIDTHP" = "42"
+    Info (12134): Parameter "LPM_WIDTHR" = "42"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_9rs.tdf
+    Info (12023): Found entity 1: mult_9rs File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mult_9rs.tdf Line: 31
 Info (12130): Elaborated megafunction instantiation "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
 Info (12133): Instantiated megafunction "draw_blocks:draw_blocks_inst|draw_block:draw_block_inst|pixel_on_line:pixel_on_line_inst|lpm_mult:Mult7" with the following parameter: File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/pixel_on_line.sv Line: 65
     Info (12134): Parameter "LPM_WIDTHA" = "32"
@@ -2664,8 +2971,8 @@ Info (12133): Instantiated megafunction "draw_blocks:draw_blocks_inst|draw_block
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12130): Elaborated megafunction instantiation "update_field:update_field_inst|lpm_mult:Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 130
-Info (12133): Instantiated megafunction "update_field:update_field_inst|lpm_mult:Mult0" with the following parameter: File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 130
+Info (12130): Elaborated megafunction instantiation "update_field:update_field_inst|lpm_mult:Mult0" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 143
+Info (12133): Instantiated megafunction "update_field:update_field_inst|lpm_mult:Mult0" with the following parameter: File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv Line: 143
     Info (12134): Parameter "LPM_WIDTHA" = "32"
     Info (12134): Parameter "LPM_WIDTHB" = "16"
     Info (12134): Parameter "LPM_WIDTHP" = "48"
@@ -2677,88 +2984,46 @@ Info (12133): Instantiated megafunction "update_field:update_field_inst|lpm_mult
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_iks.tdf
     Info (12023): Found entity 1: mult_iks File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/mult_iks.tdf Line: 31
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13014): Ignored 2446 buffer(s)
-    Info (13019): Ignored 2446 SOFT buffer(s)
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 2534 buffer(s)
+    Info (13019): Ignored 2534 SOFT buffer(s)
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "GSENSOR_SDI" and its non-tri-state driver. File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 30
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "GSENSOR_SDI" has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 30
     Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 32
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "GSENSOR_SDI~synth" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 30
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX0[7]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX1[7]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX2[7]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX3[7]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 9
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 10
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 11
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 12
     Warning (13410): Pin "HEX4[7]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 13
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "HEX5[7]" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
-    Warning (13410): Pin "GSENSOR_CS_N" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 27
-    Warning (13410): Pin "GSENSOR_SCLK" is stuck at GND File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 29
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/fluid_simulation.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15899): PLL "pll:pll_inst|altpll:altpll_component|pll_altpll1:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/synthesis/db/pll_altpll1.v Line: 44
 Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ADC_CLK_10" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 4
     Warning (15610): No output dependent on input pin "MAX10_CLK2_50" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 6
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 17
     Warning (15610): No output dependent on input pin "GSENSOR_INT[1]" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 28
     Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv Line: 28
-Info (21057): Implemented 3758 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4477 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 64 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 3376 logic cells
+    Info (21061): Implemented 4087 logic cells
     Info (21064): Implemented 200 RAM segments
     Info (21065): Implemented 1 PLLs
-    Info (21062): Implemented 108 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 101 warnings
-    Info: Peak virtual memory: 4907 megabytes
-    Info: Processing ended: Wed Jan  8 13:30:02 2025
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:12
+    Info (21062): Implemented 116 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 4889 megabytes
+    Info: Processing ended: Fri Jan 10 22:20:48 2025
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +------------------------------------------+

@@ -14,7 +14,7 @@ module draw_blocks_tb ();
   parameter FIELD_ADDRW = $clog2(FIELD_SIZE);
   parameter BLOCK_SIZE = DRAW_WIDTH / FIELD_WIDTH;
   parameter DRAW_ADDRW = $clog2(DRAW_SIZE);
-  parameter DRAW_DATAW = 1;
+  parameter DRAW_DATAW = 2;
 
   // Inputs
   logic clk;
@@ -36,7 +36,8 @@ module draw_blocks_tb ();
       .FIELD_SIZE  (FIELD_SIZE),
       .FIELD_DATAW (FIELD_DATAW),
       .FIELD_ADDRW (FIELD_ADDRW),
-      .BLOCK_SIZE  (BLOCK_SIZE)
+      .BLOCK_SIZE  (BLOCK_SIZE),
+      .DRAW_DATAW  (DRAW_DATAW)
   ) draw_blocks_inst (
       .clk(clk),
       .start(start),

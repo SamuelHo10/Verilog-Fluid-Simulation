@@ -5,13 +5,6 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	draw_block_tb
 
-} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/update_field.sv
-Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
--- Compiling module update_field
-
-Top level modules:
-	update_field
-
 } {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/sqrt_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module sqrt_tb
@@ -19,19 +12,19 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	sqrt_tb
 
-} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv
-Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
--- Compiling module draw_block
-
-Top level modules:
-	draw_block
-
 } {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_blocks_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/draw_blocks_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module draw_blocks_tb
 
 Top level modules:
 	draw_blocks_tb
+
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_block.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module draw_block
+
+Top level modules:
+	draw_block
 
 } {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/comb_ckt_generator.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/comb_ckt_generator.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
@@ -83,12 +76,12 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	draw
 
-} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/fluid_simulation.sv
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_serdes.v {1 {vlog -work work -vopt -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_serdes.v
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
--- Compiling module fluid_simulation
+-- Compiling module spi_serdes
 
 Top level modules:
-	fluid_simulation
+	spi_serdes
 
 } {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/bram_sdp.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
@@ -104,6 +97,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	div_tb
 
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_control.v {1 {vlog -work work -vopt -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/spi_control.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module spi_control
+
+Top level modules:
+	spi_control
+
 } {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/norm_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module norm_tb
@@ -118,19 +118,19 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	pixel_on_line_tb
 
-} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv
-Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
--- Compiling module update_field_tb
-
-Top level modules:
-	update_field_tb
-
 } {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/draw_blocks.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module draw_blocks
 
 Top level modules:
 	draw_blocks
+
+} {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/testbenches/update_field_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module update_field_tb
+
+Top level modules:
+	update_field_tb
 
 } {} {}} C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/samue/Documents/Code/SystemVerilog/fluid_simulation/hdl/write_vels.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
